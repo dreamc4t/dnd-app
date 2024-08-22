@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import './globals.css'
 import { ReactNode } from 'react'
+import NavBar from '@/components/NavBar/NavBar'
 
 export const metadata: Metadata = {
   title: 'Dungeons and Dragons application',
@@ -14,7 +15,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en'>
-      <body>{children}</body>
+      <body className='max-w-5xl mx-auto p-4 border border-gray-200 h-screen'>
+        <NavBar />
+        <main>{children}</main>
+      </body>
     </html>
   )
 }

@@ -1,9 +1,9 @@
-import { auth } from '@/auth'
+import { auth } from '@/lib/auth'
 
 export async function UserInfo() {
   const session = await auth()
 
-  if (!session || !session.user) return null
+  if (!session || !session.user) return <div>Not logged in</div>
 
   const { email, name } = session.user
 
@@ -13,4 +13,4 @@ export async function UserInfo() {
       <p>Email: {email}</p>
     </div>
   )
-}
+}   

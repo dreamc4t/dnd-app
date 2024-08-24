@@ -1,6 +1,7 @@
 import { UserInfo } from '@/components'
 
-export default function UserPage() {
+export default async function UserPage() {
+
   return (
     <div>
       User page:

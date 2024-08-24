@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import './globals.css'
 import { ReactNode } from 'react'
 import NavBar from '@/components/NavBar/NavBar'
+import ReactQueryProvider from './Providers'
 
 export const metadata: Metadata = {
   title: 'Dungeons and Dragons application',
@@ -16,8 +17,10 @@ export default function RootLayout({
   return (
     <html lang='en'>
       <body className='max-w-5xl mx-auto p-4 border border-gray-200 h-screen'>
-        <NavBar />
-        <main>{children}</main>
+        <ReactQueryProvider>
+          <NavBar />
+          <main>{children}</main>
+        </ReactQueryProvider>
       </body>
     </html>
   )

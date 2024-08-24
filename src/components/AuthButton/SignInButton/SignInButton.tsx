@@ -1,14 +1,6 @@
-import { signIn } from '@/auth'
+'use client'
+import { signIn } from 'next-auth/react'
 
 export function SignInButton() {
-  return (
-    <form
-      action={async () => {
-        'use server'
-        await signIn('google')
-      }}
-    >
-      <button type='submit'>Signin with Google</button>
-    </form>
-  )
+  return <button onClick={() => signIn()}>Sign In</button>
 }

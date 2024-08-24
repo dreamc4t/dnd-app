@@ -1,4 +1,4 @@
-import { auth } from '@/auth'
+import { auth } from '@/lib/auth'
 import { SignInButton } from './SignInButton'
 import { SignOutButton } from './SignOutButton'
 

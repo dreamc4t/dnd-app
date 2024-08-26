@@ -6,6 +6,7 @@ type NavigationItem = {
 const navigationItems: NavigationItem[] = [
   { title: 'Start', url: '/start' },
   { title: 'User', url: '/user' },
+  { title: 'NPC', url: '/npc' },
 ]
 
 export { navigationItems }

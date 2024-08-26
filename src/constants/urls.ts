@@ -1,8 +1,21 @@
-// const BASE_URL = process.env.NEXT_PUBLIC_BACKEND_URL
+const BASE_URL = process.env.NEXT_PUBLIC_BACKEND_URL
+const ALL_PATH = 'all'
 
+// NPC
 const NPC_PATH = 'npc' as const
 const CREATE_RANDOM_NPC_PATH = 'generate' as const
-
 const GENERATE_NPC_ENDPOINT = `${NPC_PATH}/${CREATE_RANDOM_NPC_PATH}` as const
 
-export { GENERATE_NPC_ENDPOINT }
+// ITEM
+const ITEM_PATH = 'item'
+const ITEM_URL = `${BASE_URL}/${ITEM_PATH}`
+const ALL_ITEMS_PATH = `${ITEM_URL}/${ALL_PATH}`
+
+// SHOP
+const SHOP_PATH = 'shop' as const
+const SHOP_URL = `${BASE_URL}/${SHOP_PATH}`
+const CREATE_PATH = 'create' as const
+const CREATE_SHOP_URL = `${SHOP_URL}/${CREATE_PATH}`
+const GET_ALL_SHOPS_URL = `${SHOP_URL}/${ALL_PATH}`
+
+export { GENERATE_NPC_ENDPOINT, ALL_ITEMS_PATH, CREATE_SHOP_URL, GET_ALL_SHOPS_URL }

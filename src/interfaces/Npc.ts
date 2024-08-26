@@ -1,5 +1,5 @@
 export interface Npc {
-  _id?: string
+  id?: string
   strength: number
   dexterity: number
   intelligence: number

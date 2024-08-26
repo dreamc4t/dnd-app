@@ -4,18 +4,16 @@ import Link from 'next/link'
 
 const NavBar = () => {
   return (
-    <nav className='flex p-2 gap-5'>
-      {navigationItems.map((item, i) => {
-        return (
-          <Link
-            href={item.url}
-            key={item.title + i}
-            className='text-gray-200 hover:text-yellow-400 text-sm md:text-lg font-medium py-1 md:py-2 px-3 md:px-4 bg-gray-700 bg-opacity-60 hover:bg-opacity-70 rounded-md transition duration-300 ease-in-out shadow-md hover:shadow-lg'
-          >
-            {item.title}
-          </Link>
-        )
-      })}
+    <nav className='bg-primary text-textPrimary p-4 flex items-center justify-between'>
+      <ul className={`flex items-center gap-4`}>
+        {navigationItems.map((item, i) => {
+          return (
+            <li className='text-2xl font-bold hover:text-accent' key={item.title + i}>
+              <Link href={item.url}>{item.title}</Link>
+            </li>
+          )
+        })}
+      </ul>
       <AuthButton />
     </nav>
   )

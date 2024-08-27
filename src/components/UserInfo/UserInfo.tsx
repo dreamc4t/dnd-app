@@ -13,4 +13,4 @@ export async function UserInfo() {
       <p>Email: {email}</p>
     </div>
   )
-}   
+}

@@ -1,12 +1,11 @@
-import { auth } from '@/lib/auth'
+import { User } from 'next-auth'
 
-export async function UserInfo() {
-  const session = await auth()
+interface UserInfoProps {
+  user: User
+}
 
-  if (!session || !session.user) return <div>Not logged in</div>
-
-  const { email, name } = session.user
-
+const UserInfo = ({ user }: UserInfoProps) => {
+  const { email, name } = user
   return (
     <div>
       <p>Name: {name}</p>
@@ -14,3 +13,5 @@ export async function UserInfo() {
     </div>
   )
 }
+
+export { UserInfo }

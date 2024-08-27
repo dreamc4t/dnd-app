@@ -1,15 +1,13 @@
 'use client'
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 import { ItemsList } from '../ItemsList'
 import { Item, Shop } from '@/interfaces'
 import { saveShop } from '@/app/actions/saveShop' // Import the server action
-import { SearchField } from '../searchField'
+import { FilterableItemList } from '../FilterableItemList'
 
 const ShopBuilder = ({ items }: { items: Item[] }) => {
   const [shopName, setShopName] = useState<string>('')
   const [selectedItems, setSelectedItems] = useState<Item[]>([])
-  const [searchInput, setSearchInput] = useState<string>('')
-  const [filteredItems, setFilteredItems] = useState<Item[]>(items)
 
   const addItemToShop = (item: Item) => {
     setSelectedItems((prevItems) => [...prevItems, item])
@@ -36,27 +34,13 @@ const ShopBuilder = ({ items }: { items: Item[] }) => {
     }
   }
 
-  useEffect(() => {
-    const lowerCaseSearchInput = searchInput.toLowerCase()
-
-    setFilteredItems(
-      items.filter(({ name }) => name.toLowerCase().includes(lowerCaseSearchInput)),
-    )
-  }, [searchInput, items])
-
   return (
-    <div className='flex min-h-screen'>
-      <div className='flex-1 flex'>
-        <div className='w-3/5 p-5'>
-          <SearchField setSearchInput={setSearchInput} />
-          <ItemsList
-            items={filteredItems}
-            onButtonClick={addItemToShop}
-            buttonType='ADD'
-          />
+    <div className='flex'>
+      <div className='flex-1 flex '>
+        <div className='w-3/5 p-5 flex flex-col border-2 border-black'>
+          <FilterableItemList items={items} onAddToShopClick={addItemToShop} />
         </div>
-
-        <div className='w-2/5 p-5 bg-gray-100 border-l border-gray-300 sticky top-0'>
+        <div className='w-2/5 p-5 bg-gray-100 border-l border-gray-300 flex flex-col'>
           <input
             type='text'
             value={shopName}
@@ -64,13 +48,13 @@ const ShopBuilder = ({ items }: { items: Item[] }) => {
             placeholder='Enter shop name...'
             className='p-2 mb-4 border border-gray-300 rounded w-full'
           />
-          <ul className='space-y-4'>
+          <div className='flex-grow overflow-auto'>
             <ItemsList
               items={selectedItems}
               onButtonClick={removeItemFromShop}
               buttonType='REMOVE'
             />
-          </ul>
+          </div>
           <div>
             <button
               className='bg-blue-500 text-white mt-4 px-4 py-2 rounded'

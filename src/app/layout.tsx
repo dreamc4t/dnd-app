@@ -18,10 +18,12 @@ export default async function RootLayout({
   const session = await auth()
   return (
     <html lang='en'>
-      <body>
+      <body className='h-screen flex flex-col'>
         <Providers session={session}>
-          <NavBar />
-          <div>{children}</div>
+          <header className='min-h-24 bg-slate-600 z-10'>
+            <NavBar />
+          </header>
+          <div className='flex-grow overflow-auto'>{children}</div>
         </Providers>
       </body>
     </html>

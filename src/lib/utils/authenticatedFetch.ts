@@ -1,4 +1,3 @@
-// lib/utils/authenticatedFetch.ts
 import { cookies } from 'next/headers'
 import { auth } from '@/lib/auth'
 

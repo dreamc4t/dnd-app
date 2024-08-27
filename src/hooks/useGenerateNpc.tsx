@@ -2,8 +2,8 @@
 
 import { useQuery } from '@tanstack/react-query'
 import { Npc } from '@/interfaces'
-import { ApiService } from '@/services'
 import { GENERATE_NPC_ENDPOINT } from '@/constants/urls'
+import { ApiService } from '@/lib/services'
 
 export const useGenerateNpc = () => {
   const queryKey = ['generateNpc']

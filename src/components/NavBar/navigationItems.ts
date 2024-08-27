@@ -9,6 +9,7 @@ const navigationItems: NavigationItem[] = [
   { title: 'NPC', url: '/npc' },
   { title: 'Shop', url: '/shop' },
   { title: 'My shops', url: '/myshops' },
+  { title: 'TEST', url: '/test' },
 ]
 
 export { navigationItems }

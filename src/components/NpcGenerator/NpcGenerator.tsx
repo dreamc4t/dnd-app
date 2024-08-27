@@ -9,10 +9,6 @@ const NpcGenerator = () => {
   const session = useSession()
 
   const saveNpc = async () => {
-    console.log(session)
-
-    console.log(session.data?.user?.id)
-
     if (!session.data?.user?.id) {
       console.error('User is not authenticated')
       return

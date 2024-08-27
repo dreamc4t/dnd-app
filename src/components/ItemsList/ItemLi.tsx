@@ -37,7 +37,7 @@ const ItemLi = ({ item, buttonType, onButtonClick }: ItemLiProps) => {
   const getButtonClasses = () => {
     switch (buttonType) {
       case 'ADD':
-        return 'bg-green-500 text-white'
+        return 'bg-green-400 text-white'
       case 'REMOVE':
         return 'bg-red-500 text-white'
       default:
@@ -47,10 +47,7 @@ const ItemLi = ({ item, buttonType, onButtonClick }: ItemLiProps) => {
 
   return (
     <li className='cursor-pointer hover:bg-secondary border-b border-gray-400'>
-      <div
-        className='flex justify-between items-center py-2 px-4'
-        onClick={handleRowClick}
-      >
+      <div className='flex justify-between items-center px-1' onClick={handleRowClick}>
         <div className='flex-1'>{item.name}</div>
         <div className='flex-1'>{item.type}</div>
         <div className='flex-1'>{item.prize}</div>

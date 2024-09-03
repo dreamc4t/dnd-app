@@ -17,7 +17,6 @@ const ItemCard = ({ item }: ItemCardProps) => {
     <article
       onClick={handleClick}
       className='border border-black p-2 rounded-lg cursor-pointer max-w-md w-full'
-      aria-expanded={isExpanded}
     >
       <Header title={item.name} />
       {isExpanded && <ExpandedContent item={item} />}

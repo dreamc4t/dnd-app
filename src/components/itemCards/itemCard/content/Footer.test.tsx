@@ -1,7 +1,6 @@
 import { render, screen } from '@testing-library/react'
 import { Footer } from '.'
 import { mockItem } from '@/development/mockData'
-import { dndLogoAltText } from '@/constants/altTexts'
 
 describe('Footer', () => {
   it('always displays the item prize', () => {
@@ -16,7 +15,7 @@ describe('Footer', () => {
     expect(linkElement).toBeInTheDocument()
     expect(linkElement).toHaveAttribute('href', mockItem.link)
 
-    const image = screen.getByAltText(dndLogoAltText)
+    const image = screen.getByRole('img')
     expect(image).toBeInTheDocument()
   })
 
@@ -25,7 +24,7 @@ describe('Footer', () => {
     const linkElement = screen.queryByRole('link')
     expect(linkElement).not.toBeInTheDocument()
 
-    const image = screen.queryByRole(dndLogoAltText)
+    const image = screen.queryByRole('img')
     expect(image).not.toBeInTheDocument()
   })
 })

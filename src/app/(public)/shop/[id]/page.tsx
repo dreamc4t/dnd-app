@@ -1,6 +1,6 @@
-// import { PlayerShop } from '@/components/playerShop'
-// import { shopURL } from '@/constants/urls'
-// import { Shop } from '@/interfaces/Shop'
+import { PlayerShop } from '@/components/playerShop'
+import { SHOP_URL } from '@/constants/urls'
+import { Shop } from '@/interfaces/Shop'
 
 interface PageProps {
   params: {
@@ -9,9 +9,9 @@ interface PageProps {
 }
 
 export default async function Page({ params }: PageProps) {
-  // const { id } = params
-  // const url = `${shopURL}/${id}`
-  // const shop: Shop = await fetch(url).then((res) => res.json())
+  const { id } = params
+  const url = `${SHOP_URL}/${id}`
+  const shop: Shop = await fetch(url).then((res) => res.json())
 
-  return <div>{/* <PlayerShop shop={shop} /> */}</div>
+  return <div>{<PlayerShop shop={shop} />}</div>
 }

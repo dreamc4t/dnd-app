@@ -9,7 +9,7 @@ const ItemCardsContainer = ({ items }: ItemCardsContainerProps) => {
   return (
     <section>
       {items.map((item, i) => (
-        <ItemCard item={item} key={`${item._id}-${i}`} />
+        <ItemCard item={item} key={`${item.id}-${i}`} />
       ))}
     </section>
   )

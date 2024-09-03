@@ -1,6 +1,7 @@
 import { render, screen, fireEvent } from '@testing-library/react'
 import { ItemCard } from '.'
 import { mockItem } from '@/development/mockData'
+import { expandedContentAriaLabel } from '@/constants/ariaLabels'
 
 describe('ItemCard', () => {
   it('renders', () => {
@@ -9,19 +10,23 @@ describe('ItemCard', () => {
     expect(itemCard).toBeInTheDocument()
   })
 
-  it('initially is not expanded', () => {
+  it('initially does not show expanded content', () => {
     render(<ItemCard item={mockItem} />)
-    const itemCard = screen.getByRole('article')
-    expect(itemCard).toHaveAttribute('aria-expanded', 'false')
+    const expandedContent = screen.queryByText(mockItem.description[0]) // Adjust the text to match what's in your ExpandedContent component
+    expect(expandedContent).not.toBeInTheDocument()
   })
 
   it('toggles expand state on click', () => {
     render(<ItemCard item={mockItem} />)
     const itemCard = screen.getByRole('article')
+
+    // Click to expand
     fireEvent.click(itemCard)
-    expect(itemCard).toHaveAttribute('aria-expanded', 'true')
+    expect(screen.getByText(mockItem.description[0])).toBeInTheDocument()
+
+    // Click to collapse
     fireEvent.click(itemCard)
-    expect(itemCard).toHaveAttribute('aria-expanded', 'false')
+    expect(screen.queryByText(mockItem.description[0])).not.toBeInTheDocument()
   })
 
   it('renders Header with the item name', () => {

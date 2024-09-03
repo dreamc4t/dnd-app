@@ -2,6 +2,8 @@ import { Item } from '@/interfaces'
 import React from 'react'
 import { ItemsList } from '../ItemsList'
 import { noItemsSelectedString } from '@/constants/strings'
+import { SaveShopButton } from './SaveShopButton'
+import { ShopNameInput } from './ShopNameInput'
 
 interface CurrentShopProps {
   items: Item[]
@@ -18,34 +20,20 @@ export const CurrentShop = ({
   shopName,
 }: CurrentShopProps) => {
   return (
-    <div>
-      <div className='sticky top-0 bg-white z-10 p-4'>
-        <div className='flex items-center space-x-4'>
-          <input
-            type='text'
-            value={shopName}
-            onChange={(e) => setShopName(e.target.value)}
-            placeholder='Enter shop name...'
-            className='p-2 border border-gray-300 rounded flex-grow'
-          />
-          <button
-            className='bg-blue-500 text-white px-4 py-2 rounded'
-            onClick={handleSaveShop}
-          >
-            Save Shop
-          </button>
+    <div className='flex flex-col h-full'>
+      <div className='p-4 '>
+        <div className='flex items-center space-x-4 h-full'>
+          <ShopNameInput setShopName={setShopName} shopName={shopName} />
+          <SaveShopButton handleSaveShop={handleSaveShop} />
         </div>
       </div>
-      <div className='mt-4'>
-        {items.length > 0 ? (
-          <ItemsList
-            items={items}
-            onButtonClick={removeItemFromShop}
-            buttonType='REMOVE'
-          />
-        ) : (
-          <div>{noItemsSelectedString}</div>
-        )}
+      <div className='mt-4 flex-grow overflow-auto  '>
+        <ItemsList
+          items={items}
+          onButtonClick={removeItemFromShop}
+          buttonType='REMOVE'
+          noItemsMessage={noItemsSelectedString}
+        />
       </div>
     </div>
   )

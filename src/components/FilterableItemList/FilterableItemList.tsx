@@ -52,22 +52,17 @@ export const FilterableItemList = ({
   }, [searchInput, selectedFilters, items])
 
   return (
-    <div className='flex flex-col '>
-      <div className='sticky top-0 z-10 bg-white p-4'>
+    <div className='flex flex-col h-full'>
+      <div className='p-4'>
         <SearchField setSearchInput={setSearchInput} />
         <FilterBar filters={uniqueTypes} setFilter={handleSetFilter} />
       </div>
-      <div className='flex-grow overflow-auto'>
-        {filteredItems.length > 0 ? (
-          <ItemsList
-            items={filteredItems}
-            onButtonClick={onAddToShopClick}
-            buttonType='ADD'
-          />
-        ) : (
-          <div>{noItemsFoundString}</div>
-        )}
-      </div>
+      <ItemsList
+        items={filteredItems}
+        onButtonClick={onAddToShopClick}
+        buttonType='ADD'
+        noItemsMessage={noItemsFoundString}
+      />
     </div>
   )
 }

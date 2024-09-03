@@ -5,21 +5,22 @@ const filtersString = 'Filters' as const
 // const registerString = 'Register' as const
 // const registrationFormString = 'Registration Form' as const
 // const removeString = 'remove' as const
-// const saveShopString = 'Save shop' as const
+const saveShopString = 'Save shop' as const
 const searchForItemsString = 'Search for items...' as const
 // const weightString = 'Weight' as const
 const noItemsFoundString = 'No items found' as const
 const noItemsSelectedString = 'No items selected' as const
-
+const enterShopNameString = 'Enter shop name...' as const
 export {
   // addString,
   // alreadyHaveAnAccountString,
   filtersString,
   // noActiveShopString,
-  // registerString,
+  // registerString
+  enterShopNameString,
   // registrationFormString,
   // removeString,
-  // saveShopString,
+  saveShopString,
   searchForItemsString,
   // weightString,
   noItemsFoundString,

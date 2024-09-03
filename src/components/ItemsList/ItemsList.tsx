@@ -8,22 +8,34 @@ interface ItemsListProps {
   items: Item[]
   onButtonClick: (item: Item) => void
   buttonType?: ButtonType
+  noItemsMessage?: string
 }
 
-const ItemsList = ({ items, onButtonClick, buttonType }: ItemsListProps) => {
+const ItemsList = ({
+  items,
+  onButtonClick,
+  buttonType,
+  noItemsMessage = 'No items',
+}: ItemsListProps) => {
   return (
-    <ul>
-      {items.map((item, i) => {
-        return (
-          <ItemLi
-            key={item.id + i}
-            item={item}
-            onButtonClick={onButtonClick}
-            buttonType={buttonType}
-          />
-        )
-      })}
-    </ul>
+    <div className='overflow-y-auto '>
+      {items.length > 0 ? (
+        <ul>
+          {items.map((item, i) => {
+            return (
+              <ItemLi
+                key={item.id + i}
+                item={item}
+                onButtonClick={onButtonClick}
+                buttonType={buttonType}
+              />
+            )
+          })}
+        </ul>
+      ) : (
+        <div>{noItemsMessage}</div>
+      )}
+    </div>
   )
 }
 

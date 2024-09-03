@@ -5,7 +5,7 @@ export default async function ShopPage() {
   const items = await fetchAllItems()
 
   return (
-    <main>
+    <main className='flex flex-col h-full'>
       <ShopBuilder items={items} />
     </main>
   )

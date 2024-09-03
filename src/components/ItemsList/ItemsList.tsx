@@ -1,5 +1,6 @@
 import { Item } from '@/interfaces'
 import { ItemLi } from './ItemLi'
+import { noItemsFoundString } from '@/constants/strings'
 
 type ButtonType = 'ADD' | 'REMOVE'
 
@@ -10,7 +11,6 @@ interface ItemsListProps {
 }
 
 const ItemsList = ({ items, onButtonClick, buttonType }: ItemsListProps) => {
-  if (!items) return <div>No items found!</div>
   return (
     <ul>
       {items.map((item, i) => {

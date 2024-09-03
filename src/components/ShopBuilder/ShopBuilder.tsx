@@ -1,6 +1,5 @@
 'use client'
 import { useState } from 'react'
-import { ItemsList } from '../ItemsList'
 import { Item, Shop } from '@/interfaces'
 import { saveShop } from '@/app/actions/saveShop' // Import the server action
 import { FilterableItemList } from '../FilterableItemList'
@@ -15,8 +14,6 @@ const ShopBuilder = ({ items }: { items: Item[] }) => {
   }
 
   const removeItemFromShop = (itemToRemove: Item) => {
-    console.log(itemToRemove)
-
     setSelectedItems((prevItems) =>
       prevItems.filter((item) => item.id !== itemToRemove.id),
     )

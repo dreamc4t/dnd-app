@@ -4,14 +4,18 @@ import { Item, Shop } from '@/interfaces'
 import { saveShop } from '@/app/actions/saveShop' // Import the server action
 import { FilterableItemList } from '../FilterableItemList'
 import { CurrentShop } from './CurrentShop'
+import { v4 as uuidv4 } from 'uuid'
 
 const ShopBuilder = ({ items }: { items: Item[] }) => {
   const [shopName, setShopName] = useState<string>('')
   const [selectedItems, setSelectedItems] = useState<Item[]>([])
   const [isSaving, setIsSaving] = useState<boolean>(false)
 
+
+  // TODO Look into unique ids. Maybe original id for reference? 
   const addItemToShop = (item: Item) => {
-    setSelectedItems((prevItems) => [...prevItems, item])
+    const newItem = { ...item, id: uuidv4() } // Generate a new ID
+    setSelectedItems((prevItems) => [...prevItems, newItem])
   }
 
   const removeItemFromShop = (itemToRemove: Item) => {

@@ -1,5 +1,4 @@
 import ShopsList from '@/components/ShopsList/ShopsList'
-import { Shop } from '@/interfaces'
 import { auth } from '@/lib/auth'
 import { fetchUserShops } from '@/lib/repositories'
 
@@ -11,7 +10,7 @@ export default async function MyShops() {
 
   return (
     <main>
-      <ShopsList shops={shops} />
+      <ShopsList initialShops={shops} />
     </main>
   )
 }

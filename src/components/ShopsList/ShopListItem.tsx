@@ -1,11 +1,21 @@
 'use client'
 
-import { DELETE_SHOP_ENDPOINT, SHOP_URL } from '@/constants/urls'
+import React, { useState } from 'react'
+import { DELETE_SHOP_ENDPOINT } from '@/constants/urls'
 import { Shop } from '@/interfaces'
 import { ApiService } from '@/lib/services'
-import React from 'react'
 
-const ShopListItem = (shop: Shop) => {
+interface ShopListItemProps {
+  shop: Shop
+  onDelete: (id: string) => void
+}
+
+// TODO LOOK INTO THIS IS JUST A LOT OF GPT FOR MVP
+
+const ShopListItem: React.FC<ShopListItemProps> = ({ shop, onDelete }) => {
+  const [loading, setLoading] = useState(false)
+  const [confirmDelete, setConfirmDelete] = useState(false)
+
   const handleCopy = () => {
     const currentURL = window.location.origin
     const url = `${currentURL}/shop/${shop.id}`
@@ -16,21 +26,56 @@ const ShopListItem = (shop: Shop) => {
   }
 
   const handleDelete = async () => {
-    const endpoint = `${DELETE_SHOP_ENDPOINT}/${shop.id}`
-    const res = await ApiService.delete(endpoint)
-    console.log(res)
+    setConfirmDelete(true)
+  }
+
+  const handleConfirmDelete = async () => {
+    setLoading(true)
+    try {
+      const endpoint = `${DELETE_SHOP_ENDPOINT}/${shop.id}`
+      await ApiService.delete(endpoint)
+      onDelete(shop.id as string) // Notify the parent component about the deletion
+    } catch (err) {
+      console.error('Failed to delete shop:', err)
+    } finally {
+      setLoading(false)
+      setConfirmDelete(false)
+    }
+  }
+
+  const handleCancelDelete = () => {
+    setConfirmDelete(false)
   }
 
   return (
     <li key={shop.id} className='flex max-w-lg items-center border border-black p-2'>
       <h2 className='flex-1 text-xl'>{shop.name}</h2>
-      <button
-        className='border border-neutral-800 rounded-md  p-2 '
-        onClick={handleDelete}
-      >
-        Delete
-      </button>
-      <button className='border border-neutral-800 rounded-md p-2 ' onClick={handleCopy}>
+      {confirmDelete ? (
+        <div className='flex space-x-2'>
+          <button
+            className='border border-red-600 text-red-600 rounded-md p-2'
+            onClick={handleConfirmDelete}
+            disabled={loading}
+          >
+            {loading ? 'Deleting...' : 'Yes'}
+          </button>
+          <button
+            className='border border-neutral-800 rounded-md p-2'
+            onClick={handleCancelDelete}
+          >
+            No
+          </button>
+        </div>
+      ) : (
+        <button
+          className='border border-neutral-800 rounded-md p-2'
+          onClick={handleDelete}
+          disabled={loading}
+        >
+          {loading ? 'Deleting...' : 'Delete'}
+        </button>
+      )}
+      <button className='border border-neutral-800 rounded-md p-2' onClick={handleCopy}>
         Copy link
       </button>
     </li>

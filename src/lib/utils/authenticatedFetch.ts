@@ -18,6 +18,7 @@ export async function authenticatedFetch(url: string, options: RequestInit = {})
     throw new Error('Session token is missing')
   }
   // Merge the provided options with the default headers and method
+  // TODO LOOK INTO CACHING ETC THIS IS JUST MVP STUFF
   const fetchOptions: RequestInit = {
     ...options,
     credentials: 'include', // Ensures cookies and credentials are included
@@ -26,6 +27,9 @@ export async function authenticatedFetch(url: string, options: RequestInit = {})
       'Content-Type': 'application/json',
       'user-id': user.id,
       Authorization: `Bearer ${sessionToken}`,
+      'Cache-Control': 'no-cache, no-store, must-revalidate',
+      Pragma: 'no-cache',
+      Expires: '0',
     },
   }
 

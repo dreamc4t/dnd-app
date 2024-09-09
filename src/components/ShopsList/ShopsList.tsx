@@ -1,19 +1,28 @@
+'use client'
+import React, { useState } from 'react'
 import { noShopsFoundsString } from '@/constants/strings'
 import { Shop } from '@/interfaces'
 import ShopListItem from './ShopListItem'
 
 interface ShopsListProps {
-  shops: Shop[]
+  initialShops: Shop[]
 }
-const ShopsList = ({ shops }: ShopsListProps) => {
+
+const ShopsList: React.FC<ShopsListProps> = ({ initialShops }) => {
+  const [shops, setShops] = useState<Shop[]>(initialShops)
+
+  const handleDelete = (id: string) => {
+    setShops(shops.filter((shop) => shop.id !== id))
+  }
+
   if (shops.length === 0) return <div>{noShopsFoundsString}</div>
 
   return (
     <div>
-      <ul className=''>
-        {shops.map((shop, i) => {
-          return <ShopListItem {...shop} key={shop.id} />
-        })}
+      <ul>
+        {shops.map((shop) => (
+          <ShopListItem shop={shop} key={shop.id} onDelete={handleDelete} />
+        ))}
       </ul>
     </div>
   )

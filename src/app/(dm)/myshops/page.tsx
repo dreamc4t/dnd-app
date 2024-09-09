@@ -1,3 +1,4 @@
+import ShopsList from '@/components/ShopsList/ShopsList'
 import { Shop } from '@/interfaces'
 import { auth } from '@/lib/auth'
 import { fetchUserShops } from '@/lib/repositories'
@@ -10,9 +11,7 @@ export default async function MyShops() {
 
   return (
     <main>
-      {shops.map((shop: Shop) => {
-        return <div key={shop.id}>{shop.name}</div>
-      })}
+      <ShopsList shops={shops} />
     </main>
   )
 }

@@ -6,11 +6,15 @@ class ApiServiceClass {
   constructor() {
     this.axiosInstance = axios.create({
       baseURL: process.env.NEXT_PUBLIC_BACKEND_URL,
+      withCredentials: true, // Enable credentials (cookies, tokens, etc.)
     })
   }
 
   public async get<T>(endpoint: string, config?: AxiosRequestConfig): Promise<T> {
-    const res = await this.axiosInstance.get<T>(endpoint, config)
+    const res = await this.axiosInstance.get<T>(endpoint, {
+      ...config,
+      withCredentials: true, // Include credentials for GET requests
+    })
     return res.data
   }
 
@@ -19,7 +23,10 @@ class ApiServiceClass {
     data: any,
     config?: AxiosRequestConfig,
   ): Promise<T> {
-    const res = await this.axiosInstance.post<T>(endpoint, data, config)
+    const res = await this.axiosInstance.post<T>(endpoint, data, {
+      ...config,
+      withCredentials: true, // Include credentials for POST requests
+    })
     return res.data
   }
 
@@ -28,7 +35,10 @@ class ApiServiceClass {
     config?: AxiosRequestConfig,
   ): Promise<T | null> {
     try {
-      const res = await this.axiosInstance.delete<T>(endpoint, config)
+      const res = await this.axiosInstance.delete<T>(endpoint, {
+        ...config,
+        withCredentials: true, // Include credentials for DELETE requests
+      })
       console.log(res)
 
       return res.data

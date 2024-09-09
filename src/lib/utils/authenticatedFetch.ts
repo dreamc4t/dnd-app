@@ -20,6 +20,7 @@ export async function authenticatedFetch(url: string, options: RequestInit = {})
   // Merge the provided options with the default headers and method
   const fetchOptions: RequestInit = {
     ...options,
+    credentials: 'include', // Ensures cookies and credentials are included
     headers: {
       ...options.headers,
       'Content-Type': 'application/json',

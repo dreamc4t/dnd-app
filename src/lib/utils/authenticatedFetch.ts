@@ -9,19 +9,14 @@ export async function authenticatedFetch(url: string, options: RequestInit = {})
     throw new Error('You must be signed in to perform this action')
   }
 
-  // Get the session token from the correct cookie, depending on the environment
   const cookieStore = cookies()
-  let sessionToken = cookieStore.get('__Secure-authjs.session-token')?.value
-
-  // Fallback to non-secure cookie name if it's not found (for local dev)
-  if (!sessionToken) {
-    sessionToken = cookieStore.get('authjs.session-token')?.value
-  }
+  const sessionToken =
+    cookieStore.get('__Secure-authjs.session-token')?.value ||
+    cookieStore.get('authjs.session-token')?.value
 
   if (!sessionToken) {
     throw new Error('Session token is missing')
   }
-
   // Merge the provided options with the default headers and method
   const fetchOptions: RequestInit = {
     ...options,

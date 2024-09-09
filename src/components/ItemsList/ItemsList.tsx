@@ -18,7 +18,7 @@ const ItemsList = ({
   noItemsMessage = 'No items',
 }: ItemsListProps) => {
   return (
-    <div className='overflow-y-auto '>
+    <div className='overflow-y-auto mx-2 '>
       {items.length > 0 ? (
         <ul>
           {items.map((item, i) => {

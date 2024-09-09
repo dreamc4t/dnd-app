@@ -11,8 +11,7 @@ const ShopBuilder = ({ items }: { items: Item[] }) => {
   const [selectedItems, setSelectedItems] = useState<Item[]>([])
   const [isSaving, setIsSaving] = useState<boolean>(false)
 
-
-  // TODO Look into unique ids. Maybe original id for reference? 
+  // TODO Look into unique ids. Maybe original id for reference?
   const addItemToShop = (item: Item) => {
     const newItem = { ...item, id: uuidv4() } // Generate a new ID
     setSelectedItems((prevItems) => [...prevItems, newItem])

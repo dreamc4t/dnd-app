@@ -4,9 +4,10 @@ import { fetchUserShops } from '@/lib/repositories'
 
 export default async function MyShops() {
   const session = await auth()
-  if (!session?.user) return <p>You are not logged in</p>
+  if (!session?.user?.id) return <p>You are not logged in</p>
 
-  const shops = await fetchUserShops()
+  const userID = session.user.id
+  const shops = await fetchUserShops(userID)
 
   return (
     <main>

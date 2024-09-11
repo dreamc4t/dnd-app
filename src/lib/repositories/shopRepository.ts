@@ -1,10 +1,10 @@
-import { GET_ALL_SHOPS_URL } from '@/constants/urls'
+import { GET_ALL_SHOPS_URL, GET_USERS_SHOPS_URL, SHOP_URL } from '@/constants/urls'
 import { Shop } from '@/interfaces'
 import { authenticatedFetch } from '../utils'
 
-export async function fetchUserShops(): Promise<Shop[]> {
+export async function fetchUserShops(userId: string): Promise<Shop[]> {
   try {
-    const response = await authenticatedFetch(GET_ALL_SHOPS_URL, {
+    const response = await authenticatedFetch(GET_USERS_SHOPS_URL(userId), {
       method: 'GET',
     })
 

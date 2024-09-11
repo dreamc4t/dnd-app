@@ -9,4 +9,10 @@ type Item = {
   weight: string
 }
 
-export type { Item }
+interface Weapon extends Item {
+  damage: string
+  properties: string
+  isWeapon: boolean
+}
+
+export type { Item, Weapon }

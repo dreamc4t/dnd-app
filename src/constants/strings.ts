@@ -8,6 +8,7 @@ const filtersString = 'Filters' as const
 const saveShopString = 'Save shop' as const
 const searchForItemsString = 'Search for items...' as const
 // const weightString = 'Weight' as const
+const descriptionString = 'Description: ' as const
 const noItemsFoundString = 'No items found' as const
 const noItemsSelectedString = 'No items selected' as const
 const enterShopNameString = 'Enter shop name...' as const
@@ -27,4 +28,5 @@ export {
   noItemsFoundString,
   noItemsSelectedString,
   noShopsFoundsString,
+  descriptionString,
 }

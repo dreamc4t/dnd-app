@@ -12,7 +12,7 @@ export default async function RootLayout({
   return (
     <div className='h-screen flex flex-col'>
       <Providers session={session}>
-        <header className='min-h-24 bg-slate-600 z-10'>
+        <header className='bg-slate-600 z-10'>
           <NavBar />
         </header>
         <div className='flex-grow overflow-auto'>{children}</div>

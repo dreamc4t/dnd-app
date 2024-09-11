@@ -1,4 +1,5 @@
 'use client'
+import { descriptionString } from '@/constants/strings'
 import { Item } from '@/interfaces'
 import { MouseEvent, useState } from 'react'
 
@@ -64,7 +65,16 @@ const ItemLi = ({ item, buttonType, onButtonClick }: ItemLiProps) => {
       {isToggled && (
         <div className='px-4 py-2'>
           <div className='mt-2'>
-            <strong>Description:</strong> {item.description}
+            <strong>{descriptionString}</strong>
+            {item.description.map((paragraph, i) => {
+              const key = `${paragraph.slice(0, 20).trim()}${i}`
+              if (i === 0) return <span key={key}>{paragraph}</span>
+              return (
+                <p key={key} className='mt-2'>
+                  {paragraph}
+                </p>
+              )
+            })}
           </div>
         </div>
       )}

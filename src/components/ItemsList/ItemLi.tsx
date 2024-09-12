@@ -53,13 +53,12 @@ const ItemLi = ({ item, buttonType, onButtonClick, editable = false }: ItemLiPro
     }
   }
 
-
   return (
     <li
-      className='cursor-pointer hover:bg-gray-200 border-b border-gray-400'
+      className='cursor-pointer border-b border-gray-400 hover:bg-gray-200'
       onClick={handleRowClick}
     >
-      <div className='flex justify-between items-center px-1'>
+      <div className='flex items-center justify-between px-1'>
         <div className='flex-1'>
           <EditableField value={name} onSave={setName} />
         </div>
@@ -69,7 +68,7 @@ const ItemLi = ({ item, buttonType, onButtonClick, editable = false }: ItemLiPro
         </div>
         {onButtonClick && (
           <button
-            className={`${getButtonClasses()} px-4 py-2 rounded-md`}
+            className={`${getButtonClasses()} rounded-md px-4 py-2`}
             onClick={handleButtonClick}
           >
             {getButtonText()}

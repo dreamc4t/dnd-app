@@ -53,14 +53,14 @@ const ShopListItem: React.FC<ShopListItemProps> = ({ shop, onDelete }) => {
       {confirmDelete ? (
         <div className='flex space-x-2'>
           <button
-            className='border border-red-600 text-red-600 rounded-md p-2'
+            className='rounded-md border border-red-600 p-2 text-red-600'
             onClick={handleConfirmDelete}
             disabled={loading}
           >
             {loading ? 'Deleting...' : 'Yes'}
           </button>
           <button
-            className='border border-neutral-800 rounded-md p-2'
+            className='rounded-md border border-neutral-800 p-2'
             onClick={handleCancelDelete}
           >
             No
@@ -68,14 +68,14 @@ const ShopListItem: React.FC<ShopListItemProps> = ({ shop, onDelete }) => {
         </div>
       ) : (
         <button
-          className='border border-neutral-800 rounded-md p-2'
+          className='rounded-md border border-neutral-800 p-2'
           onClick={handleDelete}
           disabled={loading}
         >
           {loading ? 'Deleting...' : 'Delete'}
         </button>
       )}
-      <button className='border border-neutral-800 rounded-md p-2' onClick={handleCopy}>
+      <button className='rounded-md border border-neutral-800 p-2' onClick={handleCopy}>
         Copy link
       </button>
     </li>

@@ -20,7 +20,7 @@ const ItemsList = ({
   itemEditable,
 }: ItemsListProps) => {
   return (
-    <div className='overflow-y-auto mx-2 '>
+    <div className='mx-2 overflow-y-auto'>
       {items.length > 0 ? (
         <ul>
           {items.map((item, i) => {

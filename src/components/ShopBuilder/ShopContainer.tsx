@@ -8,14 +8,14 @@ export const ShopContainer = () => {
   const { removeItemFromShop, selectedItems } = useShopBuilderContext()
 
   return (
-    <div className='flex flex-col h-full'>
-      <div className='p-4 '>
-        <div className='flex items-center space-x-4 h-full'>
+    <div className='flex h-full flex-col'>
+      <div className='p-4'>
+        <div className='flex h-full items-center space-x-4'>
           <ShopNameInput />
           <SaveShopButton />
         </div>
       </div>
-      <div className='mt-4 flex-grow overflow-auto  '>
+      <div className='mt-4 flex-grow overflow-auto'>
         <ItemsList
           items={selectedItems}
           onButtonClick={removeItemFromShop}

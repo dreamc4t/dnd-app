@@ -10,9 +10,9 @@ export default async function RootLayout({
 }>) {
   const session = await auth()
   return (
-    <div className='h-screen flex flex-col'>
+    <div className='flex h-screen flex-col'>
       <Providers session={session}>
-        <header className='bg-slate-600 z-10'>
+        <header className='z-10 bg-slate-600'>
           <NavBar />
         </header>
         <div className='flex-grow overflow-auto'>{children}</div>

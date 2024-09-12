@@ -1,7 +1,6 @@
 'use client'
 import { useState, useRef, useEffect } from 'react'
 
-
 interface EditableFieldProps {
   value: string
   onSave: (newValue: string) => void
@@ -36,7 +35,7 @@ const EditableField = ({ value, onSave }: EditableFieldProps) => {
           value={currentValue}
           onChange={(e) => setCurrentValue(e.target.value)}
           onBlur={handleBlur}
-          className='border p-1 w-full'
+          className='w-full border p-1'
         />
       ) : (
         <span>{currentValue}</span>

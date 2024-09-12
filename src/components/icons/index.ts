@@ -7,4 +7,5 @@ export const {
   GridBigIcon,
   InfoIcon,
   ExternalLinkIcon,
+  EditIcon,
 } = icons

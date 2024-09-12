@@ -25,6 +25,7 @@ const iconDefinitions = {
   GridBigIcon: paths.gridBig,
   InfoIcon: paths.info,
   ExternalLinkIcon: paths.externalLink,
+  EditIcon: paths.edit,
 }
 
 const icons = Object.fromEntries(

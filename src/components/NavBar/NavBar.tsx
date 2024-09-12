@@ -7,9 +7,10 @@ const NavBar = () => {
     <nav className='flex items-center justify-between bg-primary p-4 text-textPrimary'>
       <ul className={`flex items-center gap-4`}>
         {navigationItems.map((item, i) => {
+          const { title, url } = item
           return (
-            <li className='text-2xl font-bold hover:text-accent' key={item.title + i}>
-              <Link href={item.url}>{item.title}</Link>
+            <li className='text-2xl font-bold hover:text-accent' key={title + i}>
+              <Link href={url}>{title}</Link>
             </li>
           )
         })}

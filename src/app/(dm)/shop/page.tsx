@@ -1,4 +1,4 @@
-import { ShopBuilder } from '@/components/ShopBuilder'
+import ShopBuilderWrapper from '@/components/AuthButton/ShopBuilderWrapper/ShopBuilderWrapper'
 import { fetchAllItems } from '@/lib/repositories'
 
 export default async function ShopPage() {
@@ -6,7 +6,7 @@ export default async function ShopPage() {
 
   return (
     <main className='flex flex-col h-full'>
-      <ShopBuilder items={items} />
+      <ShopBuilderWrapper items={items} />
     </main>
   )
 }

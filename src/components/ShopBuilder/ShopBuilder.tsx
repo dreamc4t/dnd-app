@@ -1,46 +1,11 @@
 'use client'
-import { useState } from 'react'
-import { Item, Shop } from '@/interfaces'
-import { saveShop } from '@/app/actions/saveShop' // Import the server action
+import { Item } from '@/interfaces'
 import { FilterableItemList } from '../FilterableItemList'
-import { CurrentShop } from './CurrentShop'
-import { v4 as uuidv4 } from 'uuid'
+import { ShopContainer } from './ShopContainer'
+import { useShopBuilderContext } from './ShopBuilderContext'
 
 const ShopBuilder = ({ items }: { items: Item[] }) => {
-  const [shopName, setShopName] = useState<string>('')
-  const [selectedItems, setSelectedItems] = useState<Item[]>([])
-  const [isSaving, setIsSaving] = useState<boolean>(false)
-
-  // TODO Look into unique ids. Maybe original id for reference?
-  const addItemToShop = (item: Item) => {
-    const newItem = { ...item, id: uuidv4() } // Generate a new ID
-    setSelectedItems((prevItems) => [...prevItems, newItem])
-  }
-
-  const removeItemFromShop = (itemToRemove: Item) => {
-    setSelectedItems((prevItems) =>
-      prevItems.filter((item) => item.id !== itemToRemove.id),
-    )
-  }
-
-  const handleSaveShop = async () => {
-    const shop: Shop = {
-      name: shopName,
-      items: selectedItems,
-    }
-
-    setIsSaving(true) // Start loading spinner
-    try {
-      await saveShop(shop)
-      // Optionally, reset the form or show a success message
-      setShopName('')
-      setSelectedItems([])
-    } catch (error) {
-      console.error('Failed to save shop:', error)
-    } finally {
-      setIsSaving(false) // Stop loading spinner
-    }
-  }
+  const { addItemToShop, isSaving } = useShopBuilderContext()
 
   return (
     <div className='flex flex-col h-full'>
@@ -49,13 +14,7 @@ const ShopBuilder = ({ items }: { items: Item[] }) => {
           <FilterableItemList items={items} onAddToShopClick={addItemToShop} />
         </div>
         <div className='w-2/5   overflow-y-auto  p-x-2'>
-          <CurrentShop
-            shopName={shopName}
-            setShopName={setShopName}
-            handleSaveShop={handleSaveShop}
-            items={selectedItems}
-            removeItemFromShop={removeItemFromShop}
-          />
+          <ShopContainer />
           {isSaving && <div className='spinner'>Saving...</div>}
         </div>
       </div>

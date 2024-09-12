@@ -4,6 +4,7 @@ import { noShopsFoundsString } from '@/constants/strings'
 import { Shop } from '@/interfaces'
 import ShopListItem from './ShopListItem'
 
+
 interface ShopsListProps {
   initialShops: Shop[]
 }

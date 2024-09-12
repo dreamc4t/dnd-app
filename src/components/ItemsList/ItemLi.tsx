@@ -1,18 +1,25 @@
 'use client'
-import { descriptionString } from '@/constants/strings'
 import { Item } from '@/interfaces'
 import { MouseEvent, useState } from 'react'
-
+import { ExpandedContent } from './ExpandedContent'
+import { EditableField } from './EditableField'
 type ButtonType = 'ADD' | 'REMOVE'
 
 interface ItemLiProps {
   item: Item
   buttonType?: ButtonType
   onButtonClick?: (item: Item) => void
+  editable?: boolean
 }
 
-const ItemLi = ({ item, buttonType, onButtonClick }: ItemLiProps) => {
+const ItemLi = ({ item, buttonType, onButtonClick, editable = false }: ItemLiProps) => {
   const [isToggled, setIsToggled] = useState<boolean>(false)
+  const [isEditing, setIsEditing] = useState<boolean>(false)
+
+  const [name, setName] = useState<string>(item.name)
+  const [description, setDescription] = useState<string[]>(item.description)
+  const [prize, setPrize] = useState<string>(item.prize)
+  const [type, setType] = useState<string>(item.type)
 
   const handleRowClick = () => {
     setIsToggled(!isToggled)
@@ -46,13 +53,20 @@ const ItemLi = ({ item, buttonType, onButtonClick }: ItemLiProps) => {
     }
   }
 
-  return (
-    <li className='cursor-pointer hover:bg-secondary border-b border-gray-400'>
-      <div className='flex justify-between items-center px-1' onClick={handleRowClick}>
-        <div className='flex-1'>{item.name}</div>
-        <div className='flex-1'>{item.type}</div>
-        <div className='flex-1'>{item.prize}</div>
 
+  return (
+    <li
+      className='cursor-pointer hover:bg-gray-200 border-b border-gray-400'
+      onClick={handleRowClick}
+    >
+      <div className='flex justify-between items-center px-1'>
+        <div className='flex-1'>
+          <EditableField value={name} onSave={setName} />
+        </div>
+        <div className='flex-1'>{type}</div>
+        <div className='flex-1'>
+          <EditableField value={prize} onSave={setPrize} />
+        </div>
         {onButtonClick && (
           <button
             className={`${getButtonClasses()} px-4 py-2 rounded-md`}
@@ -62,22 +76,7 @@ const ItemLi = ({ item, buttonType, onButtonClick }: ItemLiProps) => {
           </button>
         )}
       </div>
-      {isToggled && (
-        <div className='px-4 py-2'>
-          <div className='mt-2'>
-            <strong>{descriptionString}</strong>
-            {item.description.map((paragraph, i) => {
-              const key = `${paragraph.slice(0, 20).trim()}${i}`
-              if (i === 0) return <span key={key}>{paragraph}</span>
-              return (
-                <p key={key} className='mt-2'>
-                  {paragraph}
-                </p>
-              )
-            })}
-          </div>
-        </div>
-      )}
+      {isToggled && <ExpandedContent description={description} />}
     </li>
   )
 }

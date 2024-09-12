@@ -1,10 +1,9 @@
 import { enterShopNameString } from '@/constants/strings'
+import { useShopBuilderContext } from './ShopBuilderContext'
 
-interface ShopNameInputProps {
-  shopName: string
-  setShopName: (name: string) => void
-}
-export const ShopNameInput = ({ setShopName, shopName }: ShopNameInputProps) => {
+export const ShopNameInput = () => {
+  const { shopName, setShopName } = useShopBuilderContext()
+
   return (
     <input
       type='text'

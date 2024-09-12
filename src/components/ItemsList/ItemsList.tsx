@@ -9,6 +9,7 @@ interface ItemsListProps {
   onButtonClick: (item: Item) => void
   buttonType?: ButtonType
   noItemsMessage?: string
+  itemEditable?: boolean
 }
 
 const ItemsList = ({
@@ -16,6 +17,7 @@ const ItemsList = ({
   onButtonClick,
   buttonType,
   noItemsMessage = 'No items',
+  itemEditable,
 }: ItemsListProps) => {
   return (
     <div className='overflow-y-auto mx-2 '>
@@ -28,6 +30,7 @@ const ItemsList = ({
                 item={item}
                 onButtonClick={onButtonClick}
                 buttonType={buttonType}
+                editable={itemEditable}
               />
             )
           })}

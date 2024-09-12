@@ -3,9 +3,10 @@ import { useShopBuilderContext } from './ShopBuilderContext'
 
 export const SaveShopButton = () => {
   const { handleSaveShop, isSaving } = useShopBuilderContext()
+
   return (
     <button
-      className='w-28 rounded bg-blue-500 px-4 py-2 text-white'
+      className='w-28 flex-shrink-0 rounded bg-blue-500 px-4 py-2 text-white'
       onClick={handleSaveShop}
       disabled={isSaving}
     >

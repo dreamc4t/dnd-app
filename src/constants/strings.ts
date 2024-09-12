@@ -14,6 +14,10 @@ const noItemsSelectedString = 'No items selected' as const
 const enterShopNameString = 'Enter shop name...' as const
 const noShopsFoundsString = 'No shops found' as const
 const isSavingString = 'Saving...' as const
+
+// Errors
+const noItemErrorMessage = 'You must add at least one item' as const
+const noShopNameErrorMessage = 'Missing shop name' as const
 export {
   // addString,
   // alreadyHaveAnAccountString,
@@ -31,4 +35,6 @@ export {
   noShopsFoundsString,
   descriptionString,
   isSavingString,
+  noItemErrorMessage,
+  noShopNameErrorMessage,
 }

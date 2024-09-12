@@ -1,9 +1,10 @@
 'use client'
 
 import { Children, Item, Shop } from '@/interfaces'
-import { createContext, useContext, ReactNode, useState } from 'react'
+import { createContext, useContext, ReactNode, useState, useEffect } from 'react'
 import { v4 as uuidv4 } from 'uuid'
 import { saveShop } from '@/app/actions/saveShop' // Import the server action
+import { noItemErrorMessage, noShopNameErrorMessage } from '@/constants/strings'
 
 interface ShopBuilderContextType {
   shopName: string
@@ -13,6 +14,7 @@ interface ShopBuilderContextType {
   removeItemFromShop: (item: Item) => void
   isSaving: boolean
   handleSaveShop: () => void
+  errorMessage: string
 }
 
 const ShopBuilderContext = createContext({} as ShopBuilderContextType)
@@ -22,10 +24,12 @@ const ShopBuilderContextProvider = ({ children }: Children) => {
   const [shopName, setShopName] = useState<string>('')
   const [selectedItems, setSelectedItems] = useState<Item[]>([])
   const [isSaving, setIsSaving] = useState<boolean>(false)
+  const [errorMessage, setErrorMessage] = useState<string>('')
 
   const addItemToShop = (item: Item) => {
-    const newItem = { ...item, id: uuidv4() } // Generate a new ID
+    const newItem = { ...item, id: uuidv4() }
     setSelectedItems((prevItems) => [...prevItems, newItem])
+    setErrorMessage('')
   }
 
   const removeItemFromShop = (itemToRemove: Item) => {
@@ -35,12 +39,23 @@ const ShopBuilderContextProvider = ({ children }: Children) => {
   }
 
   const handleSaveShop = async () => {
+    if (!shopName.trim()) {
+      setErrorMessage(noShopNameErrorMessage)
+      return
+    }
+    if (selectedItems.length === 0) {
+      setErrorMessage(noItemErrorMessage)
+      return
+    }
+
+    setIsSaving(true)
+    setErrorMessage('')
+
     const shop: Shop = {
       name: shopName,
       items: selectedItems,
     }
 
-    setIsSaving(true)
     try {
       await saveShop(shop)
       setShopName('')
@@ -52,6 +67,12 @@ const ShopBuilderContextProvider = ({ children }: Children) => {
     }
   }
 
+  useEffect(() => {
+    if (shopName || selectedItems.length > 0) {
+      setErrorMessage('')
+    }
+  }, [shopName, selectedItems])
+
   return (
     <ShopBuilderContext.Provider
       value={{
@@ -62,6 +83,7 @@ const ShopBuilderContextProvider = ({ children }: Children) => {
         removeItemFromShop,
         isSaving,
         handleSaveShop,
+        errorMessage,
       }}
     >
       {children}

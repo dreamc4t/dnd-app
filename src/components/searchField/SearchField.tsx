@@ -14,7 +14,7 @@ const SearchField = ({ setSearchInput }: SearchFieldProps) => {
       onChange={handleTextInput}
       placeholder={searchForItemsString}
       role='search'
-      className='p-2 border border-gray-300 rounded w-full mr-4'
+      className='mr-4 w-full rounded border border-gray-300 p-2'
     />
   )
 }

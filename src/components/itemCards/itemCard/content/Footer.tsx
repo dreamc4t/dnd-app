@@ -7,7 +7,7 @@ type FooterProps = {
 }
 const Footer = ({ item, isExpanded }: FooterProps) => {
   return (
-    <div className='flex justify-between items-center'>
+    <div className='flex items-center justify-between'>
       {item.prize}
       {isExpanded && (
         <a href={item.link} target='_blank'>

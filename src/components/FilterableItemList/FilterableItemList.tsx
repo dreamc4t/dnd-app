@@ -52,7 +52,7 @@ export const FilterableItemList = ({
   }, [searchInput, selectedFilters, items])
 
   return (
-    <div className='flex flex-col h-full'>
+    <div className='flex h-full flex-col'>
       <div className='p-4'>
         <SearchField setSearchInput={setSearchInput} />
         <FilterBar filters={uniqueTypes} setFilter={handleSetFilter} />

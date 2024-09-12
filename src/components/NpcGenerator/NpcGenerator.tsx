@@ -37,11 +37,11 @@ const NpcGenerator = () => {
   }
 
   return (
-    <div className='p-6 max-w-sm mx-auto bg-gray-800 rounded-xl shadow-md space-y-4 text-white'>
+    <div className='mx-auto max-w-sm space-y-4 rounded-xl bg-gray-800 p-6 text-white shadow-md'>
       <h2 className='text-xl font-bold'>NPC Generator client</h2>
       <button
         onClick={() => refetch()}
-        className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded'
+        className='rounded bg-blue-500 px-4 py-2 font-bold text-white hover:bg-blue-700'
         disabled={isLoading}
       >
         {isLoading ? 'Generating...' : 'Generate NPC'}
@@ -50,11 +50,11 @@ const NpcGenerator = () => {
       {error && <p className='text-red-500'>Failed to generate NPC</p>}
 
       {npc && (
-        <div className='bg-gray-700 p-4 rounded-md mt-4'>
+        <div className='mt-4 rounded-md bg-gray-700 p-4'>
           <NpcDetails npc={npc} />
           <button
             onClick={saveNpc}
-            className='bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded mt-4'
+            className='mt-4 rounded bg-green-500 px-4 py-2 font-bold text-white hover:bg-green-700'
           >
             Save npc
           </button>

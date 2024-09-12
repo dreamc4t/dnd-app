@@ -9,7 +9,7 @@ const PlayerShop = async ({ shop }: PlayerShopProps) => {
 
   return (
     <div className='flex items-start'>
-      <section className='border border-neutral-800 m-1 w-96 rounded-md'>
+      <section className='m-1 w-96 rounded-md border border-neutral-800'>
         <ItemCardsContainer items={items} />
       </section>
     </div>

@@ -16,7 +16,7 @@ const ItemCard = ({ item }: ItemCardProps) => {
   return (
     <article
       onClick={handleClick}
-      className='border border-black p-2 rounded-lg cursor-pointer max-w-md w-full'
+      className='w-full max-w-md cursor-pointer rounded-lg border border-black p-2'
     >
       <Header title={item.name} />
       {isExpanded && <ExpandedContent item={item} />}

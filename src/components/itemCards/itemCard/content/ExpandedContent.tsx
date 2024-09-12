@@ -9,10 +9,10 @@ const ExpandedContent = ({ item }: ExpandedContentProps) => {
   const { description, type, name } = item
   return (
     <section aria-label={expandedContentAriaLabel(name)}>
-      <p className='italic text-xs'>{type}</p>
+      <p className='text-xs italic'>{type}</p>
       {description.map((desc, i) => {
         return (
-          <p className='mt-2 mb-1' key={`${desc} ${i}`}>
+          <p className='mb-1 mt-2' key={`${desc} ${i}`}>
             {desc}
           </p>
         )

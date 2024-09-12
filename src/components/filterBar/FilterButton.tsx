@@ -20,7 +20,7 @@ const FilterButton = ({ title, setFilter }: FilterButtonProps) => {
         isSelected
           ? 'bg-gray-500 text-white hover:bg-gray-500'
           : 'bg-gray-300 text-gray-700 hover:bg-gray-400'
-      } px-2 py-1 rounded mx-1 my-1 cursor-pointer outline-none`}
+      } mx-1 my-1 cursor-pointer rounded px-2 py-1 outline-none`}
       onClick={handleClick}
     >
       {title}

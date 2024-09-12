@@ -13,6 +13,7 @@ const noItemsFoundString = 'No items found' as const
 const noItemsSelectedString = 'No items selected' as const
 const enterShopNameString = 'Enter shop name...' as const
 const noShopsFoundsString = 'No shops found' as const
+const isSavingString = 'Saving...' as const
 export {
   // addString,
   // alreadyHaveAnAccountString,
@@ -29,4 +30,5 @@ export {
   noItemsSelectedString,
   noShopsFoundsString,
   descriptionString,
+  isSavingString,
 }

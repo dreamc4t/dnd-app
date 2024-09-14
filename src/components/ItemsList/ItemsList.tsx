@@ -1,6 +1,5 @@
 import { Item } from '@/interfaces'
 import { ItemLi } from './ItemLi'
-import { noItemsFoundString } from '@/constants/strings'
 
 type ButtonType = 'ADD' | 'REMOVE'
 

@@ -60,11 +60,11 @@ const ItemLi = ({ item, buttonType, onButtonClick, editable = false }: ItemLiPro
     >
       <div className='flex items-center justify-between px-1'>
         <div className='flex-1'>
-          <EditableField value={name} onSave={setName} />
+          {editable ? <EditableField value={name} onSave={setName} /> : <p>{name}</p>}
         </div>
         <div className='flex-1'>{type}</div>
         <div className='flex-1'>
-          <EditableField value={prize} onSave={setPrize} />
+          {editable ? <EditableField value={prize} onSave={setPrize} /> : <p>{prize}</p>}
         </div>
         {onButtonClick && (
           <button

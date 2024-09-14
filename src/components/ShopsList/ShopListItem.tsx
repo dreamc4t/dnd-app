@@ -5,6 +5,8 @@ import { DELETE_SHOP_ENDPOINT } from '@/constants/urls'
 import { Shop } from '@/interfaces'
 import { ApiService } from '@/lib/services'
 import { ItemsList } from '../ItemsList'
+import { EditIcon } from '../icons'
+import { Button } from '../Button'
 
 interface ShopListItemProps {
   shop: Shop
@@ -57,42 +59,38 @@ const ShopListItem: React.FC<ShopListItemProps> = ({ shop, onDelete }) => {
     setExpanded(!expanded)
   }
 
+  const handleEdit = async (e: React.MouseEvent<HTMLButtonElement>) => {
+    e.stopPropagation()
+  }
+
   return (
     <li
       key={shop.id}
-      className='max-w-lg cursor-pointer border border-black p-2 hover:bg-gray-200'
+      className='max-w-lg cursor-pointer border border-black hover:bg-gray-200'
       onClick={handleExpandClick}
     >
-      <div className='flex items-center'>
+      <div className='flex items-center p-2'>
         <h2 className='flex-1 text-xl'>{shop.name}</h2>
         {confirmDelete ? (
-          <div className='flex space-x-2'>
-            <button
-              className='rounded-md border border-red-600 p-2 text-red-600'
-              onClick={handleConfirmDelete}
+          <div className=''>
+            <Button
               disabled={loading}
-            >
-              {loading ? 'Deleting...' : 'Yes'}
-            </button>
-            <button
-              className='rounded-md border border-neutral-800 p-2'
-              onClick={handleCancelDelete}
-            >
-              No
-            </button>
+              onClick={handleConfirmDelete}
+              title={loading ? 'Deleting...' : 'Yes'}
+              className='rounded-md border border-red-600 p-2 text-red-600'
+            />
+            <Button disabled={loading} onClick={handleCancelDelete} title='No' />
           </div>
         ) : (
-          <button
-            className='rounded-md border border-neutral-800 p-2'
+          <Button
             onClick={handleDelete}
             disabled={loading}
-          >
-            {loading ? 'Deleting...' : 'Delete'}
-          </button>
+            title={loading ? 'Deleting...' : 'Delete'}
+          />
         )}
-        <button className='rounded-md border border-neutral-800 p-2' onClick={handleCopy}>
-          Copy link
-        </button>
+
+        <Button onClick={handleCopy} title='Copy link' />
+        <Button onClick={handleEdit} title='Edit' />
       </div>
       {expanded && <ItemsList items={shop.items} />}
     </li>

@@ -15,6 +15,7 @@ interface ShopBuilderContextType {
   isSaving: boolean
   handleSaveShop: () => void
   errorMessage: string
+  updateItemInShop: (itemId: string, updatedFields: Partial<Item>) => void // New function
 }
 
 const ShopBuilderContext = createContext({} as ShopBuilderContextType)
@@ -30,6 +31,14 @@ const ShopBuilderContextProvider = ({ children }: Children) => {
     const newItem = { ...item, id: uuidv4() }
     setSelectedItems((prevItems) => [...prevItems, newItem])
     setErrorMessage('')
+  }
+
+  const updateItemInShop = (itemId: string, updatedFields: Partial<Item>) => {
+    setSelectedItems((prevItems) =>
+      prevItems.map((item) =>
+        item.id === itemId ? { ...item, ...updatedFields } : item,
+      ),
+    )
   }
 
   const removeItemFromShop = (itemToRemove: Item) => {
@@ -79,6 +88,7 @@ const ShopBuilderContextProvider = ({ children }: Children) => {
         shopName,
         setShopName,
         selectedItems,
+        updateItemInShop,
         addItemToShop,
         removeItemFromShop,
         isSaving,

@@ -8,7 +8,7 @@ interface ItemsListProps {
   onButtonClick: (item: Item) => void
   buttonType?: ButtonType
   noItemsMessage?: string
-  itemEditable?: boolean
+  onUpdateItem?: (itemId: string, updatedFields: Partial<Item>) => void
 }
 
 const ItemsList = ({
@@ -16,7 +16,7 @@ const ItemsList = ({
   onButtonClick,
   buttonType,
   noItemsMessage = 'No items',
-  itemEditable,
+  onUpdateItem,
 }: ItemsListProps) => {
   return (
     <div className='mx-2 overflow-y-auto'>
@@ -29,7 +29,7 @@ const ItemsList = ({
                 item={item}
                 onButtonClick={onButtonClick}
                 buttonType={buttonType}
-                editable={itemEditable}
+                onUpdateItem={onUpdateItem}
               />
             )
           })}

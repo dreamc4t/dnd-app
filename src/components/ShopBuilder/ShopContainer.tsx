@@ -6,7 +6,7 @@ import { useShopBuilderContext } from './ShopBuilderContext'
 import { LoadingSpinnerOverlay } from '../LoadingSpinnerOverlay'
 
 export const ShopContainer = () => {
-  const { removeItemFromShop, selectedItems, isSaving, errorMessage } =
+  const { removeItemFromShop, selectedItems, isSaving, errorMessage, updateItemInShop} =
     useShopBuilderContext()
 
   return (
@@ -24,7 +24,7 @@ export const ShopContainer = () => {
           onButtonClick={removeItemFromShop}
           buttonType='REMOVE'
           noItemsMessage={noItemsSelectedString}
-          itemEditable={true}
+          onUpdateItem={updateItemInShop}
         />
       </div>
 

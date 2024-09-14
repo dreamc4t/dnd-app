@@ -9,17 +9,11 @@ interface ItemLiProps {
   item: Item
   buttonType?: ButtonType
   onButtonClick?: (item: Item) => void
-  editable?: boolean
+  onUpdateItem?: (itemId: string, updatedFields: Partial<Item>) => void
 }
 
-const ItemLi = ({ item, buttonType, onButtonClick, editable = false }: ItemLiProps) => {
+const ItemLi = ({ item, buttonType, onButtonClick, onUpdateItem }: ItemLiProps) => {
   const [isToggled, setIsToggled] = useState<boolean>(false)
-  const [isEditing, setIsEditing] = useState<boolean>(false)
-
-  const [name, setName] = useState<string>(item.name)
-  const [description, setDescription] = useState<string[]>(item.description)
-  const [prize, setPrize] = useState<string>(item.prize)
-  const [type, setType] = useState<string>(item.type)
 
   const handleRowClick = () => {
     setIsToggled(!isToggled)
@@ -29,6 +23,18 @@ const ItemLi = ({ item, buttonType, onButtonClick, editable = false }: ItemLiPro
     e.stopPropagation()
     if (onButtonClick) {
       onButtonClick(item)
+    }
+  }
+
+  const handleNameSave = (newName: string) => {
+    if (onUpdateItem) {
+      onUpdateItem(item.id, { name: newName })
+    }
+  }
+
+  const handlePrizeSave = (newPrize: string) => {
+    if (onUpdateItem) {
+      onUpdateItem(item.id, { prize: newPrize })
     }
   }
   const getButtonText = () => {
@@ -60,11 +66,19 @@ const ItemLi = ({ item, buttonType, onButtonClick, editable = false }: ItemLiPro
     >
       <div className='flex items-center justify-between px-1'>
         <div className='flex-1'>
-          {editable ? <EditableField value={name} onSave={setName} /> : <p>{name}</p>}
+          {onUpdateItem ? (
+            <EditableField value={item.name} onSave={handleNameSave} />
+          ) : (
+            <p>{item.name}</p>
+          )}
         </div>
-        <div className='flex-1'>{type}</div>
+        <div className='flex-1'>{item.type}</div>
         <div className='flex-1'>
-          {editable ? <EditableField value={prize} onSave={setPrize} /> : <p>{prize}</p>}
+          {onUpdateItem ? (
+            <EditableField value={item.prize} onSave={handlePrizeSave} />
+          ) : (
+            <p>{item.prize}</p>
+          )}
         </div>
         {onButtonClick && (
           <button
@@ -75,7 +89,7 @@ const ItemLi = ({ item, buttonType, onButtonClick, editable = false }: ItemLiPro
           </button>
         )}
       </div>
-      {isToggled && <ExpandedContent description={description} />}
+      {isToggled && <ExpandedContent description={item.description} />}
     </li>
   )
 }

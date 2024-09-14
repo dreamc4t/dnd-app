@@ -1,5 +1,5 @@
 'use client'
-import { useState, useRef, useEffect } from 'react'
+import { useState, useRef, useEffect, MouseEvent } from 'react'
 
 interface EditableFieldProps {
   value: string
@@ -22,7 +22,8 @@ const EditableField = ({ value, onSave }: EditableFieldProps) => {
     onSave(currentValue)
   }
 
-  const handleClick = () => {
+  const handleClick = (e: MouseEvent) => {
+    e.stopPropagation()
     setIsEditing(true)
   }
 

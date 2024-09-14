@@ -4,6 +4,7 @@ import React, { useState } from 'react'
 import { DELETE_SHOP_ENDPOINT } from '@/constants/urls'
 import { Shop } from '@/interfaces'
 import { ApiService } from '@/lib/services'
+import { ItemsList } from '../ItemsList'
 
 interface ShopListItemProps {
   shop: Shop
@@ -15,8 +16,10 @@ interface ShopListItemProps {
 const ShopListItem: React.FC<ShopListItemProps> = ({ shop, onDelete }) => {
   const [loading, setLoading] = useState(false)
   const [confirmDelete, setConfirmDelete] = useState(false)
+  const [expanded, setExpanded] = useState(false)
 
-  const handleCopy = () => {
+  const handleCopy = (e: React.MouseEvent<HTMLButtonElement>) => {
+    e.stopPropagation()
     const currentURL = window.location.origin
     const url = `${currentURL}/shop/${shop.id}`
     navigator.clipboard
@@ -25,11 +28,13 @@ const ShopListItem: React.FC<ShopListItemProps> = ({ shop, onDelete }) => {
       .catch((err) => console.error('Failed to copy link: ', err))
   }
 
-  const handleDelete = async () => {
+  const handleDelete = async (e: React.MouseEvent<HTMLButtonElement>) => {
+    e.stopPropagation()
     setConfirmDelete(true)
   }
 
-  const handleConfirmDelete = async () => {
+  const handleConfirmDelete = async (e: React.MouseEvent<HTMLButtonElement>) => {
+    e.stopPropagation()
     setLoading(true)
     try {
       const endpoint = `${DELETE_SHOP_ENDPOINT}/${shop.id}`
@@ -43,41 +48,53 @@ const ShopListItem: React.FC<ShopListItemProps> = ({ shop, onDelete }) => {
     }
   }
 
-  const handleCancelDelete = () => {
+  const handleCancelDelete = (e: React.MouseEvent<HTMLButtonElement>) => {
+    e.stopPropagation()
     setConfirmDelete(false)
   }
 
+  const handleExpandClick = () => {
+    setExpanded(!expanded)
+  }
+
   return (
-    <li key={shop.id} className='flex max-w-lg items-center border border-black p-2'>
-      <h2 className='flex-1 text-xl'>{shop.name}</h2>
-      {confirmDelete ? (
-        <div className='flex space-x-2'>
-          <button
-            className='rounded-md border border-red-600 p-2 text-red-600'
-            onClick={handleConfirmDelete}
-            disabled={loading}
-          >
-            {loading ? 'Deleting...' : 'Yes'}
-          </button>
+    <li
+      key={shop.id}
+      className='max-w-lg cursor-pointer border border-black p-2 hover:bg-gray-200'
+      onClick={handleExpandClick}
+    >
+      <div className='flex items-center'>
+        <h2 className='flex-1 text-xl'>{shop.name}</h2>
+        {confirmDelete ? (
+          <div className='flex space-x-2'>
+            <button
+              className='rounded-md border border-red-600 p-2 text-red-600'
+              onClick={handleConfirmDelete}
+              disabled={loading}
+            >
+              {loading ? 'Deleting...' : 'Yes'}
+            </button>
+            <button
+              className='rounded-md border border-neutral-800 p-2'
+              onClick={handleCancelDelete}
+            >
+              No
+            </button>
+          </div>
+        ) : (
           <button
             className='rounded-md border border-neutral-800 p-2'
-            onClick={handleCancelDelete}
+            onClick={handleDelete}
+            disabled={loading}
           >
-            No
+            {loading ? 'Deleting...' : 'Delete'}
           </button>
-        </div>
-      ) : (
-        <button
-          className='rounded-md border border-neutral-800 p-2'
-          onClick={handleDelete}
-          disabled={loading}
-        >
-          {loading ? 'Deleting...' : 'Delete'}
+        )}
+        <button className='rounded-md border border-neutral-800 p-2' onClick={handleCopy}>
+          Copy link
         </button>
-      )}
-      <button className='rounded-md border border-neutral-800 p-2' onClick={handleCopy}>
-        Copy link
-      </button>
+      </div>
+      {expanded && <ItemsList items={shop.items} />}
     </li>
   )
 }

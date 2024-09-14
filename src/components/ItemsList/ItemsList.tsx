@@ -5,7 +5,7 @@ type ButtonType = 'ADD' | 'REMOVE'
 
 interface ItemsListProps {
   items: Item[]
-  onButtonClick: (item: Item) => void
+  onButtonClick?: (item: Item) => void
   buttonType?: ButtonType
   noItemsMessage?: string
   onUpdateItem?: (itemId: string, updatedFields: Partial<Item>) => void
@@ -19,7 +19,7 @@ const ItemsList = ({
   onUpdateItem,
 }: ItemsListProps) => {
   return (
-    <div className='mx-2 overflow-y-auto'>
+    <div className='overflow-y-auto'>
       {items.length > 0 ? (
         <ul>
           {items.map((item, i) => {

@@ -18,7 +18,7 @@ export const ShopContainer = () => {
         </div>
         {errorMessage && <p className='absolute text-sm text-red-500'>{errorMessage}</p>}
       </div>
-      <div className={`mt-4 flex-grow overflow-auto`}>
+      <div className={`mx-2 mt-4 flex-grow overflow-auto`}>
         <ItemsList
           items={selectedItems}
           onButtonClick={removeItemFromShop}

@@ -13,8 +13,20 @@ const useResizable = ({
   const maximumWidthPercentage = 100 - minimumWidthPercentage
   const isResizing = useRef(false)
 
-  const handleMouseDown = () => {
+  const disableTextSelection = () => {
+    document.body.style.userSelect = 'none'
+    document.body.style.pointerEvents = 'none'
+  }
+
+  const enableTextSelection = () => {
+    document.body.style.userSelect = ''
+    document.body.style.pointerEvents = ''
+  }
+
+  const handleMouseDown = (e: React.MouseEvent) => {
+    e.stopPropagation()
     isResizing.current = true
+    disableTextSelection()
     document.addEventListener('mousemove', handleMouseMove)
     document.addEventListener('mouseup', handleMouseUp)
   }
@@ -30,8 +42,14 @@ const useResizable = ({
 
   const handleMouseUp = () => {
     isResizing.current = false
+    enableTextSelection()
     document.removeEventListener('mousemove', handleMouseMove)
     document.removeEventListener('mouseup', handleMouseUp)
+  }
+
+  return {
+    widthPercentage,
+    handleMouseDown,
   }
 
   return {

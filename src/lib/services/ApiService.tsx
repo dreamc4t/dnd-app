@@ -6,14 +6,14 @@ class ApiServiceClass {
   constructor() {
     this.axiosInstance = axios.create({
       baseURL: process.env.NEXT_PUBLIC_BACKEND_URL,
-      withCredentials: true, // Enable credentials (cookies, tokens, etc.)
+      withCredentials: true, // TODO Do we need withCredentials on all the rest as now?
     })
   }
 
   public async get<T>(endpoint: string, config?: AxiosRequestConfig): Promise<T> {
     const res = await this.axiosInstance.get<T>(endpoint, {
       ...config,
-      withCredentials: true, // Include credentials for GET requests
+      withCredentials: true, 
     })
     return res.data
   }
@@ -25,7 +25,7 @@ class ApiServiceClass {
   ): Promise<T> {
     const res = await this.axiosInstance.post<T>(endpoint, data, {
       ...config,
-      withCredentials: true, // Include credentials for POST requests
+      withCredentials: true, 
     })
     return res.data
   }
@@ -37,7 +37,7 @@ class ApiServiceClass {
     try {
       const res = await this.axiosInstance.delete<T>(endpoint, {
         ...config,
-        withCredentials: true, // Include credentials for DELETE requests
+        withCredentials: true, 
       })
       console.log(res)
 
@@ -47,6 +47,19 @@ class ApiServiceClass {
       return null
     }
   }
+
+  public async patch<T>(
+    endpoint: string,
+    data: any,
+    config?: AxiosRequestConfig,
+  ): Promise<T> {
+    const res = await this.axiosInstance.patch<T>(endpoint, data, {
+      ...config,
+      withCredentials: true,
+    })
+    return res.data
+  }
+  
 }
 
 const ApiService = new ApiServiceClass()

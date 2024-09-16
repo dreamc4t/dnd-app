@@ -5,11 +5,7 @@ import { DELETE_SHOP_ENDPOINT } from '@/constants/urls'
 import { Shop } from '@/interfaces'
 import { ApiService } from '@/lib/services'
 import { ItemsList } from '../ItemsList'
-import { EditIcon } from '../icons'
 import { Button } from '../Button'
-import { Modal } from '../Modal'
-import ShopsList from './ShopsList'
-import { EditableField } from '../ItemsList/EditableField'
 import { EditShopModal } from './EditShopModal'
 
 interface ShopListItemProps {
@@ -68,9 +64,7 @@ const ShopListItem: React.FC<ShopListItemProps> = ({ shop, onDelete }) => {
     e.stopPropagation()
     setShowModal(true)
   }
-
-  const handleEditItem = () => {}
-  const handleEditName = () => {}
+  const handleSaveEditedShop = () => {}
 
   return (
     <li
@@ -104,8 +98,7 @@ const ShopListItem: React.FC<ShopListItemProps> = ({ shop, onDelete }) => {
       {expanded && <ItemsList items={shop.items} />}
       {showModal && (
         <EditShopModal
-          handleEditItem={handleEditItem}
-          handleEditName={handleEditName}
+          onSave={handleSaveEditedShop}
           setShowModal={setShowModal}
           shop={shop}
           showModal={showModal}

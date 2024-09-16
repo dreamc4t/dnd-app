@@ -3,11 +3,13 @@ const ALL_PATH = 'all'
 const CREATE_PATH = 'create' as const
 const DELETE_PATH = 'delete' as const
 const USER_PATH = 'user' as const
+const SAVE_PATH = 'save' as const
 
 // NPC
 const NPC_PATH = 'npc' as const
 const CREATE_RANDOM_NPC_PATH = 'generate' as const
 const GENERATE_NPC_ENDPOINT = `${NPC_PATH}/${CREATE_RANDOM_NPC_PATH}` as const
+const SAVE_NPC_URL = `${BASE_URL}/${NPC_PATH}/${SAVE_PATH}`
 
 // ITEM
 const ITEM_PATH = 'item'
@@ -29,5 +31,6 @@ export {
   GET_ALL_SHOPS_URL,
   SHOP_URL,
   DELETE_SHOP_ENDPOINT,
+  SAVE_NPC_URL,
   GET_USERS_SHOPS_URL,
 }

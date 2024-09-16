@@ -3,37 +3,19 @@
 import { useGenerateNpc } from '@/hooks/useGenerateNpc'
 import { useSession } from 'next-auth/react'
 import NpcDetails from './NpcDetails'
+import { authenticatedFetch } from '@/lib/utils'
+import { saveNpc } from '@/app/actions/saveNpc'
 
 const NpcGenerator = () => {
   const { data: npc, error, isLoading, refetch, isFetching, isError } = useGenerateNpc()
-  const session = useSession()
 
-  const saveNpc = async () => {
-    if (!session.data?.user?.id) {
-      console.error('User is not authenticated')
-      return
+  const handleSaveNpc = async () => {
+    if (!npc) return
+    try {
+      await saveNpc(npc)
+    } catch (error) {
+      console.error('Failed to save npc:', error)
     }
-
-    const npcJsonBody = JSON.stringify({
-      ...npc,
-    })
-
-    const response = await fetch('http://localhost:8080/npc/save', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-        'user-id': session.data?.user?.id ?? '',
-      },
-      credentials: 'include', // Ensures cookies are sent with the request
-      body: npcJsonBody,
-    })
-
-    if (!response.ok) {
-      console.error('Failed to save NPC')
-      return
-    }
-
-    console.log('NPC saved successfully')
   }
 
   return (
@@ -53,7 +35,7 @@ const NpcGenerator = () => {
         <div className='mt-4 rounded-md bg-gray-700 p-4'>
           <NpcDetails npc={npc} />
           <button
-            onClick={saveNpc}
+            onClick={handleSaveNpc}
             className='mt-4 rounded bg-green-500 px-4 py-2 font-bold text-white hover:bg-green-700'
           >
             Save npc

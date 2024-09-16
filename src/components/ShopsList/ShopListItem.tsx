@@ -7,6 +7,10 @@ import { ApiService } from '@/lib/services'
 import { ItemsList } from '../ItemsList'
 import { EditIcon } from '../icons'
 import { Button } from '../Button'
+import { Modal } from '../Modal'
+import ShopsList from './ShopsList'
+import { EditableField } from '../ItemsList/EditableField'
+import { EditShopModal } from './EditShopModal'
 
 interface ShopListItemProps {
   shop: Shop
@@ -19,6 +23,7 @@ const ShopListItem: React.FC<ShopListItemProps> = ({ shop, onDelete }) => {
   const [loading, setLoading] = useState(false)
   const [confirmDelete, setConfirmDelete] = useState(false)
   const [expanded, setExpanded] = useState(false)
+  const [showModal, setShowModal] = useState<boolean>(false)
 
   const handleCopy = (e: React.MouseEvent<HTMLButtonElement>) => {
     e.stopPropagation()
@@ -61,7 +66,11 @@ const ShopListItem: React.FC<ShopListItemProps> = ({ shop, onDelete }) => {
 
   const handleEdit = async (e: React.MouseEvent<HTMLButtonElement>) => {
     e.stopPropagation()
+    setShowModal(true)
   }
+
+  const handleEditItem = () => {}
+  const handleEditName = () => {}
 
   return (
     <li
@@ -93,6 +102,15 @@ const ShopListItem: React.FC<ShopListItemProps> = ({ shop, onDelete }) => {
         <Button onClick={handleEdit} title='Edit' />
       </div>
       {expanded && <ItemsList items={shop.items} />}
+      {showModal && (
+        <EditShopModal
+          handleEditItem={handleEditItem}
+          handleEditName={handleEditName}
+          setShowModal={setShowModal}
+          shop={shop}
+          showModal={showModal}
+        />
+      )}
     </li>
   )
 }

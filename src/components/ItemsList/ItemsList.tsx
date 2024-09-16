@@ -9,6 +9,7 @@ interface ItemsListProps {
   buttonType?: ButtonType
   noItemsMessage?: string
   onUpdateItem?: (itemId: string, updatedFields: Partial<Item>) => void
+
 }
 
 const ItemsList = ({

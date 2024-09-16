@@ -28,7 +28,7 @@ const EditableField = ({ value, onSave }: EditableFieldProps) => {
   }
 
   return (
-    <div onClick={handleClick}>
+    <div onClick={handleClick} className='w-fit'>
       {isEditing ? (
         <input
           ref={inputRef}

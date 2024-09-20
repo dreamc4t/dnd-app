@@ -1,7 +1,7 @@
 import { ReactNode } from 'react'
-import NavBar from '@/components/NavBar/NavBar'
 import { auth } from '@/lib/auth'
 import Providers from './Providers'
+import { NavBar } from '@/components'
 
 export default async function RootLayout({
   children,

@@ -1,4 +1,4 @@
-import ShopBuilderWrapper from '@/components/AuthButton/ShopBuilderWrapper/ShopBuilderWrapper'
+import { ShopBuilderWrapper } from '@/components/ShopBuilderWrapper'
 import { fetchAllItems } from '@/lib/repositories'
 
 export default async function ShopPage() {

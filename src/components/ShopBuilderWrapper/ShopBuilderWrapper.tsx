@@ -15,4 +15,4 @@ const ShopBuilderWrapper = ({ items }: ShopBuilderWrapperProps) => {
   )
 }
 
-export default ShopBuilderWrapper
+export { ShopBuilderWrapper }

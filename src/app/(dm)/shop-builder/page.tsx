@@ -6,7 +6,7 @@ export default async function ShopPage() {
 
   return (
     <main className='flex h-full flex-col'>
-      <ShopBuilderWrapper items={items} />
+      <ShopBuilderWrapper items={items}/>
     </main>
   )
 }

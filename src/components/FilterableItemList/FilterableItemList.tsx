@@ -8,18 +8,18 @@ import { noItemsFoundString } from '@/constants/strings'
 
 interface FilterableItemListProps {
   items: Item[]
+  itemTypes: string[]
   onAddToShopClick: (item: Item) => void
 }
 export const FilterableItemList = ({
   items,
   onAddToShopClick,
+  itemTypes
 }: FilterableItemListProps) => {
   const [selectedFilters, setSelectedFilters] = useState<string[]>([])
   const [searchInput, setSearchInput] = useState<string>('')
   const [filteredItems, setFilteredItems] = useState<Item[]>(items)
 
-  const itemTypes = items.flatMap((item) => item.type)
-  const uniqueTypes = Array.from(new Set(itemTypes))
 
   const handleSetFilter = (filter: string, isSelected: boolean) => {
     if (isSelected) {
@@ -55,7 +55,7 @@ export const FilterableItemList = ({
     <div className='flex h-full flex-col p-2'>
       <div className='p-2'>
         <SearchField setSearchInput={setSearchInput} />
-        <FilterBar filters={uniqueTypes} setFilter={handleSetFilter} />
+        <FilterBar filters={itemTypes} setFilter={handleSetFilter} />
       </div>
       <ItemsList
         items={filteredItems}

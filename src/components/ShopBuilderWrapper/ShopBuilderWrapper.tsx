@@ -5,13 +5,14 @@ import { Item } from '@/interfaces'
 
 interface ShopBuilderWrapperProps {
   items: Item[]
+
 }
 
 const ShopBuilderWrapper = ({ items }: ShopBuilderWrapperProps) => {
   return (
-    <ShopBuilderContextProvider>
-      <ShopBuilder items={items} />
-    </ShopBuilderContextProvider>
+    <ShopBuilderContextProvider items={items} >
+      <ShopBuilder />
+      </ShopBuilderContextProvider>
   )
 }
 

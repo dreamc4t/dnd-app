@@ -1,8 +1,10 @@
 'use client'
 import { Item } from '@/interfaces'
-import { MouseEvent, useState } from 'react'
+import { MouseEvent, useEffect, useState } from 'react'
 import { ExpandedContent } from './ExpandedContent'
 import { EditableField } from './EditableField'
+import { EditIcon } from '../icons'
+import DropdownEditableField from './DropdownEditableField'
 type ButtonType = 'ADD' | 'REMOVE'
 
 interface ItemLiProps {
@@ -10,10 +12,20 @@ interface ItemLiProps {
   buttonType?: ButtonType
   onButtonClick?: (item: Item) => void
   onUpdateItem?: (itemId: string, updatedFields: Partial<Item>) => void
+  isEditable?: boolean
+  itemTypes?: string[]
 }
 
-const ItemLi = ({ item, buttonType, onButtonClick, onUpdateItem }: ItemLiProps) => {
+const ItemLi = ({
+  item,
+  buttonType,
+  onButtonClick,
+  onUpdateItem,
+  isEditable = false,
+  itemTypes
+}: ItemLiProps) => {
   const [isToggled, setIsToggled] = useState<boolean>(false)
+  const [isEditing, setIsEditing] = useState<boolean>(false)
 
   const handleRowClick = () => {
     setIsToggled(!isToggled)
@@ -37,6 +49,25 @@ const ItemLi = ({ item, buttonType, onButtonClick, onUpdateItem }: ItemLiProps) 
       onUpdateItem(item.id, { prize: newPrize })
     }
   }
+  const handleTypeSave = (newType: string) => {
+    if (onUpdateItem) {
+      onUpdateItem(item.id, { type: newType })
+    }
+  }
+
+
+  const handleSetEditMode = (e: MouseEvent<HTMLButtonElement>) => {
+    e.stopPropagation()
+    isEditable && setIsEditing(!isEditing)
+  }
+  useEffect(() => {
+    
+    if (isEditable && isEditing) {
+      console.log('Editing?' + isEditing)
+      setIsToggled(true)
+    }
+  }, [isEditing, isEditable])
+  
   const getButtonText = () => {
     switch (buttonType) {
       case 'ADD':
@@ -59,6 +90,7 @@ const ItemLi = ({ item, buttonType, onButtonClick, onUpdateItem }: ItemLiProps) 
     }
   }
 
+   
   return (
     <li
       className='cursor-pointer border-b border-gray-400 hover:bg-gray-200'
@@ -66,20 +98,35 @@ const ItemLi = ({ item, buttonType, onButtonClick, onUpdateItem }: ItemLiProps) 
     >
       <div className='flex items-center justify-between px-1'>
         <div className='flex-1'>
-          {onUpdateItem ? (
-            <EditableField value={item.name} onSave={handleNameSave} />
+          {isEditing ? (
+            <EditableField
+              value={item.name}
+              onSave={handleNameSave}
+              isEditing={isEditing}
+            />
           ) : (
             <p>{item.name}</p>
           )}
         </div>
-        <div className='flex-1'>{item.type}</div>
         <div className='flex-1'>
-          {onUpdateItem ? (
-            <EditableField value={item.prize} onSave={handlePrizeSave} />
+          {isEditing ? (
+            <DropdownEditableField itemTypes={itemTypes} selectedType={item.type} onSave={handleTypeSave}/>
+          ) : (
+            <p>{item.type}</p>
+          )}
+        </div>        <div className='flex-1'>
+          {isEditing ? (
+            <EditableField
+              value={item.prize}
+              onSave={handlePrizeSave}
+              isEditing={isEditing}
+            />
           ) : (
             <p>{item.prize}</p>
           )}
         </div>
+        {isEditable && <button onClick={handleSetEditMode}>{<EditIcon />}</button>}
+
         {onButtonClick && (
           <button
             className={`${getButtonClasses()} rounded-md px-4 py-2`}

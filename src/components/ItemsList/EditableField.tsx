@@ -1,13 +1,13 @@
 'use client'
-import { useState, useRef, useEffect, MouseEvent } from 'react'
+import { useState, useRef, useEffect } from 'react'
 
 interface EditableFieldProps {
   value: string
   onSave: (newValue: string) => void
+  isEditing: boolean
 }
 
-const EditableField = ({ value, onSave }: EditableFieldProps) => {
-  const [isEditing, setIsEditing] = useState<boolean>(false)
+const EditableField = ({ value, onSave, isEditing }: EditableFieldProps) => {
   const [currentValue, setCurrentValue] = useState<string>(value)
   const inputRef = useRef<HTMLInputElement | null>(null)
 
@@ -18,17 +18,11 @@ const EditableField = ({ value, onSave }: EditableFieldProps) => {
   }, [isEditing])
 
   const handleBlur = () => {
-    setIsEditing(false)
     onSave(currentValue)
   }
 
-  const handleClick = (e: MouseEvent) => {
-    e.stopPropagation()
-    setIsEditing(true)
-  }
-
   return (
-    <div onClick={handleClick} className='w-fit'>
+    <div className='w-fit'>
       {isEditing ? (
         <input
           ref={inputRef}

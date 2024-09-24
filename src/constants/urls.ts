@@ -1,3 +1,5 @@
+import { SPECIES } from "./enums"
+
 const BASE_URL = process.env.NEXT_PUBLIC_BACKEND_URL
 const ALL_PATH = 'all'
 const CREATE_PATH = 'create' as const
@@ -7,9 +9,11 @@ const SAVE_PATH = 'save' as const
 
 // NPC
 const NPC_PATH = 'npc' as const
+const NAMES_PATH = 'names' as const
 const CREATE_RANDOM_NPC_PATH = 'generate' as const
 const GENERATE_NPC_ENDPOINT = `${NPC_PATH}/${CREATE_RANDOM_NPC_PATH}` as const
 const SAVE_NPC_URL = `${BASE_URL}/${NPC_PATH}/${SAVE_PATH}`
+const GET_NAMES_URL = (species: SPECIES, gender?: string) => `${BASE_URL}/${NPC_PATH}/${NAMES_PATH}/${species}?gender=${gender}`
 
 // ITEM
 const ITEM_PATH = 'item'
@@ -33,4 +37,5 @@ export {
   DELETE_SHOP_ENDPOINT,
   SAVE_NPC_URL,
   GET_USERS_SHOPS_URL,
+  GET_NAMES_URL,
 }

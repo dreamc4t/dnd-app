@@ -48,8 +48,15 @@ const EditShopModal = ({ onSave, setShowModal, showModal, shop }: EditShopModalP
 
   return (
     <Modal isOpen={showModal} onClose={() => setShowModal(false)}>
-      <EditableField onSave={handleEditName} value={editedShop.name} />
-      <ItemsList items={editedShop.items} onUpdateItem={handleEditItem} />
+      <div className='flex items-center'>
+        <p>Shop name:</p>
+        <EditableField onSave={handleEditName} value={editedShop.name} isEditing={true} />
+      </div>
+      <ItemsList
+        items={editedShop.items}
+        onUpdateItem={handleEditItem}
+        isEditable={true}
+      />
       <div className='mt-4 flex justify-end'>
         {error && <p className='text-red-500'>{error}</p>} {/* Error message */}
         <button

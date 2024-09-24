@@ -43,6 +43,7 @@ const ShopBuilderContextProvider = ({
     setErrorMessage('')
   }
 
+  // TODO REMOVE LINK IF EDITED ITEM
   const updateItemInShop = (itemId: string, updatedFields: Partial<Item>) => {
     setSelectedItems((prevItems) =>
       prevItems.map((item) =>

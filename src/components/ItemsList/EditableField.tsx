@@ -22,7 +22,7 @@ const EditableField = ({ value, onSave, isEditing }: EditableFieldProps) => {
   }
 
   return (
-    <div className='w-fit'>
+    <div className='w-fit' onClick={(e) => e.stopPropagation()}>
       {isEditing ? (
         <input
           ref={inputRef}

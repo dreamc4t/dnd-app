@@ -60,14 +60,7 @@ const ItemLi = ({
     e.stopPropagation()
     isEditable && setIsEditing(!isEditing)
   }
-  useEffect(() => {
-    
-    if (isEditable && isEditing) {
-      console.log('Editing?' + isEditing)
-      setIsToggled(true)
-    }
-  }, [isEditing, isEditable])
-  
+
   const getButtonText = () => {
     switch (buttonType) {
       case 'ADD':

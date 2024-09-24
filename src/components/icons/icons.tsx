@@ -26,6 +26,7 @@ const iconDefinitions = {
   InfoIcon: paths.info,
   ExternalLinkIcon: paths.externalLink,
   EditIcon: paths.edit,
+  RefreshIcon: paths.refresh,
 }
 
 const icons = Object.fromEntries(

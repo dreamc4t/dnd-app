@@ -22,7 +22,7 @@ const ItemLi = ({
   onButtonClick,
   onUpdateItem,
   isEditable = false,
-  itemTypes
+  itemTypes,
 }: ItemLiProps) => {
   const [isToggled, setIsToggled] = useState<boolean>(false)
   const [isEditing, setIsEditing] = useState<boolean>(false)
@@ -55,7 +55,6 @@ const ItemLi = ({
     }
   }
 
-
   const handleSetEditMode = (e: MouseEvent<HTMLButtonElement>) => {
     e.stopPropagation()
     isEditable && setIsEditing(!isEditing)
@@ -83,7 +82,6 @@ const ItemLi = ({
     }
   }
 
-   
   return (
     <li
       className='cursor-pointer border-b border-gray-400 hover:bg-gray-200'
@@ -103,11 +101,16 @@ const ItemLi = ({
         </div>
         <div className='flex-1'>
           {isEditing ? (
-            <DropdownEditableField itemTypes={itemTypes} selectedType={item.type} onSave={handleTypeSave}/>
+            <DropdownEditableField
+              itemTypes={itemTypes}
+              selectedType={item.type}
+              onSave={handleTypeSave}
+            />
           ) : (
             <p>{item.type}</p>
           )}
-        </div>        <div className='flex-1'>
+        </div>{' '}
+        <div className='flex-1'>
           {isEditing ? (
             <EditableField
               value={item.prize}
@@ -119,7 +122,6 @@ const ItemLi = ({
           )}
         </div>
         {isEditable && <button onClick={handleSetEditMode}>{<EditIcon />}</button>}
-
         {onButtonClick && (
           <button
             className={`${getButtonClasses()} rounded-md px-4 py-2`}

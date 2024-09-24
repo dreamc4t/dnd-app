@@ -11,7 +11,6 @@ interface ItemsListProps {
   onUpdateItem?: (itemId: string, updatedFields: Partial<Item>) => void
   isEditable?: boolean
   itemTypes?: string[]
-
 }
 
 const ItemsList = ({
@@ -21,7 +20,7 @@ const ItemsList = ({
   noItemsMessage = 'No items',
   onUpdateItem,
   isEditable,
-  itemTypes
+  itemTypes,
 }: ItemsListProps) => {
   return (
     <div className='overflow-y-auto'>

@@ -8,5 +8,5 @@ export const {
   InfoIcon,
   ExternalLinkIcon,
   EditIcon,
-  RefreshIcon
+  RefreshIcon,
 } = icons

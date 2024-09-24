@@ -13,7 +13,7 @@ class ApiServiceClass {
   public async get<T>(endpoint: string, config?: AxiosRequestConfig): Promise<T> {
     const res = await this.axiosInstance.get<T>(endpoint, {
       ...config,
-      withCredentials: true, 
+      withCredentials: true,
     })
     return res.data
   }
@@ -25,7 +25,7 @@ class ApiServiceClass {
   ): Promise<T> {
     const res = await this.axiosInstance.post<T>(endpoint, data, {
       ...config,
-      withCredentials: true, 
+      withCredentials: true,
     })
     return res.data
   }
@@ -37,7 +37,7 @@ class ApiServiceClass {
     try {
       const res = await this.axiosInstance.delete<T>(endpoint, {
         ...config,
-        withCredentials: true, 
+        withCredentials: true,
       })
       console.log(res)
 
@@ -59,7 +59,6 @@ class ApiServiceClass {
     })
     return res.data
   }
-  
 }
 
 const ApiService = new ApiServiceClass()

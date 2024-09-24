@@ -1,5 +1,5 @@
 'use server'
- 
+
 import { SAVE_NPC_URL } from '@/constants/urls'
 import { Npc } from '@/interfaces'
 import { authenticatedFetch } from '@/lib/utils'

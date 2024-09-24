@@ -12,6 +12,5 @@ export async function fetchAllItems(): Promise<Item[] | Weapon[]> {
 
   const items: (Item | Weapon)[] = await res.json()
 
-
   return items
 }

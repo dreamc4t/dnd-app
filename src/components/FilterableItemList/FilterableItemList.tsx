@@ -14,12 +14,11 @@ interface FilterableItemListProps {
 export const FilterableItemList = ({
   items,
   onAddToShopClick,
-  itemTypes
+  itemTypes,
 }: FilterableItemListProps) => {
   const [selectedFilters, setSelectedFilters] = useState<string[]>([])
   const [searchInput, setSearchInput] = useState<string>('')
   const [filteredItems, setFilteredItems] = useState<Item[]>(items)
-
 
   const handleSetFilter = (filter: string, isSelected: boolean) => {
     if (isSelected) {

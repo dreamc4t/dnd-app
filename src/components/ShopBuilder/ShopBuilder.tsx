@@ -4,15 +4,12 @@ import { ShopContainer } from './ShopContainer'
 import { useShopBuilderContext } from './ShopBuilderContext'
 import { useResizable } from '@/hooks'
 
-
 const ShopBuilder = () => {
   const { addItemToShop, items, itemTypes } = useShopBuilderContext()
   const { handleMouseDown, widthPercentage } = useResizable({
     initialLeftWidthPercentage: 60,
     minimumWidthPercentage: 35,
   })
-
-
 
   return (
     <div className='flex h-full flex-col'>
@@ -21,7 +18,11 @@ const ShopBuilder = () => {
           className='p-x-2 overflow-y-auto border-r border-black'
           style={{ width: `${widthPercentage}%` }}
         >
-          <FilterableItemList items={items} onAddToShopClick={addItemToShop} itemTypes={itemTypes}/>
+          <FilterableItemList
+            items={items}
+            onAddToShopClick={addItemToShop}
+            itemTypes={itemTypes}
+          />
         </div>
 
         <div
@@ -35,7 +36,7 @@ const ShopBuilder = () => {
           style={{ width: `${100 - widthPercentage}%` }}
         >
           <ShopContainer />
-          </div>
+        </div>
       </div>
     </div>
   )

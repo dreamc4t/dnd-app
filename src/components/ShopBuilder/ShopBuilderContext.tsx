@@ -29,7 +29,8 @@ const ShopBuilderContextProvider = ({
 }: {
   children: React.ReactNode
   items: Item[]
-}) => {  const [shopName, setShopName] = useState<string>('')
+}) => {
+  const [shopName, setShopName] = useState<string>('')
   const [selectedItems, setSelectedItems] = useState<Item[]>([])
   const [isSaving, setIsSaving] = useState<boolean>(false)
   const [errorMessage, setErrorMessage] = useState<string>('')
@@ -106,7 +107,7 @@ const ShopBuilderContextProvider = ({
         handleSaveShop,
         errorMessage,
         items,
-        itemTypes
+        itemTypes,
       }}
     >
       {children}

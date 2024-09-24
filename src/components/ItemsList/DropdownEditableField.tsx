@@ -9,13 +9,16 @@ const DropdownEditableField = ({
   onSave,
 }: DropdownEditableFieldProps) => {
   const handleChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
-    e.stopPropagation() 
+    e.stopPropagation()
     onSave(e.target.value)
   }
 
-
   return (
-    <select value={selectedType} onChange={handleChange} onClick={(e) => e.stopPropagation()}>
+    <select
+      value={selectedType}
+      onChange={handleChange}
+      onClick={(e) => e.stopPropagation()}
+    >
       {itemTypes?.map((type) => (
         <option key={type} value={type}>
           {type}

@@ -1,4 +1,4 @@
-import { SPECIES } from "@/constants/enums"
+import { SPECIES } from '@/constants/enums'
 
 export interface Npc {
   id?: string

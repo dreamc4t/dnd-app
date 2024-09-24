@@ -1,7 +1,6 @@
 export enum SPECIES {
-    ELF = 'elf',
-    HUMAN = 'human',
-    DWARF = 'dwarf',
-    HALFLING = 'halfling',
-  }
-  
+  ELF = 'elf',
+  HUMAN = 'human',
+  DWARF = 'dwarf',
+  HALFLING = 'halfling',
+}

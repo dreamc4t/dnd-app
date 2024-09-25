@@ -8,7 +8,7 @@ export async function saveShop(shop: Shop) {
   const shopJson = JSON.stringify(shop)
 
   try {
-    const response = await authenticatedFetch(CREATE_SHOP_URL, {
+    await authenticatedFetch(CREATE_SHOP_URL, {
       method: 'POST',
       body: shopJson,
     })

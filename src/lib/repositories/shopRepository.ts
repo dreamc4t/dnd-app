@@ -1,4 +1,4 @@
-import { GET_ALL_SHOPS_URL, GET_USERS_SHOPS_URL, SHOP_URL } from '@/constants/urls'
+import { GET_USERS_SHOPS_URL } from '@/constants/urls'
 import { Shop } from '@/interfaces'
 import { authenticatedFetch } from '../utils'
 

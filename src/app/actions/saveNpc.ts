@@ -8,7 +8,7 @@ export async function saveNpc(npc: Npc) {
   const npcJson = JSON.stringify(npc)
 
   try {
-    const response = await authenticatedFetch(SAVE_NPC_URL, {
+    await authenticatedFetch(SAVE_NPC_URL, {
       method: 'POST',
       body: npcJson,
     })

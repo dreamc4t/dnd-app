@@ -1,6 +1,6 @@
 'use client'
 import { Item } from '@/interfaces'
-import { MouseEvent, useEffect, useState } from 'react'
+import { MouseEvent, useState } from 'react'
 import { ExpandedContent } from './ExpandedContent'
 import { EditableField } from './EditableField'
 import { EditIcon } from '../icons'

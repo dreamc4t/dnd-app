@@ -18,17 +18,19 @@ class ApiServiceClass {
     return res.data
   }
 
-  public async post<T>(
-    endpoint: string,
-    data: any,
-    config?: AxiosRequestConfig,
-  ): Promise<T> {
-    const res = await this.axiosInstance.post<T>(endpoint, data, {
-      ...config,
-      withCredentials: true,
-    })
-    return res.data
-  }
+  // public async post<T>(
+  //   endpoint: string,
+  //   data: any,
+  //   config?: AxiosRequestConfig,
+  // ): Promise<T> {
+  //   console.log(data)
+
+  //   const res = await this.axiosInstance.post<T>(endpoint, data, {
+  //     ...config,
+  //     withCredentials: true,
+  //   })
+  //   return res.data
+  // }
 
   public async delete<T>(
     endpoint: string,
@@ -39,8 +41,6 @@ class ApiServiceClass {
         ...config,
         withCredentials: true,
       })
-      console.log(res)
-
       return res.data
     } catch (error) {
       console.error(`Failed to delete at ${endpoint}:`, error)
@@ -50,9 +50,11 @@ class ApiServiceClass {
 
   public async patch<T>(
     endpoint: string,
-    data: any,
+    data: T,
     config?: AxiosRequestConfig,
   ): Promise<T> {
+    console.log(data)
+
     const res = await this.axiosInstance.patch<T>(endpoint, data, {
       ...config,
       withCredentials: true,

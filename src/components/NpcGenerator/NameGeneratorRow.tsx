@@ -1,4 +1,4 @@
-import { InfoIcon, RefreshIcon } from '../icons'
+import { RefreshIcon } from '../icons'
 
 interface NameGeneratorRowProps {
   name: string

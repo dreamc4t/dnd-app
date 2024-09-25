@@ -64,7 +64,9 @@ const ShopListItem: React.FC<ShopListItemProps> = ({ shop, onDelete }) => {
     e.stopPropagation()
     setShowModal(true)
   }
-  const handleSaveEditedShop = () => {}
+  const handleSaveEditedShop = () => {
+    console.log('TO DO')
+  }
 
   return (
     <li

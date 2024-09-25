@@ -1,6 +1,6 @@
 'use client'
 
-import { createContext, useContext, ReactNode, useMemo } from 'react'
+import { createContext, useContext, ReactNode } from 'react'
 import { Item } from '@/interfaces'
 
 interface ItemsContextType {

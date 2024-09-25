@@ -26,7 +26,7 @@ const SHOP_PATH = 'shop' as const
 const SHOP_URL = `${BASE_URL}/${SHOP_PATH}`
 const CREATE_SHOP_URL = `${SHOP_URL}/${CREATE_PATH}`
 const GET_ALL_SHOPS_URL = `${SHOP_URL}/${ALL_PATH}`
-const GET_USERS_SHOPS_URL = (userId: String) => `${SHOP_URL}/${USER_PATH}/${userId}`
+const GET_USERS_SHOPS_URL = (userId: string) => `${SHOP_URL}/${USER_PATH}/${userId}`
 const DELETE_SHOP_ENDPOINT = `${SHOP_PATH}/${DELETE_PATH}`
 
 export {

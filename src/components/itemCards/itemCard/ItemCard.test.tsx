@@ -1,7 +1,6 @@
 import { render, screen, fireEvent } from '@testing-library/react'
 import { ItemCard } from '.'
 import { mockItem } from '@/development/mockData'
-import { expandedContentAriaLabel } from '@/constants/ariaLabels'
 
 describe('ItemCard', () => {
   it('renders', () => {

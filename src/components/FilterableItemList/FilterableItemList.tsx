@@ -5,17 +5,13 @@ import { ItemsList } from '../ItemsList'
 import { Item } from '@/interfaces'
 import { FilterBar } from '../filterBar'
 import { noItemsFoundString } from '@/constants/strings'
+import { useItemsContext } from '@/context'
 
 interface FilterableItemListProps {
-  items: Item[]
-  itemTypes: string[]
   onAddToShopClick: (item: Item) => void
 }
-export const FilterableItemList = ({
-  items,
-  onAddToShopClick,
-  itemTypes,
-}: FilterableItemListProps) => {
+export const FilterableItemList = ({ onAddToShopClick }: FilterableItemListProps) => {
+  const { items, itemTypes } = useItemsContext()
   const [selectedFilters, setSelectedFilters] = useState<string[]>([])
   const [searchInput, setSearchInput] = useState<string>('')
   const [filteredItems, setFilteredItems] = useState<Item[]>(items)

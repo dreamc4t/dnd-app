@@ -1,11 +1,10 @@
-import { Item } from '@/interfaces'
 import { FilterableItemList } from '../FilterableItemList'
 import { ShopContainer } from './ShopContainer'
 import { useShopBuilderContext } from './ShopBuilderContext'
 import { useResizable } from '@/hooks'
 
 const ShopBuilder = () => {
-  const { addItemToShop, items, itemTypes } = useShopBuilderContext()
+  const { addItemToShop } = useShopBuilderContext()
   const { handleMouseDown, widthPercentage } = useResizable({
     initialLeftWidthPercentage: 60,
     minimumWidthPercentage: 35,
@@ -18,11 +17,7 @@ const ShopBuilder = () => {
           className='p-x-2 overflow-y-auto border-r border-black'
           style={{ width: `${widthPercentage}%` }}
         >
-          <FilterableItemList
-            items={items}
-            onAddToShopClick={addItemToShop}
-            itemTypes={itemTypes}
-          />
+          <FilterableItemList onAddToShopClick={addItemToShop} />
         </div>
 
         <div

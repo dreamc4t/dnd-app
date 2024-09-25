@@ -1,6 +1,6 @@
 'use client'
 
-import { Children, Item, Shop } from '@/interfaces'
+import { Item, Shop } from '@/interfaces'
 import { createContext, useContext, ReactNode, useState, useEffect } from 'react'
 import { v4 as uuidv4 } from 'uuid'
 import { saveShop } from '@/app/actions/saveShop' // Import the server action
@@ -16,27 +16,16 @@ interface ShopBuilderContextType {
   handleSaveShop: () => void
   errorMessage: string
   updateItemInShop: (itemId: string, updatedFields: Partial<Item>) => void // New function
-  items: Item[]
-  itemTypes: string[]
 }
 
 const ShopBuilderContext = createContext({} as ShopBuilderContextType)
 const useShopBuilderContext = () => useContext(ShopBuilderContext)
 
-const ShopBuilderContextProvider = ({
-  children,
-  items,
-}: {
-  children: React.ReactNode
-  items: Item[]
-}) => {
+const ShopBuilderContextProvider = ({ children }: { children: React.ReactNode }) => {
   const [shopName, setShopName] = useState<string>('')
   const [selectedItems, setSelectedItems] = useState<Item[]>([])
   const [isSaving, setIsSaving] = useState<boolean>(false)
   const [errorMessage, setErrorMessage] = useState<string>('')
-
-  const itemTypesFlat = items.flatMap((item) => item.type)
-  const itemTypes = Array.from(new Set(itemTypesFlat))
 
   const addItemToShop = (item: Item) => {
     const newItem = { ...item, id: uuidv4() }
@@ -106,8 +95,6 @@ const ShopBuilderContextProvider = ({
         isSaving,
         handleSaveShop,
         errorMessage,
-        items,
-        itemTypes,
       }}
     >
       {children}

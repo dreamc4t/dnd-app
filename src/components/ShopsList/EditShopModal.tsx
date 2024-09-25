@@ -6,6 +6,7 @@ import { EditableField } from '../ItemsList/EditableField'
 import { Modal } from '../Modal'
 import { Item, Shop } from '@/interfaces'
 import { ApiService } from '@/lib/services'
+import { useItemsContext } from '@/context'
 interface EditShopModalProps {
   showModal: boolean
   setShowModal: (x: boolean) => void
@@ -13,6 +14,7 @@ interface EditShopModalProps {
   shop: Shop
 }
 const EditShopModal = ({ onSave, setShowModal, showModal, shop }: EditShopModalProps) => {
+  const { itemTypes } = useItemsContext()
   const [editedShop, setEditedShop] = useState<Shop>(shop)
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState<string | null>(null)
@@ -56,6 +58,7 @@ const EditShopModal = ({ onSave, setShowModal, showModal, shop }: EditShopModalP
         items={editedShop.items}
         onUpdateItem={handleEditItem}
         isEditable={true}
+        itemTypes={itemTypes}
       />
       <div className='mt-4 flex justify-end'>
         {error && <p className='text-red-500'>{error}</p>} {/* Error message */}

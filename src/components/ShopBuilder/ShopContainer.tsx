@@ -4,16 +4,12 @@ import { SaveShopButton } from './SaveShopButton'
 import { ShopNameInput } from './ShopNameInput'
 import { useShopBuilderContext } from './ShopBuilderContext'
 import { LoadingSpinnerOverlay } from '../LoadingSpinnerOverlay'
+import { useItemsContext } from '@/context'
 
 export const ShopContainer = () => {
-  const {
-    removeItemFromShop,
-    selectedItems,
-    isSaving,
-    errorMessage,
-    updateItemInShop,
-    itemTypes,
-  } = useShopBuilderContext()
+  const { removeItemFromShop, selectedItems, isSaving, errorMessage, updateItemInShop } =
+    useShopBuilderContext()
+  const { itemTypes } = useItemsContext()
 
   return (
     <div className={`relative flex h-full flex-col ${isSaving ? 'blur-sm' : ''}`}>

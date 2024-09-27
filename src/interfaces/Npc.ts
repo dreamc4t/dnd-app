@@ -1,8 +1,9 @@
-import { SPECIES } from '@/constants/enums'
+import { GENDER, SPECIES } from '@/constants/enums'
 
 export interface Npc {
   id?: string
   name: string
+  gender: GENDER
   species: SPECIES
   strength: number
   dexterity: number

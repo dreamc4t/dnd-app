@@ -52,6 +52,7 @@ const NpcGenerator = () => {
         <div className='mt-4 rounded-md bg-gray-700 p-4'>
           <NameGeneratorRow name={npcName} onRandomNameClick={handleRandomNameClick} />
           <p>Species: {npc.species} </p>
+          <p>Gender: {npc.gender}</p>
           <NpcDetails npc={npc} />
           <button
             onClick={handleSaveNpc}

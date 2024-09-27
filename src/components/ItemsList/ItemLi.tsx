@@ -89,26 +89,10 @@ const ItemLi = ({
     >
       <div className='flex items-center justify-between px-1'>
         <div className='flex-1'>
-          {isEditing ? (
-            <EditableField
-              value={item.name}
-              onSave={handleNameSave}
-              isEditing={isEditing}
-            />
-          ) : (
-            <p>{item.name}</p>
-          )}
+          <p>{item.name}</p>
         </div>
         <div className='flex-1'>
-          {isEditing ? (
-            <DropdownEditableField
-              itemTypes={itemTypes}
-              selectedType={item.type}
-              onSave={handleTypeSave}
-            />
-          ) : (
-            <p>{item.type}</p>
-          )}
+          <p>{item.type}</p>
         </div>{' '}
         <div className='flex-1'>
           {isEditing ? (

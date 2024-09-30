@@ -14,6 +14,11 @@ pnpm dev
 bun dev
 ```
 
+## Development
+for vscode add   "tailwindCSS.experimental.classRegex": [
+        ["clsx\\(([^)]*)\\)", "(?:'|\"|`)([^']*)(?:'|\"|`)"]
+      ], to setting.json for intellisense tailwind for clsx
+
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.

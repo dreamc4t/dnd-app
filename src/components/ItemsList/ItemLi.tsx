@@ -1,28 +1,32 @@
 'use client'
-import { Item } from '@/interfaces'
+import { ButtonVariant, Item } from '@/interfaces'
 import { MouseEvent, useState } from 'react'
 import { ExpandedContent } from './ExpandedContent'
 import { EditableField } from './EditableField'
 import { EditIcon } from '../icons'
 import DropdownEditableField from './DropdownEditableField'
-type ButtonType = 'ADD' | 'REMOVE'
+import { Button } from '../Button'
+
+interface ButtonProps {
+  variant: ButtonVariant
+  title: string
+  onButtonClick?: (item: Item) => void
+}
 
 interface ItemLiProps {
   item: Item
-  buttonType?: ButtonType
-  onButtonClick?: (item: Item) => void
   onUpdateItem?: (itemId: string, updatedFields: Partial<Item>) => void
   isEditable?: boolean
   itemTypes?: string[]
+  buttonProps?: ButtonProps
 }
 
 const ItemLi = ({
   item,
-  buttonType,
-  onButtonClick,
   onUpdateItem,
   isEditable = false,
   itemTypes,
+  buttonProps,
 }: ItemLiProps) => {
   const [isToggled, setIsToggled] = useState<boolean>(false)
   const [isEditing, setIsEditing] = useState<boolean>(false)
@@ -33,8 +37,8 @@ const ItemLi = ({
 
   const handleButtonClick = (e: MouseEvent<HTMLButtonElement>) => {
     e.stopPropagation()
-    if (onButtonClick) {
-      onButtonClick(item)
+    if (buttonProps?.onButtonClick) {
+      buttonProps.onButtonClick(item)
     }
   }
 
@@ -60,28 +64,6 @@ const ItemLi = ({
     isEditable && setIsEditing(!isEditing)
   }
 
-  const getButtonText = () => {
-    switch (buttonType) {
-      case 'ADD':
-        return 'Add to Shop'
-      case 'REMOVE':
-        return 'Remove'
-      default:
-        return ''
-    }
-  }
-
-  const getButtonClasses = () => {
-    switch (buttonType) {
-      case 'ADD':
-        return 'bg-green-400 text-white'
-      case 'REMOVE':
-        return 'bg-red-500 text-white'
-      default:
-        return 'bg-blue-500 text-white'
-    }
-  }
-
   return (
     <li
       className='cursor-pointer border-b border-gray-400 hover:bg-gray-200'
@@ -93,7 +75,7 @@ const ItemLi = ({
         </div>
         <div className='flex-1'>
           <p>{item.type}</p>
-        </div>{' '}
+        </div>
         <div className='flex-1'>
           {isEditing ? (
             <EditableField
@@ -106,13 +88,13 @@ const ItemLi = ({
           )}
         </div>
         {isEditable && <button onClick={handleSetEditMode}>{<EditIcon />}</button>}
-        {onButtonClick && (
-          <button
-            className={`${getButtonClasses()} rounded-md px-4 py-2`}
+        {buttonProps?.onButtonClick && (
+          <Button
+            title={buttonProps.title}
+            variant={buttonProps.variant}
+            size='normal'
             onClick={handleButtonClick}
-          >
-            {getButtonText()}
-          </button>
+          />
         )}
       </div>
       {isToggled && <ExpandedContent description={item.description} />}

@@ -1,17 +1,26 @@
-import { Item } from '@/interfaces'
+import { ButtonVariant, Item } from '@/interfaces'
 import { ItemLi } from './ItemLi'
+import { addToShopString, deleteString } from '@/constants/strings'
 
 type ButtonType = 'ADD' | 'REMOVE'
 
-interface ItemsListProps {
+interface ItemsListBaseProps {
   items: Item[]
-  onButtonClick?: (item: Item) => void
-  buttonType?: ButtonType
   noItemsMessage?: string
   onUpdateItem?: (itemId: string, updatedFields: Partial<Item>) => void
   isEditable?: boolean
   itemTypes?: string[]
 }
+
+type ItemsListProps =
+  | (ItemsListBaseProps & {
+      buttonType?: undefined
+      onButtonClick?: undefined
+    })
+  | (ItemsListBaseProps & {
+      buttonType: ButtonType
+      onButtonClick: (item: Item) => void
+    })
 
 const ItemsList = ({
   items,
@@ -22,17 +31,25 @@ const ItemsList = ({
   isEditable,
   itemTypes,
 }: ItemsListProps) => {
+  const buttonConfigMap: Record<ButtonType, { title: string; variant: ButtonVariant }> = {
+    ADD: { title: addToShopString, variant: 'primary' },
+    REMOVE: { title: deleteString, variant: 'gray' },
+  }
   return (
     <div className='overflow-y-auto'>
       {items.length > 0 ? (
         <ul>
           {items.map((item, i) => {
+            const buttonProps = buttonType && {
+              onButtonClick,
+              ...buttonConfigMap[buttonType],
+            }
+
             return (
               <ItemLi
                 key={item.id + i}
                 item={item}
-                onButtonClick={onButtonClick}
-                buttonType={buttonType}
+                buttonProps={buttonProps}
                 onUpdateItem={onUpdateItem}
                 isEditable={isEditable}
                 itemTypes={itemTypes}

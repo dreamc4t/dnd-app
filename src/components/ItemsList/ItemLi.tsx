@@ -4,7 +4,6 @@ import { MouseEvent, useState } from 'react'
 import { ExpandedContent } from './ExpandedContent'
 import { EditableField } from './EditableField'
 import { EditIcon } from '../icons'
-import DropdownEditableField from './DropdownEditableField'
 import { Button } from '../Button'
 
 interface ButtonProps {
@@ -42,20 +41,9 @@ const ItemLi = ({
     }
   }
 
-  const handleNameSave = (newName: string) => {
-    if (onUpdateItem) {
-      onUpdateItem(item.id, { name: newName })
-    }
-  }
-
   const handlePrizeSave = (newPrize: string) => {
     if (onUpdateItem) {
       onUpdateItem(item.id, { prize: newPrize })
-    }
-  }
-  const handleTypeSave = (newType: string) => {
-    if (onUpdateItem) {
-      onUpdateItem(item.id, { type: newType })
     }
   }
 

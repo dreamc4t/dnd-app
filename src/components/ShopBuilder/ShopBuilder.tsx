@@ -2,7 +2,6 @@ import { FilterableItemList } from '../FilterableItemList'
 import { ShopContainer } from './ShopContainer'
 import { useShopBuilderContext } from './ShopBuilderContext'
 import { useResizable } from '@/hooks'
-import { Chip } from '../Chip'
 
 const ShopBuilder = () => {
   const { addItemToShop } = useShopBuilderContext()

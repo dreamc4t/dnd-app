@@ -22,7 +22,6 @@ const FilterBar = ({ filters, setFilter, selectedFilters }: FilterBarProps) => {
               title={filter}
               onClick={() => setFilter(filter, !isSelected)}
               selected={isSelected}
-              disabled={i === 3}
             />
           )
         })}

@@ -28,4 +28,4 @@ const ShopsList: React.FC<ShopsListProps> = ({ initialShops }) => {
   )
 }
 
-export { ShopsList}
+export { ShopsList }

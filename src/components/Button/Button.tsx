@@ -1,46 +1,46 @@
-import { ButtonSize, ButtonVariant } from '@/interfaces'
+import { ButtonSize, ButtonStyle } from '@/interfaces'
 import clsx from 'clsx'
-import React, { ButtonHTMLAttributes } from 'react'
+import { ButtonHTMLAttributes, MouseEvent, FC } from 'react'
 
 interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   title?: string
   size?: ButtonSize
-  variant?: ButtonVariant
+  buttonStyle?: ButtonStyle
 }
 
-const Button: React.FC<ButtonProps> = ({
+const Button: FC<ButtonProps> = ({
   size = 'normal',
-  variant = 'gray',
+  buttonStyle = 'default',
   onClick,
   title,
   children,
   ...rest
 }) => {
-  const handleClick = (e: React.MouseEvent<HTMLButtonElement>) => {
-    e.stopPropagation()
+  const handleClick = (e: MouseEvent<HTMLButtonElement>) => {
     onClick && onClick(e)
   }
 
-  const buttonSize = clsx(
-    size === 'small' && 'py-1 px-2 text-sm',
-    size === 'normal' && 'px-4 py-2 text-base',
-    size === 'large' && 'px-6 py-3 text-lg',
-  )
+  const sizeStyles: Record<ButtonSize, string> = {
+    small: clsx('py-1 px-2 text-sm'),
+    normal: clsx('px-4 py-2 text-base'),
+    large: clsx('px-6 py-3 text-lg'),
+  }
 
-  const buttonVariant = clsx(
-    variant === 'primary' && 'bg-blue-500 text-white hover:bg-blue-600',
-    variant === 'gray' && 'bg-gray-500 text-white hover:bg-gray-600',
-  )
+  const variantStyles: Partial<Record<ButtonStyle, string>> = {
+    default: clsx('bg-button-default hover:bg-button-hover active:bg-button-active'),
+    disabled: clsx('bg-button-disabled text-textDisabled cursor-not-allowed'),
+  }
 
-  const commonStyles = clsx('rounded text-white')
+  const style = clsx('rounded text-white', variantStyles[buttonStyle], sizeStyles[size])
 
   return (
     <button
-      className={clsx(buttonSize, buttonVariant, commonStyles)}
-      onClick={handleClick}
+      className={style}
+      onClick={buttonStyle !== 'disabled' ? handleClick : undefined}
+      disabled={buttonStyle === 'disabled'}
       {...rest}
     >
-      {title && <p>{title}</p>}
+      {title && <span>{title}</span>}
       {children}
     </button>
   )

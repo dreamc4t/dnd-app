@@ -31,7 +31,11 @@ const Button: FC<ButtonProps> = ({
     disabled: clsx('bg-button-disabled text-textDisabled cursor-not-allowed'),
   }
 
-  const style = clsx('rounded text-white', variantStyles[buttonStyle], sizeStyles[size])
+  const style = clsx(
+    'rounded text-textBlack',
+    variantStyles[buttonStyle],
+    sizeStyles[size],
+  )
 
   return (
     <button

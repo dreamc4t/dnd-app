@@ -13,8 +13,8 @@ const config: Config = {
         secondary: '#2D3748',
         accent: '#9CA3AF',
         background: '#1F2937',
-        textPrimary: '#E5E7EB',
-        textSecondary: '#A1A1AA',
+        textWhite: '#E5E7EB',
+        textBlack: '#111827',
         textDisabled: '#6b7280',
         button: {
           default: '#E5E7EB',

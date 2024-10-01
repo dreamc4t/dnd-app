@@ -1,10 +1,11 @@
 import { UserInfo } from '@/components'
+import { NotLoggedIn } from '@/components/NotLoggedIn'
 import { auth } from '@/lib/auth'
 
 export default async function UserPage() {
   const session = await auth()
 
-  if (!session || !session.user) return <div>Not logged in</div>
+  if (!session?.user?.id) return <NotLoggedIn />
 
   return (
     <main>

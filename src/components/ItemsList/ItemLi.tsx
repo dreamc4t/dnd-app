@@ -1,5 +1,5 @@
 'use client'
-import { ButtonVariant, Item } from '@/interfaces'
+import { ButtonStyle, Item } from '@/interfaces'
 import { MouseEvent, useState } from 'react'
 import { ExpandedContent } from './ExpandedContent'
 import { EditableField } from './EditableField'
@@ -8,7 +8,7 @@ import DropdownEditableField from './DropdownEditableField'
 import { Button } from '../Button'
 
 interface ButtonProps {
-  variant: ButtonVariant
+  buttonStyle: ButtonStyle
   title: string
   onButtonClick?: (item: Item) => void
 }
@@ -91,7 +91,7 @@ const ItemLi = ({
         {buttonProps?.onButtonClick && (
           <Button
             title={buttonProps.title}
-            variant={buttonProps.variant}
+            buttonStyle={buttonProps.buttonStyle}
             size='normal'
             onClick={handleButtonClick}
           />

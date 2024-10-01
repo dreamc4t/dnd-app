@@ -2,6 +2,7 @@ import { FilterableItemList } from '../FilterableItemList'
 import { ShopContainer } from './ShopContainer'
 import { useShopBuilderContext } from './ShopBuilderContext'
 import { useResizable } from '@/hooks'
+import { Chip } from '../Chip'
 
 const ShopBuilder = () => {
   const { addItemToShop } = useShopBuilderContext()
@@ -30,6 +31,11 @@ const ShopBuilder = () => {
           className='p-x-2 overflow-y-auto'
           style={{ width: `${100 - widthPercentage}%` }}
         >
+          <Chip title='123' />
+          <Chip title='123' disabled />
+          <Chip title='123' selected={true} />
+          <Chip title='123' />
+
           <ShopContainer />
         </div>
       </div>

@@ -1,4 +1,4 @@
-import { ButtonVariant, Item } from '@/interfaces'
+import { ButtonStyle, Item } from '@/interfaces'
 import { ItemLi } from './ItemLi'
 import { addToShopString, deleteString } from '@/constants/strings'
 
@@ -31,10 +31,11 @@ const ItemsList = ({
   isEditable,
   itemTypes,
 }: ItemsListProps) => {
-  const buttonConfigMap: Record<ButtonType, { title: string; variant: ButtonVariant }> = {
-    ADD: { title: addToShopString, variant: 'primary' },
-    REMOVE: { title: deleteString, variant: 'gray' },
-  }
+  const buttonConfigMap: Record<ButtonType, { title: string; buttonStyle: ButtonStyle }> =
+    {
+      ADD: { title: addToShopString, buttonStyle: 'default' },
+      REMOVE: { title: deleteString, buttonStyle: 'disabled' },
+    }
   return (
     <div className='overflow-y-auto'>
       {items.length > 0 ? (

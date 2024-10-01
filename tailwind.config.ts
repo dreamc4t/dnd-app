@@ -15,12 +15,13 @@ const config: Config = {
         background: '#1F2937',
         textPrimary: '#E5E7EB',
         textSecondary: '#A1A1AA',
+        textDisabled: '#6b7280',
         button: {
-          default: '#E5E7EB', // Light gray for default buttons (neutral background).
-          selected: '#4B5563', // Strong dark gray for selected/active state (high contrast).
-          disabled: '#D1D5DB', // Soft, muted gray for disabled buttons (subtle and clear).
-          hover: '#6B7280', // Medium gray for hover (indicates interactivity without being overwhelming).
-          active: '#374151', // Darker gray for active state (reinforces interaction).
+          default: '#E5E7EB',
+          selected: '#4B5563',
+          disabled: '#D1D5DB',
+          hover: '#6B7280',
+          active: '#374151',
         },
       },
       backgroundImage: {

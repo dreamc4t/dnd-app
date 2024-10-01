@@ -15,9 +15,20 @@ bun dev
 ```
 
 ## Development
-for vscode add   "tailwindCSS.experimental.classRegex": [
-        ["clsx\\(([^)]*)\\)", "(?:'|\"|`)([^']*)(?:'|\"|`)"]
-      ], to setting.json for intellisense tailwind for clsx
+
+To enable Tailwind CSS IntelliSense for styles variables and `clsx` in VSCode, follow these steps:
+
+1. Add the following to your `settings.json`:
+
+   ```json
+   "tailwindCSS.experimental.classRegex": [
+     ["clsx\\(([^)]*)\\)", "(?:'|\"|`)([^']*)(?:'|\"|`)"]], "tailwindCSS.classAttributes": [".*ClassName", ".*Style", ".*Styles"],
+
+
+2. Comment out or remove the following line if it's present:
+
+   ```json
+   "tailwindCSS.experimental.configFile": null,
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 

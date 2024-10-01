@@ -34,7 +34,7 @@ const ItemsList = ({
   const buttonConfigMap: Record<ButtonType, { title: string; buttonStyle: ButtonStyle }> =
     {
       ADD: { title: addToShopString, buttonStyle: 'default' },
-      REMOVE: { title: deleteString, buttonStyle: 'disabled' },
+      REMOVE: { title: deleteString, buttonStyle: 'default' },
     }
   return (
     <div className='overflow-y-auto'>

@@ -31,11 +31,6 @@ const ShopBuilder = () => {
           className='p-x-2 overflow-y-auto'
           style={{ width: `${100 - widthPercentage}%` }}
         >
-          <Chip title='123' />
-          <Chip title='123' disabled />
-          <Chip title='123' selected={true} />
-          <Chip title='123' />
-
           <ShopContainer />
         </div>
       </div>

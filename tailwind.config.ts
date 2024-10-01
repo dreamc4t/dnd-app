@@ -18,9 +18,9 @@ const config: Config = {
         textDisabled: '#6b7280',
         button: {
           default: '#E5E7EB',
-          selected: '#4B5563',
+          selected: '#6B7280',
           disabled: '#D1D5DB',
-          hover: '#6B7280',
+          hover: '#9CA3AF',
           active: '#374151',
         },
       },

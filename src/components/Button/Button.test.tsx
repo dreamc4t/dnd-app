@@ -14,6 +14,12 @@ describe('SignIn Button', () => {
     expect(button).toBeInTheDocument()
   })
 
+  it('renders with correct title', () => {
+    render(<Button title='test title' />)
+    const button = screen.getByRole('button', { name: 'test title' })
+    expect(button).toBeInTheDocument()
+  })
+
   it('fires onClick function when clicked', () => {
     render(<Button onClick={mockOnclick} />)
     const button = screen.getByRole('button')

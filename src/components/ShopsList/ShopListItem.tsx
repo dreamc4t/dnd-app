@@ -71,11 +71,11 @@ const ShopListItem: React.FC<ShopListItemProps> = ({ shop, onDelete }) => {
   return (
     <li
       key={shop.id}
-      className='max-w-lg cursor-pointer border border-black hover:bg-gray-200'
+      className='bg-row-default hover:bg-row-hover cursor-pointer border-b border-black'
       onClick={handleExpandClick}
     >
-      <div className='flex items-center p-2'>
-        <h2 className='flex-1 text-xl'>{shop.name}</h2>
+      <div className='flex items-center gap-1'>
+        <h2 className='flex-1 pl-2 text-xl'>{shop.name}</h2>
         {confirmDelete ? (
           <div className=''>
             <Button

@@ -16,8 +16,8 @@ const Chip = ({ onClick, title, disabled = false, selected = false }: ChipProps)
 
   const baseStyle = 'rounded px-2 py-1 text-black'
   const defaultStyle =
-    'bg-button-default hover:bg-button-hover hover:text-textWhite active:bg-button-active'
-  const selectedStyle = 'bg-button-selected text-textWhite active:bg-button-active'
+    'bg-button-default hover:bg-button-hover hover:text-white active:bg-button-active'
+  const selectedStyle = 'bg-button-selected text-white active:bg-button-active'
   const disabledStyle = 'bg-button-disabled cursor-not-allowed text-gray-500 opacity-50 '
 
   const getStyle = () => {

@@ -10,18 +10,18 @@ const config: Config = {
     extend: {
       colors: {
         primary: '#4B5953',
-        secondary: '#2D3748',
         accent: '#9CA3AF',
-        background: '#1F2937',
-        textWhite: '#E5E7EB',
-        textBlack: '#111827',
         textDisabled: '#6b7280',
+        row: {
+          default: '#FFFFFF',
+          hover: '#F1F3F5',
+        },
         button: {
-          default: '#E5E7EB',
-          selected: '#6B7280',
-          disabled: '#D1D5DB',
-          hover: '#9CA3AF',
-          active: '#374151',
+          default: '#D1D5DB',
+          selected: '#4B5358',
+          disabled: '#A3A8AF',
+          hover: '#7A828C',
+          active: '#2F3B44',
         },
       },
       backgroundImage: {

@@ -4,7 +4,7 @@ import Link from 'next/link'
 
 const NavBar = () => {
   return (
-    <nav className='text-textWhite flex items-center justify-between bg-primary p-4'>
+    <nav className='flex items-center justify-between bg-primary p-4 text-white'>
       <ul className={`flex items-center gap-4`}>
         {navigationItems.map((item, i) => {
           const { title, url } = item

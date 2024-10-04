@@ -71,7 +71,7 @@ const ShopListItem: React.FC<ShopListItemProps> = ({ shop, onDelete }) => {
   return (
     <li
       key={shop.id}
-      className='bg-row-default hover:bg-row-hover cursor-pointer border-b border-black'
+      className='bg-row-default cursor-pointer border-b border-black hover:bg-gray-200'
       onClick={handleExpandClick}
     >
       <div className='flex items-center gap-1'>

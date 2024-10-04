@@ -54,7 +54,7 @@ const ItemLi = ({
 
   return (
     <li
-      className='cursor-pointer border-b border-gray-400 hover:bg-gray-200'
+      className='hover:bg-row-hover cursor-pointer border-b border-gray-400'
       onClick={handleRowClick}
     >
       <div className='flex items-center justify-between px-1'>

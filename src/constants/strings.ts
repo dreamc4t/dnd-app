@@ -13,6 +13,7 @@ const addToShopString = 'Add to shop' as const
 const removeString = 'Remove' as const
 const deleteString = 'Delete' as const
 const notLoggedInString = 'You are not logged in' as const
+const mySavedShopsTitle = 'My saved shops' as const
 // Errors
 const noItemErrorMessage = 'You must add at least one item' as const
 const noShopNameErrorMessage = 'Missing shop name' as const
@@ -34,4 +35,5 @@ export {
   noItemErrorMessage,
   noShopNameErrorMessage,
   notLoggedInString,
+  mySavedShopsTitle,
 }

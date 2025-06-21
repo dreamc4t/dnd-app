@@ -9,14 +9,14 @@ interface HeadingProps extends HtmlHTMLAttributes<HTMLHeadingElement> {
 }
 
 const Heading: FC<HeadingProps> = ({ title, variant = 'h2', ...props }) => {
-  const baseStyles = 'text-black font-bold'
+  const baseStyles = 'p-0'
   const { className } = props
 
   const variantStyles: Record<HeadingVariant, string> = {
-    h1: clsx('text-4xl'),
-    h2: clsx('text-3xl'),
-    h3: clsx('text-2xl'),
-    h4: clsx('text-xl'),
+    h1: clsx('text-3xl'),
+    h2: clsx('text-2xl'),
+    h3: clsx('text-xl'),
+    h4: clsx('text-l'),
   }
 
   const HeadingTag = variant as keyof JSX.IntrinsicElements

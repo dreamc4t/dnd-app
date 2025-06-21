@@ -1,0 +1,963 @@
+[
+  {
+    "_id": {
+      "$oid": "62a0ad739feae631a057abd2"
+    },
+    "name": "Antimatter Rifle",
+    "type": "Firearms Ranged Weapon",
+    "prize": " -- ",
+    "description": [
+      "It’s up to you to decide whether a character has proficiency with a firearm. Characters in most D&D worlds wouldn’t have such proficiency. During their downtime, characters can use the training rules in the Player’s Handbook to acquire proficiency, assuming that they have enough ammunition to keep the weapons working while mastering their use."
+    ],
+    "weight": "10 lbs",
+    "damage": "6d8 necrotic",
+    "properties": "Ammunition (Firearms), (Range 120/360), Reload, Two-Handed",
+    "tags": ["Damage", "Combat"],
+    "link": "https://www.dndbeyond.com//equipment/antimatter-rifle"
+  },
+  {
+    "_id": {
+      "$oid": "62a0ad739feae631a057abd3"
+    },
+    "name": "Bad News (Exandria)",
+    "type": "Firearms Ranged Weapon",
+    "prize": " -- ",
+    "description": [
+      "Firearms are a new and volatile technology, and as such bring their own unique set of weapon properties. Some properties are followed by a number, and this number signifies an element of that property (outlined below). These properties replace the optional ones presented in the Dungeon Master’s Guide. Firearms are ranged weapons.",
+      "Reload. The weapon can be fired a number of times equal to its Reload score before you must spend 1 attack or 1 action to reload. You must have one free hand to reload a firearm.",
+      "Misfire. Whenever you make an attack roll with a firearm, and the dice roll is equal to or lower than the weapon’s Misfire score, the weapon misfires. The attack misses, and the weapon cannot be used again until you spend an action to try and repair it. To repair your firearm, you must make a successful Tinker’s Tools check (DC equal to 8 + misfire score). If your check fails, the weapon is broken and must be mended out of combat at a quarter of the cost of the firearm. Creatures who use a firearm without being proficient increase the weapon’s misfire score by 1.",
+      "Explosive. Upon a hit, everything within 5 ft of the target must make a Dexterity saving throw (DC equal to 8 + your proficiency bonus + your Dexterity modifier) or suffer 1d8 fire damage. If the weapon misses, the ammunition fails to detonate, or bounces away harmlessly before doing so.",
+      "Ammunition",
+      "All firearms require ammunition to make an attack, and due to their rare nature, ammunition may be near impossible to find or purchase. However, if materials are gathered, you can craft ammunition yourself using your Tinker’s Tools at half the cost. Each firearm uses its own unique ammunition and is generally sold or crafted in batches listed below next to the price.",
+      "THIS IS UNOFFICIAL MATERIAL",
+      "These game mechanics are usable in your campaign if your DM allows them but not refined by final game design and editing. They aren’t officially part of the Dungeons & Dragons game and aren’t permitted in D&D Adventurers League events unless otherwise stated."
+    ],
+    "weight": "25 lbs",
+    "damage": "2d12 piercing",
+    "properties": "Two-Handed, Reload, Misfire",
+    "tags": [],
+    "link": "https://www.dndbeyond.com//equipment/bad-news-exandria"
+  },
+  {
+    "_id": {
+      "$oid": "62a0ad739feae631a057abd4"
+    },
+    "name": "Battleaxe",
+    "type": "Martial Melee Weapon",
+    "prize": "10 gp",
+    "description": [
+      "Proficiency with a battleaxe allows you to add your proficiency bonus to the attack roll for any attack you make with it."
+    ],
+    "weight": "4 lbs",
+    "damage": "1d8 slashing",
+    "properties": "Versatile (1d10)",
+    "tags": ["Damage", "Combat"],
+    "link": "https://www.dndbeyond.com//equipment/battleaxe"
+  },
+  {
+    "_id": {
+      "$oid": "62a0ad739feae631a057abd5"
+    },
+    "name": "Blowgun",
+    "type": "Martial Ranged Weapon",
+    "prize": "10 gp",
+    "description": [
+      "Proficiency with a blowgun allows you to add your proficiency bonus to the attack roll for any attack you make with it."
+    ],
+    "weight": "1 lb",
+    "damage": "1 piercing",
+    "properties": "Ammunition, Loading, (Range 25/100)",
+    "tags": ["Damage", "Combat"],
+    "link": "https://www.dndbeyond.com//equipment/blowgun"
+  },
+  {
+    "_id": {
+      "$oid": "62a0ad739feae631a057abd6"
+    },
+    "name": "Blunderbuss (Exandria)",
+    "type": "Firearms Ranged Weapon",
+    "prize": "300 gp",
+    "description": [
+      "Firearms are a new and volatile technology, and as such bring their own unique set of weapon properties. Some properties are followed by a number, and this number signifies an element of that property (outlined below). These properties replace the optional ones presented in the Dungeon Master’s Guide. Firearms are ranged weapons.",
+      "Reload. The weapon can be fired a number of times equal to its Reload score before you must spend 1 attack or 1 action to reload. You must have one free hand to reload a firearm.",
+      "Misfire. Whenever you make an attack roll with a firearm, and the dice roll is equal to or lower than the weapon’s Misfire score, the weapon misfires. The attack misses, and the weapon cannot be used again until you spend an action to try and repair it. To repair your firearm, you must make a successful Tinker’s Tools check (DC equal to 8 + misfire score). If your check fails, the weapon is broken and must be mended out of combat at a quarter of the cost of the firearm. Creatures who use a firearm without being proficient increase the weapon’s misfire score by 1.",
+      "Explosive. Upon a hit, everything within 5 ft of the target must make a Dexterity saving throw (DC equal to 8 + your proficiency bonus + your Dexterity modifier) or suffer 1d8 fire damage. If the weapon misses, the ammunition fails to detonate, or bounces away harmlessly before doing so.",
+      "Ammunition",
+      "All firearms require ammunition to make an attack, and due to their rare nature, ammunition may be near impossible to find or purchase. However, if materials are gathered, you can craft ammunition yourself using your Tinker’s Tools at half the cost. Each firearm uses its own unique ammunition and is generally sold or crafted in batches listed below next to the price.",
+      "THIS IS UNOFFICIAL MATERIAL",
+      "These game mechanics are usable in your campaign if your DM allows them but not refined by final game design and editing. They aren’t officially part of the Dungeons & Dragons game and aren’t permitted in D&D Adventurers League events unless otherwise stated."
+    ],
+    "weight": "10 lbs",
+    "damage": "2d8 piercing",
+    "properties": "Reload, Misfire",
+    "tags": [],
+    "link": "https://www.dndbeyond.com//equipment/blunderbuss-exandria"
+  },
+  {
+    "_id": {
+      "$oid": "62a0ad739feae631a057abd7"
+    },
+    "name": "Boomerang",
+    "type": "Simple Ranged Weapon",
+    "prize": " -- ",
+    "description": [
+      "The boomerang is a ranged weapon, and any creature proficient with the javelin is also proficient with this weapon.",
+      "On a miss, a boomerang returns to the thrower's hand."
+    ],
+    "weight": " -- ",
+    "damage": "1d4 bludgeoning",
+    "properties": "(Range 60/120)",
+    "tags": ["Damage", "Combat"],
+    "link": "https://www.dndbeyond.com//equipment/boomerang"
+  },
+  {
+    "_id": {
+      "$oid": "62a0ad739feae631a057abd8"
+    },
+    "name": "Club",
+    "type": "Simple Melee Weapon",
+    "prize": "1 sp",
+    "description": [
+      "Proficiency with a club allows you to add your proficiency bonus to the attack roll for any attack you make with it."
+    ],
+    "weight": "2 lbs",
+    "damage": "1d4 bludgeoning",
+    "properties": "Light",
+    "tags": ["Damage", "Combat"],
+    "link": "https://www.dndbeyond.com//equipment/club"
+  },
+  {
+    "_id": {
+      "$oid": "62a0ad739feae631a057abd9"
+    },
+    "name": "Crossbow, hand",
+    "type": "Martial Ranged Weapon",
+    "prize": "75 gp",
+    "description": [
+      "Proficiency with a hand crossbow allows you to add your proficiency bonus to the attack roll for any attack you make with it."
+    ],
+    "weight": "3 lbs",
+    "damage": "1d6 piercing",
+    "properties": "Ammunition, (Range 30/120), Light, Loading",
+    "tags": ["Damage", "Combat"],
+    "link": "https://www.dndbeyond.com//equipment/crossbow-hand"
+  },
+  {
+    "_id": {
+      "$oid": "62a0ad739feae631a057abda"
+    },
+    "name": "Crossbow, heavy",
+    "type": "Martial Ranged Weapon",
+    "prize": "50 gp",
+    "description": [
+      "Proficiency with a heavy crossbow allows you to add your proficiency bonus to the attack roll for any attack you make with it."
+    ],
+    "weight": "18 lbs",
+    "damage": "1d10 piercing",
+    "properties": "Ammunition, Heavy, Loading, (Range 100/400), Two-Handed",
+    "tags": ["Damage", "Combat"],
+    "link": "https://www.dndbeyond.com//equipment/crossbow-heavy"
+  },
+  {
+    "_id": {
+      "$oid": "62a0ad739feae631a057abdb"
+    },
+    "name": "Crossbow, light",
+    "type": "Simple Ranged Weapon",
+    "prize": "25 gp",
+    "description": [
+      "Proficiency with a light crossbow allows you to add your proficiency bonus to the attack roll for any attack you make with it."
+    ],
+    "weight": "5 lbs",
+    "damage": "1d8 piercing",
+    "properties": "Ammunition, Loading, (Range 80/320), Two-Handed",
+    "tags": ["Damage", "Combat"],
+    "link": "https://www.dndbeyond.com//equipment/crossbow-light"
+  },
+  {
+    "_id": {
+      "$oid": "62a0ad739feae631a057abdc"
+    },
+    "name": "Dagger",
+    "type": "Simple Melee Weapon",
+    "prize": "2 gp",
+    "description": [
+      "Proficiency with a dagger allows you to add your proficiency bonus to the attack roll for any attack you make with it."
+    ],
+    "weight": "1 lb",
+    "damage": "1d4 piercing",
+    "properties": "Finesse, Light, Thrown (range 20/60)",
+    "tags": ["Damage", "Combat"],
+    "link": "https://www.dndbeyond.com//equipment/dagger"
+  },
+  {
+    "_id": {
+      "$oid": "62a0ad739feae631a057abdd"
+    },
+    "name": "Dart",
+    "type": "Simple Ranged Weapon",
+    "prize": "5 cp",
+    "description": [
+      "Proficiency with a dart allows you to add your proficiency bonus to the attack roll for any attack you make with it."
+    ],
+    "weight": "1/4 lb",
+    "damage": "1d4 piercing",
+    "properties": "Finesse, Thrown (range 20/60)",
+    "tags": ["Damage", "Combat"],
+    "link": "https://www.dndbeyond.com//equipment/dart"
+  },
+  {
+    "_id": {
+      "$oid": "62a0ad739feae631a057abde"
+    },
+    "name": "Double-Bladed Scimitar",
+    "type": "Martial Melee Weapon",
+    "prize": "100 gp",
+    "description": [
+      "The double-bladed scimitar is the signature weapon of Valenar elves. A haft of fine wood supports a long, curving blade on either end. Forged with techniques honed over centuries, these blades are strong, sharp, and remarkably light. Each scimitar is a masterpiece, and as a result the double-bladed scimitar is an expensive weapon (100 gp) — few though ever have the opportunity to purchase one. A Valenar blade in the hands of a non-elf is generally assumed to have been stolen or looted from a fallen foe, and a Valenar elf might feel entitled to demand its return or challenge the bearer to prove they’re worthy to wield it.",
+      "Special. If you attack with a double-bladed scimitar as part of the Attack action on your turn, you can use a bonus action immediately after to make a melee attack with it. This attack deals 1d4 slashing damage on a hit, instead of 2d4."
+    ],
+    "weight": "6 lbs",
+    "damage": "2d4 slashing",
+    "properties": "Special, Two-Handed",
+    "tags": ["Damage", "Combat"],
+    "link": "https://www.dndbeyond.com//equipment/double-bladed-scimitar"
+  },
+  {
+    "_id": {
+      "$oid": "62a0ad739feae631a057abdf"
+    },
+    "name": "Flail",
+    "type": "Martial Melee Weapon",
+    "prize": "10 gp",
+    "description": [
+      "Proficiency with a flail allows you to add your proficiency bonus to the attack roll for any attack you make with it."
+    ],
+    "weight": "2 lbs",
+    "damage": "1d8 bludgeoning",
+    "properties": "",
+    "tags": ["Damage", "Combat"],
+    "link": "https://www.dndbeyond.com//equipment/flail"
+  },
+  {
+    "_id": {
+      "$oid": "62a0ad739feae631a057abe0"
+    },
+    "name": "Glaive",
+    "type": "Martial Melee Weapon",
+    "prize": "20 gp",
+    "description": [
+      "Proficiency with a glaive allows you to add your proficiency bonus to the attack roll for any attack you make with it."
+    ],
+    "weight": "6 lbs",
+    "damage": "1d10 slashing",
+    "properties": "Heavy, Reach, Two-Handed",
+    "tags": ["Damage", "Control", "Combat"],
+    "link": "https://www.dndbeyond.com//equipment/glaive"
+  },
+  {
+    "_id": {
+      "$oid": "62a0ad739feae631a057abe1"
+    },
+    "name": "Greataxe",
+    "type": "Martial Melee Weapon",
+    "prize": "30 gp",
+    "description": [
+      "Proficiency with a greataxe allows you to add your proficiency bonus to the attack roll for any attack you make with it."
+    ],
+    "weight": "7 lbs",
+    "damage": "1d12 slashing",
+    "properties": "Heavy, Two-Handed",
+    "tags": ["Damage", "Combat"],
+    "link": "https://www.dndbeyond.com//equipment/greataxe"
+  },
+  {
+    "_id": {
+      "$oid": "62a0ad739feae631a057abe2"
+    },
+    "name": "Greatclub",
+    "type": "Simple Melee Weapon",
+    "prize": "2 sp",
+    "description": [
+      "Proficiency with a greatclub allows you to add your proficiency bonus to the attack roll for any attack you make with it."
+    ],
+    "weight": "10 lbs",
+    "damage": "1d8 bludgeoning",
+    "properties": "Two-Handed",
+    "tags": ["Damage", "Combat"],
+    "link": "https://www.dndbeyond.com//equipment/greatclub"
+  },
+  {
+    "_id": {
+      "$oid": "62a0ad739feae631a057abe3"
+    },
+    "name": "Greatsword",
+    "type": "Martial Melee Weapon",
+    "prize": "50 gp",
+    "description": [
+      "Proficiency with a greatsword allows you to add your proficiency bonus to the attack roll for any attack you make with it."
+    ],
+    "weight": "6 lbs",
+    "damage": "2d6 slashing",
+    "properties": "Heavy, Two-Handed",
+    "tags": ["Damage", "Combat"],
+    "link": "https://www.dndbeyond.com//equipment/greatsword"
+  },
+  {
+    "_id": {
+      "$oid": "62a0ad739feae631a057abe4"
+    },
+    "name": "Halberd",
+    "type": "Martial Melee Weapon",
+    "prize": "20 gp",
+    "description": [
+      "Proficiency with a halberd allows you to add your proficiency bonus to the attack roll for any attack you make with it."
+    ],
+    "weight": "6 lbs",
+    "damage": "1d10 slashing",
+    "properties": "Heavy, Reach, Two-Handed",
+    "tags": ["Damage", "Control", "Combat"],
+    "link": "https://www.dndbeyond.com//equipment/halberd"
+  },
+  {
+    "_id": {
+      "$oid": "62a0ad739feae631a057abe5"
+    },
+    "name": "Hand Mortar (Exandria)",
+    "type": "Firearms Ranged Weapon",
+    "prize": " -- ",
+    "description": [
+      "Firearms are a new and volatile technology, and as such bring their own unique set of weapon properties. Some properties are followed by a number, and this number signifies an element of that property (outlined below). These properties replace the optional ones presented in the Dungeon Master’s Guide. Firearms are ranged weapons.",
+      "Reload. The weapon can be fired a number of times equal to its Reload score before you must spend 1 attack or 1 action to reload. You must have one free hand to reload a firearm.",
+      "Misfire. Whenever you make an attack roll with a firearm, and the dice roll is equal to or lower than the weapon’s Misfire score, the weapon misfires. The attack misses, and the weapon cannot be used again until you spend an action to try and repair it. To repair your firearm, you must make a successful Tinker’s Tools check (DC equal to 8 + misfire score). If your check fails, the weapon is broken and must be mended out of combat at a quarter of the cost of the firearm. Creatures who use a firearm without being proficient increase the weapon’s misfire score by 1.",
+      "Explosive. Upon a hit, everything within 5 ft of the target must make a Dexterity saving throw (DC equal to 8 + your proficiency bonus + your Dexterity modifier) or suffer 1d8 fire damage. If the weapon misses, the ammunition fails to detonate, or bounces away harmlessly before doing so.AmmunitionAll firearms require ammunition to make an attack, and due to their rare nature, ammunition may be near impossible to find or purchase. However, if materials are gathered, you can craft ammunition yourself using your Tinker’s Tools at half the cost. Each firearm uses its own unique ammunition and is generally sold or crafted in batches listed below next to the price.",
+      "THIS IS UNOFFICIAL MATERIAL",
+      "These game mechanics are usable in your campaign if your DM allows them but not refined by final game design and editing. They aren’t officially part of the Dungeons & Dragons game and aren’t permitted in D&D Adventurers League events unless otherwise stated."
+    ],
+    "weight": "10 lbs",
+    "damage": "2d8 fire",
+    "properties": "Reload, Misfire, Explosive",
+    "tags": [],
+    "link": "https://www.dndbeyond.com//equipment/hand-mortar-exandria"
+  },
+  {
+    "_id": {
+      "$oid": "62a0ad739feae631a057abe6"
+    },
+    "name": "Handaxe",
+    "type": "Simple Melee Weapon",
+    "prize": "5 gp",
+    "description": [
+      "Proficiency with a handaxe allows you to add your proficiency bonus to the attack roll for any attack you make with it."
+    ],
+    "weight": "2 lbs",
+    "damage": "1d6 slashing",
+    "properties": "Light, Thrown (range 20/60)",
+    "tags": ["Damage", "Combat"],
+    "link": "https://www.dndbeyond.com//equipment/handaxe"
+  },
+  {
+    "_id": {
+      "$oid": "62a0ad739feae631a057abe7"
+    },
+    "name": "Javelin",
+    "type": "Simple Melee Weapon",
+    "prize": "5 sp",
+    "description": [
+      "Proficiency with a javelin allows you to add your proficiency bonus to the attack roll for any attack you make with it."
+    ],
+    "weight": "2 lbs",
+    "damage": "1d6 piercing",
+    "properties": "Thrown (range 30/120)",
+    "tags": ["Damage", "Combat"],
+    "link": "https://www.dndbeyond.com//equipment/javelin"
+  },
+  {
+    "_id": {
+      "$oid": "62a0ad739feae631a057abe8"
+    },
+    "name": "Lance",
+    "type": "Martial Melee Weapon",
+    "prize": "10 gp",
+    "description": [
+      "Proficiency with a lance allows you to add your proficiency bonus to the attack roll for any attack you make with it.",
+      "You have disadvantage when you use a lance to attack a target within 5 feet of you. Also, a lance requires two hands to wield when you aren't mounted."
+    ],
+    "weight": "6 lbs",
+    "damage": "1d12 piercing",
+    "properties": "Reach, Special",
+    "tags": ["Damage", "Control", "Combat"],
+    "link": "https://www.dndbeyond.com//equipment/lance"
+  },
+  {
+    "_id": {
+      "$oid": "62a0ad739feae631a057abe9"
+    },
+    "name": "Laser Pistol",
+    "type": "Firearms Ranged Weapon",
+    "prize": " -- ",
+    "description": [
+      "It’s up to you to decide whether a character has proficiency with a firearm. Characters in most D&D worlds wouldn’t have such proficiency. During their downtime, characters can use the training rules in the Player’s Handbook to acquire proficiency, assuming that they have enough ammunition to keep the weapons working while mastering their use."
+    ],
+    "weight": "2 lbs",
+    "damage": "3d6 radiant",
+    "properties": "Ammunition (Firearms), (Range 40/120), Reload",
+    "tags": ["Damage", "Combat"],
+    "link": "https://www.dndbeyond.com//equipment/laser-pistol"
+  },
+  {
+    "_id": {
+      "$oid": "62a0ad739feae631a057abea"
+    },
+    "name": "Laser Rifle",
+    "type": "Firearms Ranged Weapon",
+    "prize": " -- ",
+    "description": [
+      "It’s up to you to decide whether a character has proficiency with a firearm. Characters in most D&D worlds wouldn’t have such proficiency. During their downtime, characters can use the training rules in the Player’s Handbook to acquire proficiency, assuming that they have enough ammunition to keep the weapons working while mastering their use."
+    ],
+    "weight": "7 lbs",
+    "damage": "3d8 radiant",
+    "properties": "Ammunition (Firearms), (Range 100/300), Reload, Two-Handed",
+    "tags": ["Damage", "Combat"],
+    "link": "https://www.dndbeyond.com//equipment/laser-rifle"
+  },
+  {
+    "_id": {
+      "$oid": "62a0ad739feae631a057abeb"
+    },
+    "name": "Light Hammer",
+    "type": "Simple Melee Weapon",
+    "prize": "2 gp",
+    "description": [
+      "Proficiency with a light hammer allows you to add your proficiency bonus to the attack roll for any attack you make with it."
+    ],
+    "weight": "2 lbs",
+    "damage": "1d4 bludgeoning",
+    "properties": "Light, Thrown (range 20/60)",
+    "tags": ["Damage", "Combat"],
+    "link": "https://www.dndbeyond.com//equipment/light-hammer"
+  },
+  {
+    "_id": {
+      "$oid": "62a0ad739feae631a057abec"
+    },
+    "name": "Longbow",
+    "type": "Martial Ranged Weapon",
+    "prize": "50 gp",
+    "description": [
+      "Proficiency with a longbow allows you to add your proficiency bonus to the attack roll for any attack you make with it."
+    ],
+    "weight": "2 lbs",
+    "damage": "1d8 piercing",
+    "properties": "Ammunition, Heavy, (Range 150/600), Two-Handed",
+    "tags": ["Damage", "Combat"],
+    "link": "https://www.dndbeyond.com//equipment/longbow"
+  },
+  {
+    "_id": {
+      "$oid": "62a0ad739feae631a057abed"
+    },
+    "name": "Longsword",
+    "type": "Martial Melee Weapon",
+    "prize": "15 gp",
+    "description": [
+      "Proficiency with a longsword allows you to add your proficiency bonus to the attack roll for any attack you make with it."
+    ],
+    "weight": "3 lbs",
+    "damage": "1d8 slashing",
+    "properties": "Versatile (1d10)",
+    "tags": ["Damage", "Combat"],
+    "link": "https://www.dndbeyond.com//equipment/longsword"
+  },
+  {
+    "_id": {
+      "$oid": "62a0ad739feae631a057abee"
+    },
+    "name": "Mace",
+    "type": "Simple Melee Weapon",
+    "prize": "5 gp",
+    "description": [
+      "Proficiency with a mace allows you to add your proficiency bonus to the attack roll for any attack you make with it."
+    ],
+    "weight": "4 lbs",
+    "damage": "1d6 bludgeoning",
+    "properties": "",
+    "tags": ["Damage", "Combat"],
+    "link": "https://www.dndbeyond.com//equipment/mace"
+  },
+  {
+    "_id": {
+      "$oid": "62a0ad739feae631a057abef"
+    },
+    "name": "Maul",
+    "type": "Martial Melee Weapon",
+    "prize": "10 gp",
+    "description": [
+      "Proficiency with a maul allows you to add your proficiency bonus to the attack roll for any attack you make with it."
+    ],
+    "weight": "10 lbs",
+    "damage": "2d6 bludgeoning",
+    "properties": "Heavy, Two-Handed",
+    "tags": ["Damage", "Combat"],
+    "link": "https://www.dndbeyond.com//equipment/maul"
+  },
+  {
+    "_id": {
+      "$oid": "62a0ad739feae631a057abf0"
+    },
+    "name": "Morningstar",
+    "type": "Martial Melee Weapon",
+    "prize": "15 gp",
+    "description": [
+      "Proficiency with a morningstar allows you to add your proficiency bonus to the attack roll for any attack you make with it."
+    ],
+    "weight": "4 lbs",
+    "damage": "1d8 piercing",
+    "properties": "",
+    "tags": ["Damage", "Combat"],
+    "link": "https://www.dndbeyond.com//equipment/morningstar"
+  },
+  {
+    "_id": {
+      "$oid": "62a0ad739feae631a057abf1"
+    },
+    "name": "Musket",
+    "type": "Firearms Ranged Weapon",
+    "prize": "500 gp",
+    "description": [
+      "It’s up to you to decide whether a character has proficiency with a firearm. Characters in most D&D worlds wouldn’t have such proficiency. During their downtime, characters can use the training rules in the Player’s Handbook to acquire proficiency, assuming that they have enough ammunition to keep the weapons working while mastering their use."
+    ],
+    "weight": "10 lbs",
+    "damage": "1d12 piercing",
+    "properties": "Ammunition (Firearms), (Range 40/120), Loading, Two-Handed",
+    "tags": ["Damage", "Combat"],
+    "link": "https://www.dndbeyond.com//equipment/musket"
+  },
+  {
+    "_id": {
+      "$oid": "62a0ad739feae631a057abf2"
+    },
+    "name": "Musket (Exandria)",
+    "type": "Firearms Ranged Weapon",
+    "prize": "300 gp",
+    "description": [
+      "Firearms are a new and volatile technology, and as such bring their own unique set of weapon properties. Some properties are followed by a number, and this number signifies an element of that property (outlined below). These properties replace the optional ones presented in the Dungeon Master’s Guide. Firearms are ranged weapons.",
+      "Reload. The weapon can be fired a number of times equal to its Reload score before you must spend 1 attack or 1 action to reload. You must have one free hand to reload a firearm.",
+      "Misfire. Whenever you make an attack roll with a firearm, and the dice roll is equal to or lower than the weapon’s Misfire score, the weapon misfires. The attack misses, and the weapon cannot be used again until you spend an action to try and repair it. To repair your firearm, you must make a successful Tinker’s Tools check (DC equal to 8 + misfire score). If your check fails, the weapon is broken and must be mended out of combat at a quarter of the cost of the firearm. Creatures who use a firearm without being proficient increase the weapon’s misfire score by 1.",
+      "Explosive. Upon a hit, everything within 5 ft of the target must make a Dexterity saving throw (DC equal to 8 + your proficiency bonus + your Dexterity modifier) or suffer 1d8 fire damage. If the weapon misses, the ammunition fails to detonate, or bounces away harmlessly before doing so.",
+      "Ammunition",
+      "All firearms require ammunition to make an attack, and due to their rare nature, ammunition may be near impossible to find or purchase. However, if materials are gathered, you can craft ammunition yourself using your Tinker’s Tools at half the cost. Each firearm uses its own unique ammunition and is generally sold or crafted in batches listed below next to the price.",
+      "THIS IS UNOFFICIAL MATERIAL",
+      "These game mechanics are usable in your campaign if your DM allows them but not refined by final game design and editing. They aren’t officially part of the Dungeons & Dragons game and aren’t permitted in D&D Adventurers League events unless otherwise stated."
+    ],
+    "weight": "10 lbs",
+    "damage": "1d12 piercing",
+    "properties": "Two-Handed, Reload, Misfire",
+    "tags": [],
+    "link": "https://www.dndbeyond.com//equipment/musket-exandria"
+  },
+  {
+    "_id": {
+      "$oid": "62a0ad739feae631a057abf3"
+    },
+    "name": "Net",
+    "type": "Martial Ranged Weapon",
+    "prize": "1 gp",
+    "description": [
+      "Proficiency with a net allows you to add your proficiency bonus to the attack roll for any attack you make with it.",
+      "A Large or smaller creature hit by a net is restrained until it is freed. A net has no effect on creatures that are formless, or creatures that are Huge or larger. A creature can use its action to make a DC 10 Strength check, freeing itself or another creature within its reach on a success. Dealing 5 slashing damage to the net (AC 10) also frees the creature without harming it, ending the effect and destroying the net.",
+      "When you use an action, bonus action, or reaction to attack with a net, you can make only one attack regardless of the number of attacks you can normally make."
+    ],
+    "weight": "3 lbs",
+    "damage": "0 bludgeoning",
+    "properties": "Special, Thrown (range 5/15)",
+    "tags": ["Control", "Combat"],
+    "link": "https://www.dndbeyond.com//equipment/net"
+  },
+  {
+    "_id": {
+      "$oid": "62a0ad739feae631a057abf4"
+    },
+    "name": "Palm Pistol (Exandria)",
+    "type": "Firearms Ranged Weapon",
+    "prize": "50 gp",
+    "description": [
+      "Firearms are a new and volatile technology, and as such bring their own unique set of weapon properties. Some properties are followed by a number, and this number signifies an element of that property (outlined below). These properties replace the optional ones presented in the Dungeon Master’s Guide. Firearms are ranged weapons.",
+      "Reload. The weapon can be fired a number of times equal to its Reload score before you must spend 1 attack or 1 action to reload. You must have one free hand to reload a firearm.",
+      "Misfire. Whenever you make an attack roll with a firearm, and the dice roll is equal to or lower than the weapon’s Misfire score, the weapon misfires. The attack misses, and the weapon cannot be used again until you spend an action to try and repair it. To repair your firearm, you must make a successful Tinker’s Tools check (DC equal to 8 + misfire score). If your check fails, the weapon is broken and must be mended out of combat at a quarter of the cost of the firearm. Creatures who use a firearm without being proficient increase the weapon’s misfire score by 1.",
+      "Explosive. Upon a hit, everything within 5 ft of the target must make a Dexterity saving throw (DC equal to 8 + your proficiency bonus + your Dexterity modifier) or suffer 1d8 fire damage. If the weapon misses, the ammunition fails to detonate, or bounces away harmlessly before doing so.",
+      "Ammunition",
+      "All firearms require ammunition to make an attack, and due to their rare nature, ammunition may be near impossible to find or purchase. However, if materials are gathered, you can craft ammunition yourself using your Tinker’s Tools at half the cost. Each firearm uses its own unique ammunition and is generally sold or crafted in batches listed below next to the price.",
+      "THIS IS UNOFFICIAL MATERIAL",
+      "These game mechanics are usable in your campaign if your DM allows them but not refined by final game design and editing. They aren’t officially part of the Dungeons & Dragons game and aren’t permitted in D&D Adventurers League events unless otherwise stated."
+    ],
+    "weight": "1 lb",
+    "damage": "1d8 piercing",
+    "properties": "Light, Reload, Misfire",
+    "tags": [],
+    "link": "https://www.dndbeyond.com//equipment/palm-pistol-exandria"
+  },
+  {
+    "_id": {
+      "$oid": "62a0ad739feae631a057abf5"
+    },
+    "name": "Pepperbox (Exandria)",
+    "type": "Firearms Ranged Weapon",
+    "prize": "250 gp",
+    "description": [
+      "Firearms are a new and volatile technology, and as such bring their own unique set of weapon properties. Some properties are followed by a number, and this number signifies an element of that property (outlined below). These properties replace the optional ones presented in the Dungeon Master’s Guide. Firearms are ranged weapons.",
+      "Reload. The weapon can be fired a number of times equal to its Reload score before you must spend 1 attack or 1 action to reload. You must have one free hand to reload a firearm.",
+      "Misfire. Whenever you make an attack roll with a firearm, and the dice roll is equal to or lower than the weapon’s Misfire score, the weapon misfires. The attack misses, and the weapon cannot be used again until you spend an action to try and repair it. To repair your firearm, you must make a successful Tinker’s Tools check (DC equal to 8 + misfire score). If your check fails, the weapon is broken and must be mended out of combat at a quarter of the cost of the firearm. Creatures who use a firearm without being proficient increase the weapon’s misfire score by 1.AmmunitionAll firearms require ammunition to make an attack, and due to their rare nature, ammunition may be near impossible to find or purchase. However, if materials are gathered, you can craft ammunition yourself using your Tinker’s Tools at half the cost. Each firearm uses its own unique ammunition and is generally sold or crafted in batches listed below next to the price.",
+      "THIS IS UNOFFICIAL MATERIAL",
+      "These game mechanics are usable in your campaign if your DM allows them but not refined by final game design and editing. They aren’t officially part of the Dungeons & Dragons game and aren’t permitted in D&D Adventurers League events unless otherwise stated."
+    ],
+    "weight": "5 lbs",
+    "damage": "1d10 piercing",
+    "properties": "Reload, Misfire",
+    "tags": [],
+    "link": "https://www.dndbeyond.com//equipment/pepperbox-exandria"
+  },
+  {
+    "_id": {
+      "$oid": "62a0ad739feae631a057abf6"
+    },
+    "name": "Pike",
+    "type": "Martial Melee Weapon",
+    "prize": "5 gp",
+    "description": [
+      "Proficiency with a pike allows you to add your proficiency bonus to the attack roll for any attack you make with it."
+    ],
+    "weight": "18 lbs",
+    "damage": "1d10 piercing",
+    "properties": "Heavy, Reach, Two-Handed",
+    "tags": ["Damage", "Control", "Combat"],
+    "link": "https://www.dndbeyond.com//equipment/pike"
+  },
+  {
+    "_id": {
+      "$oid": "62a0ad739feae631a057abf7"
+    },
+    "name": "Pistol",
+    "type": "Firearms Ranged Weapon",
+    "prize": "250 gp",
+    "description": [
+      "It’s up to you to decide whether a character has proficiency with a firearm. Characters in most D&D worlds wouldn’t have such proficiency. During their downtime, characters can use the training rules in the Player’s Handbook to acquire proficiency, assuming that they have enough ammunition to keep the weapons working while mastering their use."
+    ],
+    "weight": "3 lbs",
+    "damage": "1d10 piercing",
+    "properties": "Ammunition (Firearms), (Range 30/90), Loading",
+    "tags": ["Damage", "Combat"],
+    "link": "https://www.dndbeyond.com//equipment/pistol"
+  },
+  {
+    "_id": {
+      "$oid": "62a0ad739feae631a057abf8"
+    },
+    "name": "Pistol (Exandria)",
+    "type": "Firearms Ranged Weapon",
+    "prize": "150 gp",
+    "description": [
+      "Firearms are a new and volatile technology, and as such bring their own unique set of weapon properties. Some properties are followed by a number, and this number signifies an element of that property (outlined below). These properties replace the optional ones presented in the Dungeon Master’s Guide. Firearms are ranged weapons.",
+      "Reload. The weapon can be fired a number of times equal to its Reload score before you must spend 1 attack or 1 action to reload. You must have one free hand to reload a firearm.",
+      "Misfire. Whenever you make an attack roll with a firearm, and the dice roll is equal to or lower than the weapon’s Misfire score, the weapon misfires. The attack misses, and the weapon cannot be used again until you spend an action to try and repair it. To repair your firearm, you must make a successful Tinker’s Tools check (DC equal to 8 + misfire score). If your check fails, the weapon is broken and must be mended out of combat at a quarter of the cost of the firearm. Creatures who use a firearm without being proficient increase the weapon’s misfire score by 1.",
+      "Explosive. Upon a hit, everything within 5 ft of the target must make a Dexterity saving throw (DC equal to 8 + your proficiency bonus + your Dexterity modifier) or suffer 1d8 fire damage. If the weapon misses, the ammunition fails to detonate, or bounces away harmlessly before doing so.",
+      "Ammunition",
+      "All firearms require ammunition to make an attack, and due to their rare nature, ammunition may be near impossible to find or purchase. However, if materials are gathered, you can craft ammunition yourself using your Tinker’s Tools at half the cost. Each firearm uses its own unique ammunition and is generally sold or crafted in batches listed below next to the price.",
+      "THIS IS UNOFFICIAL MATERIAL",
+      "These game mechanics are usable in your campaign if your DM allows them but not refined by final game design and editing. They aren’t officially part of the Dungeons & Dragons game and aren’t permitted in D&D Adventurers League events unless otherwise stated."
+    ],
+    "weight": "3 lbs",
+    "damage": "1d10 piercing",
+    "properties": "Reload, Misfire",
+    "tags": [],
+    "link": "https://www.dndbeyond.com//equipment/pistol-exandria"
+  },
+  {
+    "_id": {
+      "$oid": "62a0ad739feae631a057abf9"
+    },
+    "name": "Pistol, Automatic",
+    "type": "Firearms Ranged Weapon",
+    "prize": " -- ",
+    "description": [
+      "It’s up to you to decide whether a character has proficiency with a firearm. Characters in most D&D worlds wouldn’t have such proficiency. During their downtime, characters can use the training rules in the Player’s Handbook to acquire proficiency, assuming that they have enough ammunition to keep the weapons working while mastering their use."
+    ],
+    "weight": "3 lbs",
+    "damage": "2d6 piercing",
+    "properties": "Ammunition (Firearms), (Range 50/150), Reload",
+    "tags": ["Damage", "Combat"],
+    "link": "https://www.dndbeyond.com//equipment/pistol-automatic"
+  },
+  {
+    "_id": {
+      "$oid": "62a0ad739feae631a057abfa"
+    },
+    "name": "Quarterstaff",
+    "type": "Simple Melee Weapon",
+    "prize": "2 sp",
+    "description": [
+      "Proficiency with a quarterstaff allows you to add your proficiency bonus to the attack roll for any attack you make with it."
+    ],
+    "weight": "4 lbs",
+    "damage": "1d6 bludgeoning",
+    "properties": "Versatile (1d8)",
+    "tags": ["Damage", "Combat"],
+    "link": "https://www.dndbeyond.com//equipment/quarterstaff"
+  },
+  {
+    "_id": {
+      "$oid": "62a0ad739feae631a057abfb"
+    },
+    "name": "Rapier",
+    "type": "Martial Melee Weapon",
+    "prize": "25 gp",
+    "description": [
+      "Proficiency with a rapier allows you to add your proficiency bonus to the attack roll for any attack you make with it."
+    ],
+    "weight": "2 lbs",
+    "damage": "1d8 piercing",
+    "properties": "Finesse",
+    "tags": ["Damage", "Combat"],
+    "link": "https://www.dndbeyond.com//equipment/rapier"
+  },
+  {
+    "_id": {
+      "$oid": "62a0ad739feae631a057abfc"
+    },
+    "name": "Revolver",
+    "type": "Firearms Ranged Weapon",
+    "prize": " -- ",
+    "description": [
+      "It’s up to you to decide whether a character has proficiency with a firearm. Characters in most D&D worlds wouldn’t have such proficiency. During their downtime, characters can use the training rules in the Player’s Handbook to acquire proficiency, assuming that they have enough ammunition to keep the weapons working while mastering their use."
+    ],
+    "weight": "3 lbs",
+    "damage": "2d8 piercing",
+    "properties": "Ammunition (Firearms), (Range 40/120), Reload",
+    "tags": ["Damage", "Combat"],
+    "link": "https://www.dndbeyond.com//equipment/revolver"
+  },
+  {
+    "_id": {
+      "$oid": "62a0ad739feae631a057abfd"
+    },
+    "name": "Rifle, Automatic",
+    "type": "Firearms Ranged Weapon",
+    "prize": " -- ",
+    "description": [
+      "It’s up to you to decide whether a character has proficiency with a firearm. Characters in most D&D worlds wouldn’t have such proficiency. During their downtime, characters can use the training rules in the Player’s Handbook to acquire proficiency, assuming that they have enough ammunition to keep the weapons working while mastering their use."
+    ],
+    "weight": "8 lbs",
+    "damage": "2d8 piercing",
+    "properties": "Ammunition (Firearms), (Range 80/240), Reload, Two-Handed, Burst Fire",
+    "tags": ["Damage", "Combat"],
+    "link": "https://www.dndbeyond.com//equipment/rifle-automatic"
+  },
+  {
+    "_id": {
+      "$oid": "62a0ad739feae631a057abfe"
+    },
+    "name": "Rifle, Hunting",
+    "type": "Firearms Ranged Weapon",
+    "prize": " -- ",
+    "description": [
+      "It’s up to you to decide whether a character has proficiency with a firearm. Characters in most D&D worlds wouldn’t have such proficiency. During their downtime, characters can use the training rules in the Player’s Handbook to acquire proficiency, assuming that they have enough ammunition to keep the weapons working while mastering their use."
+    ],
+    "weight": "8 lbs",
+    "damage": "2d10 piercing",
+    "properties": "Ammunition (Firearms), (Range 80/240), Reload, Two-Handed",
+    "tags": ["Damage", "Combat"],
+    "link": "https://www.dndbeyond.com//equipment/rifle-hunting"
+  },
+  {
+    "_id": {
+      "$oid": "62a0ad739feae631a057abff"
+    },
+    "name": "Scimitar",
+    "type": "Martial Melee Weapon",
+    "prize": "25 gp",
+    "description": [
+      "Proficiency with a scimitar allows you to add your proficiency bonus to the attack roll for any attack you make with it."
+    ],
+    "weight": "3 lbs",
+    "damage": "1d6 slashing",
+    "properties": "Finesse, Light",
+    "tags": ["Damage", "Combat"],
+    "link": "https://www.dndbeyond.com//equipment/scimitar"
+  },
+  {
+    "_id": {
+      "$oid": "62a0ad739feae631a057ac00"
+    },
+    "name": "Shortbow",
+    "type": "Simple Ranged Weapon",
+    "prize": "25 gp",
+    "description": [
+      "Proficiency with a shortbow allows you to add your proficiency bonus to the attack roll for any attack you make with it."
+    ],
+    "weight": "2 lbs",
+    "damage": "1d6 piercing",
+    "properties": "Ammunition, (Range 80/320), Two-Handed",
+    "tags": ["Damage", "Combat"],
+    "link": "https://www.dndbeyond.com//equipment/shortbow"
+  },
+  {
+    "_id": {
+      "$oid": "62a0ad739feae631a057ac01"
+    },
+    "name": "Shortsword",
+    "type": "Martial Melee Weapon",
+    "prize": "10 gp",
+    "description": [
+      "Proficiency with a shortsword allows you to add your proficiency bonus to the attack roll for any attack you make with it."
+    ],
+    "weight": "2 lbs",
+    "damage": "1d6 piercing",
+    "properties": "Finesse, Light",
+    "tags": ["Damage", "Combat"],
+    "link": "https://www.dndbeyond.com//equipment/shortsword"
+  },
+  {
+    "_id": {
+      "$oid": "62a0ad739feae631a057ac02"
+    },
+    "name": "Shotgun",
+    "type": "Firearms Ranged Weapon",
+    "prize": " -- ",
+    "description": [
+      "It’s up to you to decide whether a character has proficiency with a firearm. Characters in most D&D worlds wouldn’t have such proficiency. During their downtime, characters can use the training rules in the Player’s Handbook to acquire proficiency, assuming that they have enough ammunition to keep the weapons working while mastering their use."
+    ],
+    "weight": "7 lbs",
+    "damage": "2d8 piercing",
+    "properties": "Ammunition (Firearms), (Range 30/90), Reload, Two-Handed",
+    "tags": ["Damage", "Combat"],
+    "link": "https://www.dndbeyond.com//equipment/shotgun"
+  },
+  {
+    "_id": {
+      "$oid": "62a0ad739feae631a057ac03"
+    },
+    "name": "Sickle",
+    "type": "Simple Melee Weapon",
+    "prize": "1 gp",
+    "description": [
+      "Proficiency with a sickle allows you to add your proficiency bonus to the attack roll for any attack you make with it."
+    ],
+    "weight": "2 lbs",
+    "damage": "1d4 slashing",
+    "properties": "Light",
+    "tags": ["Damage", "Combat"],
+    "link": "https://www.dndbeyond.com//equipment/sickle"
+  },
+  {
+    "_id": {
+      "$oid": "62a0ad739feae631a057ac04"
+    },
+    "name": "Sling",
+    "type": "Simple Ranged Weapon",
+    "prize": "1 sp",
+    "description": [
+      "Proficiency with a sling allows you to add your proficiency bonus to the attack roll for any attack you make with it."
+    ],
+    "weight": " -- ",
+    "damage": "1d4 bludgeoning",
+    "properties": "Ammunition, (Range 30/120)",
+    "tags": ["Damage", "Combat"],
+    "link": "https://www.dndbeyond.com//equipment/sling"
+  },
+  {
+    "_id": {
+      "$oid": "62a0ad739feae631a057ac05"
+    },
+    "name": "Spear",
+    "type": "Simple Melee Weapon",
+    "prize": "1 gp",
+    "description": [
+      "Proficiency with a spear allows you to add your proficiency bonus to the attack roll for any attack you make with it."
+    ],
+    "weight": "3 lbs",
+    "damage": "1d6 piercing",
+    "properties": "Thrown (range 20/60), Versatile (1d8)",
+    "tags": ["Damage", "Combat"],
+    "link": "https://www.dndbeyond.com//equipment/spear"
+  },
+  {
+    "_id": {
+      "$oid": "62a0ad739feae631a057ac06"
+    },
+    "name": "Trident",
+    "type": "Martial Melee Weapon",
+    "prize": "5 gp",
+    "description": [
+      "Proficiency with a trident allows you to add your proficiency bonus to the attack roll for any attack you make with it."
+    ],
+    "weight": "4 lbs",
+    "damage": "1d6 piercing",
+    "properties": "Thrown (range 20/60), Versatile (1d8)",
+    "tags": ["Damage", "Combat"],
+    "link": "https://www.dndbeyond.com//equipment/trident"
+  },
+  {
+    "_id": {
+      "$oid": "62a0ad739feae631a057ac07"
+    },
+    "name": "War Pick",
+    "type": "Martial Melee Weapon",
+    "prize": "5 gp",
+    "description": [
+      "Proficiency with a war pick allows you to add your proficiency bonus to the attack roll for any attack you make with it."
+    ],
+    "weight": "2 lbs",
+    "damage": "1d8 piercing",
+    "properties": "",
+    "tags": ["Damage", "Combat"],
+    "link": "https://www.dndbeyond.com//equipment/war-pick"
+  },
+  {
+    "_id": {
+      "$oid": "62a0ad739feae631a057ac08"
+    },
+    "name": "Warhammer",
+    "type": "Martial Melee Weapon",
+    "prize": "15 gp",
+    "description": [
+      "Proficiency with a warhammer allows you to add your proficiency bonus to the attack roll for any attack you make with it."
+    ],
+    "weight": "2 lbs",
+    "damage": "1d8 bludgeoning",
+    "properties": "Versatile (1d10)",
+    "tags": ["Damage", "Combat"],
+    "link": "https://www.dndbeyond.com//equipment/warhammer"
+  },
+  {
+    "_id": {
+      "$oid": "62a0ad739feae631a057ac09"
+    },
+    "name": "Whip",
+    "type": "Martial Melee Weapon",
+    "prize": "2 gp",
+    "description": [
+      "Proficiency with a whip allows you to add your proficiency bonus to the attack roll for any attack you make with it."
+    ],
+    "weight": "3 lbs",
+    "damage": "1d4 slashing",
+    "properties": "Finesse, Reach",
+    "tags": ["Damage", "Control", "Combat"],
+    "link": "https://www.dndbeyond.com//equipment/whip"
+  },
+  {
+    "_id": {
+      "$oid": "62a0ad739feae631a057ac0a"
+    },
+    "name": "Yklwa",
+    "type": "Simple Melee Weapon",
+    "prize": "1 gp",
+    "description": [
+      "A yklwa (pronounced YICK-ul-wah) is a simple melee weapon that is the traditional weapon of Chultan warriors. A yklwa consists of a 3-foot wooden shaft with a steel or stone blade up to 18 inches long. It costs 1 gp, and it deals 1d8 piercing damage on a hit. Although it has the thrown weapon property, the yklwa is not well balanced for throwing (range 10/30 ft.)."
+    ],
+    "weight": "2 lbs",
+    "damage": "1d8 piercing",
+    "properties": "Thrown (range 10/30)",
+    "tags": ["Damage", "Combat"],
+    "link": "https://www.dndbeyond.com//equipment/yklwa"
+  }
+]

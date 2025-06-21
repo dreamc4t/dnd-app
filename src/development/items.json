@@ -1,0 +1,3859 @@
+[
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa2572633ca"
+    },
+    "name": "Abacus",
+    "type": "Adventuring Gear",
+    "prize": "2 gp",
+    "description": ["A standard tool used to make calculations."],
+    "weight": "2 lbs",
+    "tags": ["Utility"],
+    "link": "https://www.dndbeyond.com//equipment/abacus"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa2572633cb"
+    },
+    "name": "Acid (vial)",
+    "type": "Adventuring Gear",
+    "prize": "25 gp",
+    "description": [
+      "As an action, you can splash the contents of this vial onto a creature within 5 feet of you or throw the vial up to 20 feet, shattering it on impact. In either case, make a ranged attack against a creature or object, treating the acid as an improvised weapon. On a hit, the target takes 2d6 acid damage."
+    ],
+    "weight": "1 lb",
+    "tags": ["Damage", "Utility", "Combat"],
+    "link": "https://www.dndbeyond.com//equipment/acid-vial"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa2572633cc"
+    },
+    "name": "Alchemist's Fire (flask)",
+    "type": "Adventuring Gear",
+    "prize": "50 gp",
+    "description": [
+      "This sticky, adhesive fluid ignites when exposed to air. As an action, you can throw this flask up to 20 feet, shattering it on impact. Make a ranged attack against a creature or object, treating the alchemist's fire as an improvised weapon. On a hit, the target takes 1d4 fire damage at the start of each of its turns. A creature can end this damage by using its action to make a DC 10 Dexterity check to extinguish the flames."
+    ],
+    "weight": "1 lb",
+    "tags": ["Damage", "Utility", "Combat", "Consumable"],
+    "link": "https://www.dndbeyond.com//equipment/alchemists-fire-flask"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa2572633cd"
+    },
+    "name": "Alchemist's Supplies",
+    "type": "Tool",
+    "prize": "50 gp",
+    "description": [
+      "These special tools include the items needed to pursue a craft or trade. Proficiency with a set of artisan's tools lets you add your proficiency bonus to any ability checks you make using the tools in your craft. Each type of artisan's tools requires a separate proficiency."
+    ],
+    "weight": "8 lbs",
+    "tags": ["Utility"],
+    "link": "https://www.dndbeyond.com//equipment/alchemists-supplies"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa2572633ce"
+    },
+    "name": "Alexandrite",
+    "type": "Gemstone",
+    "prize": "500 gp",
+    "description": ["A transparent dark green gemstone worth 500 gold pieces"],
+    "weight": " -- ",
+    "tags": [],
+    "link": "https://www.dndbeyond.com//equipment/alexandrite"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa2572633cf"
+    },
+    "name": "Alms Box",
+    "type": "Adventuring Gear",
+    "prize": " -- ",
+    "description": ["A small box for alms, typically found in a priest's pack."],
+    "weight": " -- ",
+    "tags": ["Utility"],
+    "link": "https://www.dndbeyond.com//equipment/alms-box"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa2572633d0"
+    },
+    "name": "Amber",
+    "type": "Gemstone",
+    "prize": "100 gp",
+    "description": [
+      "A transparent watery gold to rich gold gemstone worth 100 gold pieces. "
+    ],
+    "weight": " -- ",
+    "tags": [],
+    "link": "https://www.dndbeyond.com//equipment/amber"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa2572633d1"
+    },
+    "name": "Amethyst",
+    "type": "Gemstone",
+    "prize": "100 gp",
+    "description": ["A transparent deep purple gemstone worth 100 gold pieces."],
+    "weight": " -- ",
+    "tags": [],
+    "link": "https://www.dndbeyond.com//equipment/amethyst"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa2572633d2"
+    },
+    "name": "Amulet",
+    "type": "Holy Symbol",
+    "prize": "5 gp",
+    "description": [
+      "A holy symbol is a representation of a god or pantheon. A cleric or paladin can use a holy symbol as a spellcasting focus, as described in the Spellcasting section. To use the symbol in this way, the caster must hold it in hand, wear it visibly, or bear it on a shield."
+    ],
+    "weight": "1 lb",
+    "tags": ["Utility"],
+    "link": "https://www.dndbeyond.com//equipment/amulet"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa2572633d3"
+    },
+    "name": "Antitoxin",
+    "type": "Adventuring Gear",
+    "prize": "50 gp",
+    "description": [
+      "A creature that drinks this vial of liquid gains advantage on saving throws against poison for 1 hour. It confers no benefit to undead or constructs."
+    ],
+    "weight": " -- ",
+    "tags": ["Healing", "Utility"],
+    "link": "https://www.dndbeyond.com//equipment/antitoxin"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa2572633d4"
+    },
+    "name": "Aquamarine",
+    "type": "Gemstone",
+    "prize": "500 gp",
+    "description": ["A transparent pale blue-green gemstone worth 500 gold pieces. "],
+    "weight": " -- ",
+    "tags": [],
+    "link": "https://www.dndbeyond.com//equipment/aquamarine"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa2572633d5"
+    },
+    "name": "Arcane Focus",
+    "type": "Arcane Focus",
+    "prize": " -- ",
+    "description": [
+      "An arcane focus is a special item designed to channel the power of arcane spells. A sorcerer, warlock, or wizard can use such an item as a spellcasting focus, as described in the Spellcasting section."
+    ],
+    "weight": " -- ",
+    "tags": ["Utility"],
+    "link": "https://www.dndbeyond.com//equipment/arcane-focus"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa2572633d6"
+    },
+    "name": "Arrows",
+    "type": "Ammunition",
+    "prize": "1 gp",
+    "description": [
+      "Arrows are used with a weapon that has the ammunition property to make a ranged attack. Each time you attack with the weapon, you expend one piece of ammunition. Drawing the ammunition from a quiver, case, or other container is part of the attack (you need a free hand to load a one-handed weapon). At the end of the battle, you can recover half your expended ammunition by taking a minute to search the battlefield."
+    ],
+    "weight": "1 lb",
+    "tags": ["Damage", "Combat"],
+    "link": "https://www.dndbeyond.com//equipment/arrows"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa2572633d7"
+    },
+    "name": "Assassin's Blood (Ingested)",
+    "type": "Poison",
+    "prize": "150 gp",
+    "description": [
+      "A creature subjected to this poison must make a DC 10 Constitution saving throw. On a failed save, it takes 6 (1d12) poison damage and is poisoned for 24 hours. On a successful save, the creature takes half damage and isn't poisoned.",
+      "Ingested. A creature must swallow an entire dose of ingested poison to suffer its effects. The dose can be delivered in food or a liquid. You may decide that a partial dose has a reduced effect, such as allowing advantage on the saving throw or dealing only half damage on a failed save."
+    ],
+    "weight": " -- ",
+    "tags": ["Damage", "Consumable"],
+    "link": "https://www.dndbeyond.com//equipment/assassins-blood-ingested"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa2572633d8"
+    },
+    "name": "Azurite",
+    "type": "Gemstone",
+    "prize": "10 gp",
+    "description": ["An opaque mottled deep blue gemstone worth 10 gold pieces"],
+    "weight": " -- ",
+    "tags": [],
+    "link": "https://www.dndbeyond.com//equipment/azurite"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa2572633d9"
+    },
+    "name": "Backpack",
+    "type": "Adventuring Gear",
+    "prize": "2 gp",
+    "description": [
+      "A backpack is a leather pack carried on the back, typically with straps to secure it. A backpack can hold 1 cubic foot/ 30 pounds of gear.",
+      "You can also strap items, such as a bedroll or a coil of rope, to the outside of a backpack."
+    ],
+    "weight": "5 lbs",
+    "tags": ["Container"],
+    "link": "https://www.dndbeyond.com//equipment/backpack"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa2572633da"
+    },
+    "name": "Bad News Bullets",
+    "type": "Ammunition",
+    "prize": "10 gp",
+    "description": [
+      "Firearm bullets are used with a weapon that has the reload property to make a ranged attack. Each time you attack with the weapon, you expend one piece of ammunition. Drawing the ammunition from a case, or other container is part of the attack (you need a free hand to load a one-handed weapon)."
+    ],
+    "weight": " -- ",
+    "tags": [],
+    "link": "https://www.dndbeyond.com//equipment/bad-news-bullets"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa2572633db"
+    },
+    "name": "Bagpipes",
+    "type": "Tool",
+    "prize": "30 gp",
+    "description": [
+      "If you have proficiency with a given musical instrument, you can add your proficiency bonus to any ability checks you make to play music with the instrument. A bard can use bagpipes as a spellcasting focus."
+    ],
+    "weight": "6 lbs",
+    "tags": ["Instrument"],
+    "link": "https://www.dndbeyond.com//equipment/bagpipes"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa2572633dc"
+    },
+    "name": "Ball Bearings (bag of 1,000)",
+    "type": "Adventuring Gear",
+    "prize": "1 gp",
+    "description": [
+      "As an action, you can spill these tiny metal balls from their pouch to cover a level, square area that is 10 feet on a side. A creature moving across the covered area must succeed on a DC 10 Dexterity saving throw or fall prone. A creature moving through the area at half speed doesn't need to make the save."
+    ],
+    "weight": "2 lbs",
+    "tags": ["Control", "Utility", "Combat"],
+    "link": "https://www.dndbeyond.com//equipment/ball-bearings-bag-of-1-000"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa2572633dd"
+    },
+    "name": "Banded Agate",
+    "type": "Gemstone",
+    "prize": "10 gp",
+    "description": [
+      "A translucent striped brown, blue, white, or red gemstone worth 10 gold pieces"
+    ],
+    "weight": " -- ",
+    "tags": [],
+    "link": "https://www.dndbeyond.com//equipment/banded-agate"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa2572633de"
+    },
+    "name": "Barding",
+    "type": "Adventuring Gear",
+    "prize": " -- ",
+    "description": [
+      "Barding is armor designed to protect an animal’s head, neck, chest, and body. Any type of armor can be purchased as barding. The cost is four times the equivalent armor made for humanoids, and it weighs twice as much.",
+      "Applicable Armor:"
+    ],
+    "weight": " -- ",
+    "tags": ["Warding"],
+    "link": "https://www.dndbeyond.com//equipment/barding"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa2572633df"
+    },
+    "name": "Barrel",
+    "type": "Adventuring Gear",
+    "prize": "2 gp",
+    "description": [
+      "A barrel can hold 40 gallons of liquid, or 4 cubic feet of solid material."
+    ],
+    "weight": "70 lbs",
+    "tags": ["Container"],
+    "link": "https://www.dndbeyond.com//equipment/barrel"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa2572633e0"
+    },
+    "name": "Basket",
+    "type": "Adventuring Gear",
+    "prize": "4 sp",
+    "description": ["A basket can hold 2 cubic feet/40 pounds of gear."],
+    "weight": "2 lbs",
+    "tags": ["Container"],
+    "link": "https://www.dndbeyond.com//equipment/basket"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa2572633e1"
+    },
+    "name": "Bedroll",
+    "type": "Adventuring Gear",
+    "prize": "1 gp",
+    "description": [
+      "You never know where you’re going to sleep, and a bedroll helps you get better sleep in a hayloft or on the cold ground. A bedroll consists of bedding and a blanket thin enough to be rolled up and tied. In an emergency, it can double as a stretcher."
+    ],
+    "weight": "7 lbs",
+    "tags": ["Utility"],
+    "link": "https://www.dndbeyond.com//equipment/bedroll"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa2572633e2"
+    },
+    "name": "Bell",
+    "type": "Adventuring Gear",
+    "prize": "1 gp",
+    "description": ["A standard bell that rings, typically used for signaling."],
+    "weight": " -- ",
+    "tags": ["Communication", "Utility"],
+    "link": "https://www.dndbeyond.com//equipment/bell"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa2572633e3"
+    },
+    "name": "Bit and Bridle",
+    "type": "Adventuring Gear",
+    "prize": "2 gp",
+    "description": ["Standard equipment used to direct a mount."],
+    "weight": "1 lb",
+    "tags": ["Utility"],
+    "link": "https://www.dndbeyond.com//equipment/bit-and-bridle"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa2572633e4"
+    },
+    "name": "Black Opal",
+    "type": "Gemstone",
+    "prize": "1000 gp",
+    "description": [
+      "A translucent dark green with black mottling and golden flecks gemstone worth 1,000 gold pieces"
+    ],
+    "weight": " -- ",
+    "tags": [],
+    "link": "https://www.dndbeyond.com//equipment/black-opal"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa2572633e5"
+    },
+    "name": "Black Pearl",
+    "type": "Gemstone",
+    "prize": "500 gp",
+    "description": ["An opaque pure black gemstone worth 500 gold pieces."],
+    "weight": " -- ",
+    "tags": [],
+    "link": "https://www.dndbeyond.com//equipment/black-pearl"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa2572633e6"
+    },
+    "name": "Black Sapphire",
+    "type": "Gemstone",
+    "prize": "5000 gp",
+    "description": [
+      "A translucent lustrous black gemstone with glowing highlights worth 5,000 gold pieces."
+    ],
+    "weight": " -- ",
+    "tags": [],
+    "link": "https://www.dndbeyond.com//equipment/black-sapphire"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa2572633e7"
+    },
+    "name": "Blanket",
+    "type": "Adventuring Gear",
+    "prize": "5 sp",
+    "description": ["A thick, quilted, blanket made to keep you warm in cold weather."],
+    "weight": "3 lbs",
+    "tags": ["Utility"],
+    "link": "https://www.dndbeyond.com//equipment/blanket"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa2572633e8"
+    },
+    "name": "Block and Tackle",
+    "type": "Adventuring Gear",
+    "prize": "1 gp",
+    "description": [
+      "A set of pulleys with a cable threaded through them and a hook to attach to objects, a block and tackle allows you to hoist up to four times the weight you can normally lift."
+    ],
+    "weight": "5 lbs",
+    "tags": ["Movement", "Utility", "Exploration"],
+    "link": "https://www.dndbeyond.com//equipment/block-and-tackle"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa2572633e9"
+    },
+    "name": "Block of Incense",
+    "type": "Adventuring Gear",
+    "prize": " -- ",
+    "description": ["A block of incense, typically found in a priest's pack."],
+    "weight": " -- ",
+    "tags": ["Social", "Utility"],
+    "link": "https://www.dndbeyond.com//equipment/block-of-incense"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa2572633ea"
+    },
+    "name": "Bloodstone",
+    "type": "Gemstone",
+    "prize": "50 gp",
+    "description": ["An opaque dark gray gemstone with red flecks worth 50 gold pieces"],
+    "weight": " -- ",
+    "tags": [],
+    "link": "https://www.dndbeyond.com//equipment/bloodstone"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa2572633eb"
+    },
+    "name": "Blowgun Needles",
+    "type": "Ammunition",
+    "prize": "1 gp",
+    "description": [
+      "Blowgun needles are used with a weapon that has the ammunition property to make a ranged attack. Each time you attack with the weapon, you expend one piece of ammunition. Drawing the ammunition from a quiver, case, or other container is part of the attack (you need a free hand to load a one-handed weapon). At the end of the battle, you can recover half your expended ammunition by taking a minute to search the battlefield."
+    ],
+    "weight": "1 lb",
+    "tags": ["Damage", "Combat"],
+    "link": "https://www.dndbeyond.com//equipment/blowgun-needles"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa2572633ec"
+    },
+    "name": "Blue quartz",
+    "type": "Gemstone",
+    "prize": "10 gp",
+    "description": ["A transparent pale blue gemstone worth 10 gold pieces"],
+    "weight": " -- ",
+    "tags": [],
+    "link": "https://www.dndbeyond.com//equipment/blue-quartz"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa2572633ed"
+    },
+    "name": "Blue Sapphire",
+    "type": "Gemstone",
+    "prize": "1000 gp",
+    "description": [
+      "A transparent blue-white to medium blue gemstone worth 1,000 gold pieces. "
+    ],
+    "weight": " -- ",
+    "tags": [],
+    "link": "https://www.dndbeyond.com//equipment/blue-sapphire"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa2572633ee"
+    },
+    "name": "Blue spinel",
+    "type": "Gemstone",
+    "prize": "500 gp",
+    "description": ["A transparent deep blue gemstone worth 500 gold pieces"],
+    "weight": " -- ",
+    "tags": [],
+    "link": "https://www.dndbeyond.com//equipment/blue-spinel"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa2572633ef"
+    },
+    "name": "Blunderbuss Bullets",
+    "type": "Ammunition",
+    "prize": "5 gp",
+    "description": [
+      "Firearm bullets are used with a weapon that has the reload property to make a ranged attack. Each time you attack with the weapon, you expend one piece of ammunition. Drawing the ammunition from a case, or other container is part of the attack (you need a free hand to load a one-handed weapon)."
+    ],
+    "weight": " -- ",
+    "tags": [],
+    "link": "https://www.dndbeyond.com//equipment/blunderbuss-bullets"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa2572633f0"
+    },
+    "name": "Bomb",
+    "type": "Adventuring Gear",
+    "prize": "150 gp",
+    "description": [
+      "As an action, a character can light this bomb and throw it at a point up to 60 feet away. Each creature within 5 feet of that point must succeed on a DC 12 Dexterity saving throw or take 3d6 fire damage."
+    ],
+    "weight": "1 lb",
+    "tags": ["Damage", "Combat"],
+    "link": "https://www.dndbeyond.com//equipment/bomb"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa2572633f1"
+    },
+    "name": "Book",
+    "type": "Adventuring Gear",
+    "prize": "25 gp",
+    "description": [
+      "A book might contain poetry, historical accounts, information pertaining to a particular field of lore, diagrams and notes on gnomish contraptions, or just about anything else that can be represented using text or pictures. A book of spells is a spellbook."
+    ],
+    "weight": "5 lbs",
+    "tags": ["Social", "Utility"],
+    "link": "https://www.dndbeyond.com//equipment/book"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa2572633f2"
+    },
+    "name": "Boots",
+    "type": "Adventuring Gear",
+    "prize": " -- ",
+    "description": ["A pair of boots - included as part of most sets of clothing."],
+    "weight": " -- ",
+    "tags": [],
+    "link": "https://www.dndbeyond.com//equipment/boots"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa2572633f3"
+    },
+    "name": "Bottle, Glass",
+    "type": "Adventuring Gear",
+    "prize": "2 gp",
+    "description": ["A bottle can hold 1 1/2 pints of liquid."],
+    "weight": "2 lbs",
+    "tags": ["Container"],
+    "link": "https://www.dndbeyond.com//equipment/bottle-glass"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa2572633f4"
+    },
+    "name": "Breastplate",
+    "type": "Medium Armor",
+    "prize": "400 gp",
+    "description": [
+      "This armor consists of a fitted metal chest piece worn with supple leather. Although it leaves the legs and arms relatively unprotected, this armor provides good protection for the wearer's vital organs while leaving the wearer relatively unencumbered."
+    ],
+    "weight": "20 lbs",
+    "tags": ["Warding"],
+    "link": "https://www.dndbeyond.com//equipment/breastplate"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa2572633f5"
+    },
+    "name": "Brewer's Supplies",
+    "type": "Tool",
+    "prize": "20 gp",
+    "description": [
+      "These special tools include the items needed to pursue a craft or trade. Proficiency with a set of artisan's tools lets you add your proficiency bonus to any ability checks you make using the tools in your craft. Each type of artisan's tools requires a separate proficiency."
+    ],
+    "weight": "9 lbs",
+    "tags": ["Utility"],
+    "link": "https://www.dndbeyond.com//equipment/brewers-supplies"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa2572633f6"
+    },
+    "name": "Bucket",
+    "type": "Adventuring Gear",
+    "prize": "5 cp",
+    "description": [
+      "A bucket can hold 3 gallons of liquid, or 1/2 cubic foot of solid material."
+    ],
+    "weight": "2 lbs",
+    "tags": ["Container"],
+    "link": "https://www.dndbeyond.com//equipment/bucket"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa2572633f7"
+    },
+    "name": "Bullets, Modern",
+    "type": "Ammunition",
+    "prize": " -- ",
+    "description": [
+      "The ammunition of a firearm is destroyed upon use. Renaissance and modern firearms use bullets."
+    ],
+    "weight": "1 lb",
+    "tags": ["Damage", "Combat"],
+    "link": "https://www.dndbeyond.com//equipment/bullets-modern"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa2572633f8"
+    },
+    "name": "Bullets, Renaissance",
+    "type": "Ammunition",
+    "prize": "3 gp",
+    "description": [
+      "The ammunition of a firearm is destroyed upon use. Renaissance and modern firearms use bullets."
+    ],
+    "weight": "2 lbs",
+    "tags": ["Damage", "Combat"],
+    "link": "https://www.dndbeyond.com//equipment/bullets-renaissance"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa2572633f9"
+    },
+    "name": "Burglar's Pack",
+    "type": "Equipment Pack",
+    "prize": "16 gp",
+    "description": [
+      "Includes a backpack, a bag of 1,000 ball bearings, 10 feet of string, a bell, 5 candles, a crowbar, a hammer, 10 pitons, a hooded lantern, 2 flasks of oil, 5 days rations, a tinderbox, and a waterskin. The pack also has 50 feet of hempen rope strapped to the side of it."
+    ],
+    "weight": "47 1/2 lbs",
+    "tags": ["Utility", "Exploration", "Container"],
+    "link": "https://www.dndbeyond.com//equipment/burglars-pack"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa2572633fa"
+    },
+    "name": "Burnt Othur Fumes (Inhaled)",
+    "type": "Poison",
+    "prize": "500 gp",
+    "description": [
+      "A creature subjected to this poison must succeed on a DC 13 Constitution saving throw or take 10 (3d6) poison damage, and must repeat the saving throw at the start of each of its turns. On each successive failed save, the character takes 3 (1d6) poison damage. After three successful saves, the poison ends.",
+      "Inhaled. These poisons are powders or gases that take effect when inhaled. Blowing the powder or releasing the gas subjects creatures in a 5-foot cube to its effect. The resulting cloud dissipates immediately afterward. Holding one's breath is ineffective against inhaled poisons, as they affect nasal membranes, tear ducts, and other parts of the body."
+    ],
+    "weight": " -- ",
+    "tags": ["Damage", "Consumable"],
+    "link": "https://www.dndbeyond.com//equipment/burnt-othur-fumes-inhaled"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa2572633fb"
+    },
+    "name": "Calligrapher's Supplies",
+    "type": "Tool",
+    "prize": "10 gp",
+    "description": [
+      "These special tools include the items needed to pursue a craft or trade. Proficiency with a set of artisan's tools lets you add your proficiency bonus to any ability checks you make using the tools in your craft. Each type of artisan's tools requires a separate proficiency."
+    ],
+    "weight": "5 lbs",
+    "tags": ["Utility"],
+    "link": "https://www.dndbeyond.com//equipment/calligraphers-supplies"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa2572633fc"
+    },
+    "name": "Caltrops (bag of 20)",
+    "type": "Adventuring Gear",
+    "prize": "1 gp",
+    "description": [
+      "As an action, you can spread a bag of caltrops to cover a square area that is 5 feet on a side. Any creature that enters the area must succeed on a DC 15 Dexterity saving throw or stop moving this turn and take 1 piercing damage. Taking this damage reduces the creature's walking speed by 10 feet until the creature regains at least 1 hit point. A creature moving through the area at half speed doesn't need to make the save."
+    ],
+    "weight": "2 lbs",
+    "tags": ["Damage", "Movement", "Combat"],
+    "link": "https://www.dndbeyond.com//equipment/caltrops-bag-of-20"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa2572633fd"
+    },
+    "name": "Camel",
+    "type": "Mount",
+    "prize": "50 gp",
+    "description": [
+      "Camel Statistics",
+      "A good mount can help you move more quickly through the wilderness, but its primary purpose is to carry the gear that would otherwise slow you down.",
+      "An animal pulling a carriage, cart, chariot, sled, or wagon can move weight up to five times its base carrying capacity, including the weight of the vehicle. If multiple animals pull the same vehicle, they can add their carrying capacity together."
+    ],
+    "weight": " -- ",
+    "tags": ["Movement", "Utility", "Exploration"],
+    "link": "https://www.dndbeyond.com//equipment/camel"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa2572633fe"
+    },
+    "name": "Candle",
+    "type": "Adventuring Gear",
+    "prize": "1 cp",
+    "description": [
+      "For 1 hour, a candle sheds bright light in a 5-foot radius and dim light for an additional 5 feet."
+    ],
+    "weight": " -- ",
+    "tags": ["Utility", "Exploration", "Consumable"],
+    "link": "https://www.dndbeyond.com//equipment/candle"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa2572633ff"
+    },
+    "name": "Carnelian",
+    "type": "Gemstone",
+    "prize": "50 gp",
+    "description": ["An opaque orange to red-brown gemstone worth 50 gold pieces"],
+    "weight": " -- ",
+    "tags": [],
+    "link": "https://www.dndbeyond.com//equipment/carnelian"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa257263400"
+    },
+    "name": "Carpenter's Tools",
+    "type": "Tool",
+    "prize": "8 gp",
+    "description": [
+      "These special tools include the items needed to pursue a craft or trade. Proficiency with a set of artisan's tools lets you add your proficiency bonus to any ability checks you make using the tools in your craft. Each type of artisan's tools requires a separate proficiency."
+    ],
+    "weight": "6 lbs",
+    "tags": ["Utility"],
+    "link": "https://www.dndbeyond.com//equipment/carpenters-tools"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa257263401"
+    },
+    "name": "Carriage",
+    "type": "Vehicle (Land)",
+    "prize": "100 gp",
+    "description": [
+      "If you have proficiency with a certain kind of vehicle (land or water), you can add your proficiency bonus to any check you make to control that kind of vehicle in difficult circumstances."
+    ],
+    "weight": "600 lbs",
+    "tags": ["Movement", "Utility", "Exploration"],
+    "link": "https://www.dndbeyond.com//equipment/carriage"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa257263402"
+    },
+    "name": "Cart",
+    "type": "Vehicle (Land)",
+    "prize": "15 gp",
+    "description": [
+      "If you have proficiency with a certain kind of vehicle (land or water), you can add your proficiency bonus to any check you make to control that kind of vehicle in difficult circumstances."
+    ],
+    "weight": "200 lbs",
+    "tags": ["Movement", "Utility", "Exploration"],
+    "link": "https://www.dndbeyond.com//equipment/cart"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa257263403"
+    },
+    "name": "Cartographer's Tools",
+    "type": "Tool",
+    "prize": "15 gp",
+    "description": [
+      "These special tools include the items needed to pursue a craft or trade. Proficiency with a set of artisan's tools lets you add your proficiency bonus to any ability checks you make using the tools in your craft. Each type of artisan's tools requires a separate proficiency."
+    ],
+    "weight": "6 lbs",
+    "tags": ["Utility"],
+    "link": "https://www.dndbeyond.com//equipment/cartographers-tools"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa257263404"
+    },
+    "name": "Case, Crossbow Bolt",
+    "type": "Adventuring Gear",
+    "prize": "1 gp",
+    "description": ["This wooden case can hold up to twenty crossbow bolts."],
+    "weight": "1 lb",
+    "tags": ["Container"],
+    "link": "https://www.dndbeyond.com//equipment/case-crossbow-bolt"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa257263405"
+    },
+    "name": "Case, Map or Scroll",
+    "type": "Adventuring Gear",
+    "prize": "1 gp",
+    "description": [
+      "This cylindrical leather case can hold up to ten rolled-up sheets of paper or five rolled-up sheets of parchment."
+    ],
+    "weight": "1 lb",
+    "tags": ["Container"],
+    "link": "https://www.dndbeyond.com//equipment/case-map-or-scroll"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa257263406"
+    },
+    "name": "Censer",
+    "type": "Adventuring Gear",
+    "prize": " -- ",
+    "description": ["A censer, typically found in a priest's pack."],
+    "weight": " -- ",
+    "tags": ["Utility"],
+    "link": "https://www.dndbeyond.com//equipment/censer"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa257263407"
+    },
+    "name": "Chain (10 feet)",
+    "type": "Adventuring Gear",
+    "prize": "5 gp",
+    "description": [
+      "A chain has 10 hit points. It can be burst with a successful DC 20 Strength check."
+    ],
+    "weight": "10 lbs",
+    "tags": ["Utility"],
+    "link": "https://www.dndbeyond.com//equipment/chain-10-feet"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa257263408"
+    },
+    "name": "Chain Mail",
+    "type": "Heavy Armor",
+    "prize": "75 gp",
+    "description": [
+      "Made of interlocking metal rings, chain mail includes a layer of quilted fabric worn underneath the mail to prevent chafing and to cushion the impact of blows. The suit includes gauntlets."
+    ],
+    "weight": "55 lbs",
+    "tags": ["Warding"],
+    "link": "https://www.dndbeyond.com//equipment/chain-mail"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa257263409"
+    },
+    "name": "Chain Shirt",
+    "type": "Medium Armor",
+    "prize": "50 gp",
+    "description": [
+      "Made of interlocking metal rings, a chain shirt is worn between layers of clothing or leather. This armor offers modest protection to the wearer's upper body and allows the sound of the rings rubbing against one another to be muffled by outer layers."
+    ],
+    "weight": "20 lbs",
+    "tags": ["Warding"],
+    "link": "https://www.dndbeyond.com//equipment/chain-shirt"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa25726340a"
+    },
+    "name": "Chalcedony",
+    "type": "Gemstone",
+    "prize": "50 gp",
+    "description": ["An opaque white gemstone worth 50 gold pieces."],
+    "weight": " -- ",
+    "tags": [],
+    "link": "https://www.dndbeyond.com//equipment/chalcedony"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa25726340b"
+    },
+    "name": "Chalk (1 piece)",
+    "type": "Adventuring Gear",
+    "prize": "1 cp",
+    "description": ["A piece of chalk used for writing and marking on various surfaces."],
+    "weight": " -- ",
+    "tags": ["Communication", "Utility", "Consumable"],
+    "link": "https://www.dndbeyond.com//equipment/chalk-1-piece"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa25726340c"
+    },
+    "name": "Chariot",
+    "type": "Vehicle (Land)",
+    "prize": "250 gp",
+    "description": [
+      "If you have proficiency with a certain kind of vehicle (land or water), you can add your proficiency bonus to any check you make to control that kind of vehicle in difficult circumstances."
+    ],
+    "weight": "100 lbs",
+    "tags": ["Movement", "Utility", "Exploration"],
+    "link": "https://www.dndbeyond.com//equipment/chariot"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa25726340d"
+    },
+    "name": "Chest",
+    "type": "Adventuring Gear",
+    "prize": "5 gp",
+    "description": ["A chest can hold 12 cubic feet/ 300 pounds of gear."],
+    "weight": "25 lbs",
+    "tags": ["Container"],
+    "link": "https://www.dndbeyond.com//equipment/chest"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa25726340e"
+    },
+    "name": "Chrysoberyl",
+    "type": "Gemstone",
+    "prize": "100 gp",
+    "description": [
+      "A transparent yellow-green to pale green gemstone worth 100 gold pieces"
+    ],
+    "weight": " -- ",
+    "tags": [],
+    "link": "https://www.dndbeyond.com//equipment/chrysoberyl"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa25726340f"
+    },
+    "name": "Chrysoprase",
+    "type": "Gemstone",
+    "prize": "50 gp",
+    "description": ["A translucent green gemstone worth 50 gold pieces"],
+    "weight": " -- ",
+    "tags": [],
+    "link": "https://www.dndbeyond.com//equipment/chrysoprase"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa257263410"
+    },
+    "name": "Citrine",
+    "type": "Gemstone",
+    "prize": "50 gp",
+    "description": ["A transparent pale yellow-brown gemstone worth 50 gold pieces"],
+    "weight": " -- ",
+    "tags": [],
+    "link": "https://www.dndbeyond.com//equipment/citrine"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa257263411"
+    },
+    "name": "Climber's Kit",
+    "type": "Adventuring Gear",
+    "prize": "25 gp",
+    "description": [
+      "A climber's kit includes special pitons, boot tips, gloves, and a harness. You can use the climber's kit as an action to anchor yourself; when you do, you can't fall more than 25 feet from the point where you anchored yourself, and you can't climb more than 25 feet away from that point without undoing the anchor."
+    ],
+    "weight": "12 lbs",
+    "tags": ["Movement", "Utility", "Exploration"],
+    "link": "https://www.dndbeyond.com//equipment/climbers-kit"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa257263412"
+    },
+    "name": "Clothes, Common",
+    "type": "Adventuring Gear",
+    "prize": "5 sp",
+    "description": [
+      "This set of clothes could consist of a loose shirt and baggy breeches, or a loose shirt and skirt or overdress. Cloth wrappings are used for shoes."
+    ],
+    "weight": "3 lbs",
+    "tags": ["Social", "Outerwear"],
+    "link": "https://www.dndbeyond.com//equipment/clothes-common"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa257263413"
+    },
+    "name": "Clothes, Costume",
+    "type": "Adventuring Gear",
+    "prize": "5 gp",
+    "description": [
+      "This set of clothes is fashioned after a particular costume, typically meant for entertaining."
+    ],
+    "weight": "4 lbs",
+    "tags": ["Social", "Deception", "Outerwear"],
+    "link": "https://www.dndbeyond.com//equipment/clothes-costume"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa257263414"
+    },
+    "name": "Clothes, Fine",
+    "type": "Adventuring Gear",
+    "prize": "15 gp",
+    "description": [
+      "This set of clothes is designed specifically to be expensive and to show it, including fancy, tailored clothes in whatever fashion happens to be the current style in the courts of the nobles. Precious metals and gems could be worked into the clothing."
+    ],
+    "weight": "6 lbs",
+    "tags": ["Social", "Outerwear"],
+    "link": "https://www.dndbeyond.com//equipment/clothes-fine"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa257263415"
+    },
+    "name": "Clothes, Traveler's",
+    "type": "Adventuring Gear",
+    "prize": "2 gp",
+    "description": [
+      "This set of clothes could consist of boots, a wool skirt or breeches, a sturdy belt, a shirt (perhaps with a vest or jacket), and an ample cloak with a hood."
+    ],
+    "weight": "4 lbs",
+    "tags": ["Social", "Outerwear"],
+    "link": "https://www.dndbeyond.com//equipment/clothes-travelers"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa257263416"
+    },
+    "name": "Cobbler's Tools",
+    "type": "Tool",
+    "prize": "5 gp",
+    "description": [
+      "These special tools include the items needed to pursue a craft or trade. Proficiency with a set of artisan's tools lets you add your proficiency bonus to any ability checks you make using the tools in your craft. Each type of artisan's tools requires a separate proficiency."
+    ],
+    "weight": "5 lbs",
+    "tags": ["Utility"],
+    "link": "https://www.dndbeyond.com//equipment/cobblers-tools"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa257263417"
+    },
+    "name": "Component Pouch",
+    "type": "Adventuring Gear",
+    "prize": "25 gp",
+    "description": [
+      "A component pouch is a small, watertight leather belt pouch that has compartments to hold all the material components and other special items you need to cast your spells, except for those components that have a specific cost (as indicated in a spell's description)."
+    ],
+    "weight": "2 lbs",
+    "tags": ["Utility", "Container"],
+    "link": "https://www.dndbeyond.com//equipment/component-pouch"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa257263418"
+    },
+    "name": "Cook's Utensils",
+    "type": "Tool",
+    "prize": "1 gp",
+    "description": [
+      "These special tools include the items needed to pursue a craft or trade. Proficiency with a set of artisan's tools lets you add your proficiency bonus to any ability checks you make using the tools in your craft. Each type of artisan's tools requires a separate proficiency."
+    ],
+    "weight": "8 lbs",
+    "tags": ["Utility"],
+    "link": "https://www.dndbeyond.com//equipment/cooks-utensils"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa257263419"
+    },
+    "name": "Coral",
+    "type": "Gemstone",
+    "prize": "100 gp",
+    "description": ["An opaque crimson gemstone worth 100 gold pieces"],
+    "weight": " -- ",
+    "tags": [],
+    "link": "https://www.dndbeyond.com//equipment/coral"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa25726341a"
+    },
+    "name": "Crawler Mucus (Contact)",
+    "type": "Poison",
+    "prize": "200 gp",
+    "description": [
+      "This poison must be harvested from a dead or incapacitated crawler. A creature subjected to this poison must succeed on a DC 13 Constitution saving throw or be poisoned for 1 minute. The poisoned creature is paralyzed. The creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.",
+      "Contact. Contact poison can be smeared on an object and remains potent until it is touched or washed off. A creature that touches contact poison with exposed skin suffers its effects."
+    ],
+    "weight": " -- ",
+    "tags": ["Damage", "Debuff", "Consumable"],
+    "link": "https://www.dndbeyond.com//equipment/crawler-mucus-contact"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa25726341b"
+    },
+    "name": "Crossbow Bolts",
+    "type": "Ammunition",
+    "prize": "1 gp",
+    "description": [
+      "Crossbow bolts are used with a weapon that has the ammunition property to make a ranged attack. Each time you attack with the weapon, you expend one piece of ammunition. Drawing the ammunition from a quiver, case, or other container is part of the attack (you need a free hand to load a one-handed weapon). At the end of the battle, you can recover half your expended ammunition by taking a minute to search the battlefield."
+    ],
+    "weight": "1 1/2 lb",
+    "tags": ["Damage", "Combat"],
+    "link": "https://www.dndbeyond.com//equipment/crossbow-bolts"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa25726341c"
+    },
+    "name": "Crowbar",
+    "type": "Adventuring Gear",
+    "prize": "2 gp",
+    "description": [
+      "Using a crowbar grants advantage to Strength checks where the crowbar's leverage can be applied."
+    ],
+    "weight": "5 lbs",
+    "tags": ["Utility", "Exploration"],
+    "link": "https://www.dndbeyond.com//equipment/crowbar"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa25726341d"
+    },
+    "name": "Crystal",
+    "type": "Arcane Focus",
+    "prize": "10 gp",
+    "description": [
+      "An arcane focus is a special item designed to channel the power of arcane spells. A sorcerer, warlock, or wizard can use such an item as a spellcasting focus, as described in the Spellcasting section."
+    ],
+    "weight": "1 lb",
+    "tags": ["Utility"],
+    "link": "https://www.dndbeyond.com//equipment/crystal"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa25726341e"
+    },
+    "name": "Diamond",
+    "type": "Gemstone",
+    "prize": "5000 gp",
+    "description": [
+      "A transparent blue-white, canary, pink, brown, or blue gemstone worth 5,000 gold pieces. "
+    ],
+    "weight": " -- ",
+    "tags": [],
+    "link": "https://www.dndbeyond.com//equipment/diamond"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa25726341f"
+    },
+    "name": "Dice Set",
+    "type": "Tool",
+    "prize": "1 sp",
+    "description": [
+      "If you are proficient with a gaming set, you can add your proficiency bonus to ability checks you make to play a game with that set."
+    ],
+    "weight": " -- ",
+    "tags": ["Social"],
+    "link": "https://www.dndbeyond.com//equipment/dice-set"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa257263420"
+    },
+    "name": "Diplomat's Pack",
+    "type": "Equipment Pack",
+    "prize": "39 gp",
+    "description": [
+      "Includes a chest, 2 cases for maps and scrolls, a set of fine clothes, a bottle of ink, an ink pen, a lamp, 2 flasks of oil, 5 sheets of paper, a vial of perfume, sealing wax, and soap."
+    ],
+    "weight": "36 lbs",
+    "tags": ["Social", "Utility", "Exploration", "Container", "Outerwear"],
+    "link": "https://www.dndbeyond.com//equipment/diplomats-pack"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa257263421"
+    },
+    "name": "Disguise Kit",
+    "type": "Tool",
+    "prize": "25 gp",
+    "description": [
+      "This pouch of cosmetics, hair dye, and small props lets you create disguises that change your physical appearance. Proficiency with this kit lets you add your proficiency bonus to any ability checks you make to create a visual disguise."
+    ],
+    "weight": "3 lbs",
+    "tags": ["Utility", "Deception"],
+    "link": "https://www.dndbeyond.com//equipment/disguise-kit"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa257263422"
+    },
+    "name": "Donkey (or Mule)",
+    "type": "Mount",
+    "prize": "8 gp",
+    "description": [
+      "Mule Statistics",
+      "A good mount can help you move more quickly through the wilderness, but its primary purpose is to carry the gear that would otherwise slow you down.",
+      "An animal pulling a carriage, cart, chariot, sled, or wagon can move weight up to five times its base carrying capacity, including the weight of the vehicle. If multiple animals pull the same vehicle, they can add their carrying capacity together."
+    ],
+    "weight": " -- ",
+    "tags": ["Movement", "Utility", "Exploration"],
+    "link": "https://www.dndbeyond.com//equipment/donkey-or-mule"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa257263423"
+    },
+    "name": "Draft Horse",
+    "type": "Mount",
+    "prize": "50 gp",
+    "description": [
+      "Draft Horse Statistics",
+      "A good mount can help you move more quickly through the wilderness, but its primary purpose is to carry the gear that would otherwise slow you down.",
+      "An animal pulling a carriage, cart, chariot, sled, or wagon can move weight up to five times its base carrying capacity, including the weight of the vehicle. If multiple animals pull the same vehicle, they can add their carrying capacity together."
+    ],
+    "weight": " -- ",
+    "tags": ["Movement", "Utility", "Exploration"],
+    "link": "https://www.dndbeyond.com//equipment/draft-horse"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa257263424"
+    },
+    "name": "Dragonchess Set",
+    "type": "Tool",
+    "prize": "1 gp",
+    "description": [
+      "If you are proficient with a gaming set, you can add your proficiency bonus to ability checks you make to play a game with that set."
+    ],
+    "weight": "1/2 lb",
+    "tags": ["Social"],
+    "link": "https://www.dndbeyond.com//equipment/dragonchess-set"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa257263425"
+    },
+    "name": "Drow Poison (Injury)",
+    "type": "Poison",
+    "prize": "200 gp",
+    "description": [
+      "This poison is typically made only by the drow, and only in a place far removed from sunlight. A creature subjected to this poison must succeed on a DC 13 Constitution saving throw or be poisoned for 1 hour. If the saving throw fails by 5 or more, the creature is also unconscious while poisoned in this way. The creature wakes up if it takes damage or if another creature takes an action to shake it awake.",
+      "Injury. Injury poison can be applied to weapons, ammunition, trap components, and other objects that deal piercing or slashing damage and remains potent until delivered through a wound or washed off. A creature that takes piercing or slashing damage from an object coated with the poison is exposed to its effects."
+    ],
+    "weight": " -- ",
+    "tags": ["Damage", "Debuff", "Consumable"],
+    "link": "https://www.dndbeyond.com//equipment/drow-poison-injury"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa257263426"
+    },
+    "name": "Druidic Focus",
+    "type": "Druidic Focus",
+    "prize": " -- ",
+    "description": [
+      "A druid can use a Sprig of Mistletoe (or holly) as a spellcasting focus, as described in the Spellcasting section."
+    ],
+    "weight": " -- ",
+    "tags": ["Utility"],
+    "link": "https://www.dndbeyond.com//equipment/druidic-focus"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa257263427"
+    },
+    "name": "Drum",
+    "type": "Tool",
+    "prize": "6 gp",
+    "description": [
+      "If you have proficiency with a given musical instrument, you can add your proficiency bonus to any ability checks you make to play music with the instrument. A bard can use a musical instrument as a spellcasting focus."
+    ],
+    "weight": "3 lbs",
+    "tags": ["Instrument"],
+    "link": "https://www.dndbeyond.com//equipment/drum"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa257263428"
+    },
+    "name": "Dulcimer",
+    "type": "Tool",
+    "prize": "25 gp",
+    "description": [
+      "If you have proficiency with a given musical instrument, you can add your proficiency bonus to any ability checks you make to play music with the instrument. A bard can use a musical instrument as a spellcasting focus."
+    ],
+    "weight": "10 lbs",
+    "tags": ["Instrument"],
+    "link": "https://www.dndbeyond.com//equipment/dulcimer"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa257263429"
+    },
+    "name": "Dungeoneer's Pack",
+    "type": "Equipment Pack",
+    "prize": "12 gp",
+    "description": [
+      "Includes a backpack, a crowbar, a hammer, 10 pitons, 10 torches, a tinderbox, 10 days of rations, and a waterskin. The pack also has 50 feet of hempen rope strapped to the side of it."
+    ],
+    "weight": "61 1/2 lbs",
+    "tags": ["Utility", "Exploration", "Container"],
+    "link": "https://www.dndbeyond.com//equipment/dungeoneers-pack"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa25726342a"
+    },
+    "name": "Dynamite (Stick)",
+    "type": "Adventuring Gear",
+    "prize": " -- ",
+    "description": [
+      "As an action, a creature can light a stick of dynamite and throw it at a point up to 60 feet away. Each creature within 5 feet of that point must make a DC 12 Dexterity saving throw, taking 3d6 bludgeoning damage on a failed save, or half as much damage on a successful one.",
+      "A character can bind sticks of dynamite together so they explode at the same time. Each additional stick increases the damage by 1d6 (to a maximum of 10d6) and the burst radius by 5 feet (to a maximum of 20 feet).",
+      "Dynamite can be rigged with a longer fuse to explode after a set amount of time, usually 1 to 6 rounds. Roll initiative for the dynamite. After the set number of rounds goes by, the dynamite explodes on that initiative."
+    ],
+    "weight": "1 lb",
+    "tags": ["Damage", "Combat"],
+    "link": "https://www.dndbeyond.com//equipment/dynamite-stick"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa25726342b"
+    },
+    "name": "Elephant",
+    "type": "Mount",
+    "prize": "200 gp",
+    "description": [
+      "Elephant Statistics",
+      "A good mount can help you move more quickly through the wilderness, but its primary purpose is to carry the gear that would otherwise slow you down.",
+      "An animal pulling a carriage, cart, chariot, sled, or wagon can move weight up to five times its base carrying capacity, including the weight of the vehicle. If multiple animals pull the same vehicle, they can add their carrying capacity together."
+    ],
+    "weight": " -- ",
+    "tags": ["Movement", "Utility", "Exploration"],
+    "link": "https://www.dndbeyond.com//equipment/elephant"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa25726342c"
+    },
+    "name": "Emblem",
+    "type": "Holy Symbol",
+    "prize": "5 gp",
+    "description": [
+      "A holy symbol is a representation of a god or pantheon. A cleric or paladin can use a holy symbol as a spellcasting focus, as described in the Spellcasting section. To use the symbol in this way, the caster must hold it in hand, wear it visibly, or bear it on a shield."
+    ],
+    "weight": " -- ",
+    "tags": ["Utility"],
+    "link": "https://www.dndbeyond.com//equipment/emblem"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa25726342d"
+    },
+    "name": "Emerald",
+    "type": "Gemstone",
+    "prize": "1000 gp",
+    "description": ["A transparent deep bright green gemstone worth 1,000 gold pieces"],
+    "weight": " -- ",
+    "tags": [],
+    "link": "https://www.dndbeyond.com//equipment/emerald"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa25726342e"
+    },
+    "name": "Energy Cell",
+    "type": "Ammunition",
+    "prize": " -- ",
+    "description": [
+      "The ammunition of a firearm is destroyed upon use. Futuristic firearms are powered by a special type of ammunition called energy cells. An energy cell contains enough power for all the shots its firearm can make."
+    ],
+    "weight": "lb",
+    "tags": ["Damage", "Combat"],
+    "link": "https://www.dndbeyond.com//equipment/energy-cell"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa25726342f"
+    },
+    "name": "Entertainer's Pack",
+    "type": "Equipment Pack",
+    "prize": "40 gp",
+    "description": [
+      "Includes a backpack, a bedroll, 2 costumes, 5 candles, 5 days of rations, a waterskin, and a disguise kit."
+    ],
+    "weight": "38 lbs",
+    "tags": ["Social", "Utility", "Exploration", "Deception", "Container", "Outerwear"],
+    "link": "https://www.dndbeyond.com//equipment/entertainers-pack"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa257263430"
+    },
+    "name": "Essence of Ether (Inhaled)",
+    "type": "Poison",
+    "prize": "300 gp",
+    "description": [
+      "A creature subjected to this poison must succeed on a DC 15 Constitution saving throw or become poisoned for 8 hours. The poisoned creature is unconscious. The creature wakes up if it takes damage or if another creature takes an action to shake it awake.",
+      "Inhaled. These poisons are powders or gases that take effect when inhaled. Blowing the powder or releasing the gas subjects creatures in a 5-foot cube to its effect. The resulting cloud dissipates immediately afterward. Holding one's breath is ineffective against inhaled poisons, as they affect nasal membranes, tear ducts, and other parts of the body."
+    ],
+    "weight": " -- ",
+    "tags": ["Damage", "Debuff", "Consumable"],
+    "link": "https://www.dndbeyond.com//equipment/essence-of-ether-inhaled"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa257263431"
+    },
+    "name": "Explorer's Pack",
+    "type": "Equipment Pack",
+    "prize": "10 gp",
+    "description": [
+      "Includes a backpack, a bedroll, a mess kit, a tinderbox, 10 torches, 10 days of rations, and a waterskin. The pack also has 50 feet of hempen rope strapped to the side of it."
+    ],
+    "weight": "59 lbs",
+    "tags": ["Utility", "Exploration", "Container"],
+    "link": "https://www.dndbeyond.com//equipment/explorers-pack"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa257263432"
+    },
+    "name": "Eye agate",
+    "type": "Gemstone",
+    "prize": "10 gp",
+    "description": [
+      "A translucent gemstone with circles of gray, white, brown, blue, or green worth 10 gold pieces"
+    ],
+    "weight": " -- ",
+    "tags": [],
+    "link": "https://www.dndbeyond.com//equipment/eye-agate"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa257263433"
+    },
+    "name": "Feed (per day)",
+    "type": "Adventuring Gear",
+    "prize": "5 cp",
+    "description": ["Standard feed typically consumed by a mount per day."],
+    "weight": "10 lbs",
+    "tags": ["Utility", "Consumable"],
+    "link": "https://www.dndbeyond.com//equipment/feed-per-day"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa257263434"
+    },
+    "name": "Fire Opal",
+    "type": "Gemstone",
+    "prize": "1000 gp",
+    "description": ["A translucent fiery red Gemstone worth 1,000 gold pieces."],
+    "weight": " -- ",
+    "tags": [],
+    "link": "https://www.dndbeyond.com//equipment/fire-opal"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa257263435"
+    },
+    "name": "Fishing Tackle",
+    "type": "Adventuring Gear",
+    "prize": "1 gp",
+    "description": [
+      "This kit includes a wooden rod, silken line, corkwood bobbers, steel hooks, lead sinkers, velvet lures, and narrow netting."
+    ],
+    "weight": "4 lbs",
+    "tags": ["Social", "Utility"],
+    "link": "https://www.dndbeyond.com//equipment/fishing-tackle"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa257263436"
+    },
+    "name": "Flask or Tankard",
+    "type": "Adventuring Gear",
+    "prize": "2 cp",
+    "description": ["A flask or tankard can hold 1 pint of liquid."],
+    "weight": "1 lb",
+    "tags": ["Container"],
+    "link": "https://www.dndbeyond.com//equipment/flask-or-tankard"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa257263437"
+    },
+    "name": "Flute",
+    "type": "Tool",
+    "prize": "2 gp",
+    "description": [
+      "If you have proficiency with a given musical instrument, you can add your proficiency bonus to any ability checks you make to play music with the instrument. A bard can use a musical instrument as a spellcasting focus."
+    ],
+    "weight": "1 lb",
+    "tags": ["Instrument"],
+    "link": "https://www.dndbeyond.com//equipment/flute"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa257263438"
+    },
+    "name": "Forgery Kit",
+    "type": "Tool",
+    "prize": "15 gp",
+    "description": [
+      "This small box contains a variety of papers and parchments, pens and inks, seals and sealing wax, gold and silver leaf, and other supplies necessary to create convincing forgeries of physical documents. Proficiency with this kit lets you add your proficiency bonus to any ability checks you make to create a physical forgery of a document."
+    ],
+    "weight": "5 lbs",
+    "tags": ["Utility", "Deception"],
+    "link": "https://www.dndbeyond.com//equipment/forgery-kit"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa257263439"
+    },
+    "name": "Galley",
+    "type": "Vehicle (Water)",
+    "prize": "30000 gp",
+    "description": [
+      "If you have proficiency with a certain kind of vehicle (land or water), you can add your proficiency bonus to any check you make to control that kind of vehicle in difficult circumstances."
+    ],
+    "weight": " -- ",
+    "tags": ["Movement", "Utility", "Exploration"],
+    "link": "https://www.dndbeyond.com//equipment/galley"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa25726343a"
+    },
+    "name": "Garnet",
+    "type": "Gemstone",
+    "prize": "100 gp",
+    "description": [
+      "A transparent red, brown-green, or violet gemstone worth 100 gold pieces"
+    ],
+    "weight": " -- ",
+    "tags": [],
+    "link": "https://www.dndbeyond.com//equipment/garnet"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa25726343b"
+    },
+    "name": "Glassblower's Tools",
+    "type": "Tool",
+    "prize": "30 gp",
+    "description": [
+      "These special tools include the items needed to pursue a craft or trade. Proficiency with a set of artisan's tools lets you add your proficiency bonus to any ability checks you make using the tools in your craft. Each type of artisan's tools requires a separate proficiency."
+    ],
+    "weight": "5 lbs",
+    "tags": ["Utility"],
+    "link": "https://www.dndbeyond.com//equipment/glassblowers-tools"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa25726343c"
+    },
+    "name": "Grappling Hook",
+    "type": "Adventuring Gear",
+    "prize": "2 gp",
+    "description": [
+      "When tied to the end of a rope, a grappling hook can secure the rope to a battlement, window ledge, tree limb, or other protrusion."
+    ],
+    "weight": "4 lbs",
+    "tags": ["Utility", "Exploration"],
+    "link": "https://www.dndbeyond.com//equipment/grappling-hook"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa25726343d"
+    },
+    "name": "Grenade Launcher",
+    "type": "Adventuring Gear",
+    "prize": " -- ",
+    "description": [
+      "As an action, a character can throw a grenade at a point up to 60 feet away. With a grenade launcher, the character can propel the grenade up to 120 feet away."
+    ],
+    "weight": "7 lbs",
+    "tags": ["Damage", "Control", "Combat"],
+    "link": "https://www.dndbeyond.com//equipment/grenade-launcher"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa25726343e"
+    },
+    "name": "Grenade, Fragmentation",
+    "type": "Adventuring Gear",
+    "prize": " -- ",
+    "description": [
+      "As an action, a character can throw a grenade at a point up to 60 feet away. With a grenade launcher, the character can propel the grenade up to 120 feet away.",
+      "Each creature within 20 feet of an exploding fragmentation grenade must make a DC 15 Dexterity saving throw, taking 5d6 piercing damage on a failed save, or half as much damage on a successful one."
+    ],
+    "weight": "1 lb",
+    "tags": ["Damage", "Combat"],
+    "link": "https://www.dndbeyond.com//equipment/grenade-fragmentation"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa25726343f"
+    },
+    "name": "Grenade, Smoke",
+    "type": "Adventuring Gear",
+    "prize": " -- ",
+    "description": [
+      "As an action, a character can throw a grenade at a point up to 60 feet away. With a grenade launcher, the character can propel the grenade up to 120 feet away.",
+      "One round after a smoke grenade lands, it emits a cloud of smoke that creates a heavily obscured area in a 20-foot radius. A moderate wind (at least 10 miles per hour) disperses the smoke in 4 rounds; a strong wind (20 or more miles per hour) disperses it in 1 round."
+    ],
+    "weight": "2 lbs",
+    "tags": ["Control", "Combat"],
+    "link": "https://www.dndbeyond.com//equipment/grenade-smoke"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa257263440"
+    },
+    "name": "Gunpowder, Keg",
+    "type": "Adventuring Gear",
+    "prize": "250 gp",
+    "description": [
+      "Gunpowder is chiefly used to propel a bullet out of the barrel of a pistol or rifle, or it is formed into a bomb. Gunpowder is sold in small wooden kegs and in water-resistant powder horns.",
+      "Setting fire to a container full of gunpowder can cause it to explode, dealing fire damage to creatures within 10 feet of it (3d6 for a powder horn, 7d6 for a keg). A successful DC 12 Dexterity saving throw halves the damage. Setting fire to an ounce of gunpowder causes it to flare for 1 round, shedding bright light in a 30-foot radius and dim light for an additional 30 feet."
+    ],
+    "weight": "20 lbs",
+    "tags": ["Damage", "Combat"],
+    "link": "https://www.dndbeyond.com//equipment/gunpowder-keg"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa257263441"
+    },
+    "name": "Gunpowder, Powder Horn",
+    "type": "Adventuring Gear",
+    "prize": "35 gp",
+    "description": [
+      "Gunpowder is chiefly used to propel a bullet out of the barrel of a pistol or rifle, or it is formed into a bomb. Gunpowder is sold in small wooden kegs and in water-resistant powder horns.",
+      "Setting fire to a container full of gunpowder can cause it to explode, dealing fire damage to creatures within 10 feet of it (3d6 for a powder horn, 7d6 for a keg). A successful DC 12 Dexterity saving throw halves the damage. Setting fire to an ounce of gunpowder causes it to flare for 1 round, shedding bright light in a 30-foot radius and dim light for an additional 30 feet."
+    ],
+    "weight": "2 lbs",
+    "tags": ["Damage", "Combat"],
+    "link": "https://www.dndbeyond.com//equipment/gunpowder-powder-horn"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa257263442"
+    },
+    "name": "Half Plate",
+    "type": "Medium Armor",
+    "prize": "750 gp",
+    "description": [
+      "Half plate consists of shaped metal plates that cover most of the wearer's body. It does not include leg protection beyond simple greaves that are attached with leather straps."
+    ],
+    "weight": "40 lbs",
+    "tags": ["Warding"],
+    "link": "https://www.dndbeyond.com//equipment/half-plate"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa257263443"
+    },
+    "name": "Hammer",
+    "type": "Adventuring Gear",
+    "prize": "1 gp",
+    "description": [
+      "This one-handed hammer with an iron head is useful for pounding pitons into a wall."
+    ],
+    "weight": "3 lbs",
+    "tags": ["Utility"],
+    "link": "https://www.dndbeyond.com//equipment/hammer"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa257263444"
+    },
+    "name": "Hammer, Sledge",
+    "type": "Adventuring Gear",
+    "prize": "2 gp",
+    "description": [
+      "This two-handed, iron-headed hammer is good for smashing open treasure chests."
+    ],
+    "weight": "10 lbs",
+    "tags": ["Utility"],
+    "link": "https://www.dndbeyond.com//equipment/hammer-sledge"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa257263445"
+    },
+    "name": "Hand Mortar Ammunition",
+    "type": "Ammunition",
+    "prize": "10 gp",
+    "description": [
+      "Hand mortar ammunition is used with a hand mortar to make a ranged attack. Each time you attack with the weapon, you expend one piece of ammunition. Drawing the ammunition from a case, or other container is part of the attack (you need a free hand to load a one-handed weapon)."
+    ],
+    "weight": " -- ",
+    "tags": [],
+    "link": "https://www.dndbeyond.com//equipment/hand-mortar-ammunition"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa257263446"
+    },
+    "name": "Healer's Kit",
+    "type": "Adventuring Gear",
+    "prize": "5 gp",
+    "description": [
+      "This kit is a leather pouch containing bandages, salves, and splints. The kit has ten uses. As an action, you can expend one use of the kit to stabilize a creature that has 0 hit points, without needing to make a Wisdom (Medicine) check."
+    ],
+    "weight": "3 lbs",
+    "tags": ["Healing", "Combat"],
+    "link": "https://www.dndbeyond.com//equipment/healers-kit"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa257263447"
+    },
+    "name": "Helm",
+    "type": "Adventuring Gear",
+    "prize": " -- ",
+    "description": ["A helm - included as part of most sets of armor."],
+    "weight": " -- ",
+    "tags": [],
+    "link": "https://www.dndbeyond.com//equipment/helm"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa257263448"
+    },
+    "name": "Hematite",
+    "type": "Gemstone",
+    "prize": "10 gp",
+    "description": ["An opaque gray-black gemstone worth 10 gold pieces."],
+    "weight": " -- ",
+    "tags": [],
+    "link": "https://www.dndbeyond.com//equipment/hematite"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa257263449"
+    },
+    "name": "Herbalism Kit",
+    "type": "Tool",
+    "prize": "5 gp",
+    "description": [
+      "This kit contains a variety of instruments such as clippers, mortar and pestle, and pouches and vials used by herbalists to create remedies and potions. Proficiency with this kit lets you add your proficiency bonus to any ability checks you make to identify or apply herbs. Also, proficiency with this kit is required to create antitoxin and any potion of healing."
+    ],
+    "weight": "3 lbs",
+    "tags": ["Healing", "Utility"],
+    "link": "https://www.dndbeyond.com//equipment/herbalism-kit"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa25726344a"
+    },
+    "name": "Hide",
+    "type": "Medium Armor",
+    "prize": "10 gp",
+    "description": [
+      "This crude armor consists of thick furs and pelts. It is commonly worn by barbarian tribes, evil humanoids, and other folk who lack access to the tools and materials needed to create better armor."
+    ],
+    "weight": "12 lbs",
+    "tags": ["Warding"],
+    "link": "https://www.dndbeyond.com//equipment/hide"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa25726344b"
+    },
+    "name": "Holy Symbol",
+    "type": "Holy Symbol",
+    "prize": " -- ",
+    "description": [
+      "A holy symbol is a representation of a god or pantheon. A cleric or paladin can use a holy symbol as a spellcasting focus, as described in the Spellcasting section. To use the symbol in this way, the caster must hold it in hand, wear it visibly, or bear it on a shield."
+    ],
+    "weight": " -- ",
+    "tags": ["Utility"],
+    "link": "https://www.dndbeyond.com//equipment/holy-symbol"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa25726344c"
+    },
+    "name": "Holy Water (flask)",
+    "type": "Adventuring Gear",
+    "prize": "25 gp",
+    "description": [
+      "As an action, you can splash the contents of this flask onto a creature within 5 feet of you or throw it up to 20 feet, shattering it on impact. In either case, make a ranged attack against a target creature, treating the holy water as an improvised weapon. If the target is a fiend or undead, it takes 2d6 radiant damage.",
+      "A cleric or paladin may create holy water by performing a special ritual. The ritual takes 1 hour to perform, uses 25 gp worth of powdered silver, and requires the caster to expend a 1st-level spell slot."
+    ],
+    "weight": "1 lb",
+    "tags": ["Damage", "Utility", "Combat"],
+    "link": "https://www.dndbeyond.com//equipment/holy-water-flask"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa25726344d"
+    },
+    "name": "Horn",
+    "type": "Tool",
+    "prize": "3 gp",
+    "description": [
+      "If you have proficiency with a given musical instrument, you can add your proficiency bonus to any ability checks you make to play music with the instrument. A bard can use a musical instrument as a spellcasting focus."
+    ],
+    "weight": "2 lbs",
+    "tags": ["Instrument"],
+    "link": "https://www.dndbeyond.com//equipment/horn"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa25726344e"
+    },
+    "name": "Hourglass",
+    "type": "Adventuring Gear",
+    "prize": "25 gp",
+    "description": ["A standard hourglass used to measure the passage of time."],
+    "weight": "1 lb",
+    "tags": ["Utility"],
+    "link": "https://www.dndbeyond.com//equipment/hourglass"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa25726344f"
+    },
+    "name": "Hunting Trap",
+    "type": "Adventuring Gear",
+    "prize": "5 gp",
+    "description": [
+      "When you use your action to set it, this trap forms a saw-toothed steel ring that snaps shut when a creature steps on a pressure plate in the center. The trap is affixed by a heavy chain to an immobile object, such as a tree or a spike driven into the ground. A creature that steps on the plate must succeed on a DC 13 Dexterity saving throw or take 1d4 piercing damage and stop moving. Thereafter, until the creature breaks free of the trap, its movement is limited by the length of the chain (typically 3 feet long). A creature can use its action to make a DC 13 Strength check, freeing itself or another creature within its reach on a success. Each failed check deals 1 piercing damage to the trapped creature."
+    ],
+    "weight": "25 lbs",
+    "tags": ["Damage", "Utility"],
+    "link": "https://www.dndbeyond.com//equipment/hunting-trap"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa257263450"
+    },
+    "name": "Ink (1 ounce bottle)",
+    "type": "Adventuring Gear",
+    "prize": "10 gp",
+    "description": ["Ink is typically used with an ink pen to write."],
+    "weight": " -- ",
+    "tags": ["Communication", "Social", "Utility", "Consumable"],
+    "link": "https://www.dndbeyond.com//equipment/ink-1-ounce-bottle"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa257263451"
+    },
+    "name": "Ink Pen",
+    "type": "Adventuring Gear",
+    "prize": "2 cp",
+    "description": [
+      "An ink pen is a wooden stick with a special tip on the end. The tip draws ink in when dipped in a vial and leaves an ink trail when drawn across a surface."
+    ],
+    "weight": " -- ",
+    "tags": ["Communication", "Social", "Utility"],
+    "link": "https://www.dndbeyond.com//equipment/ink-pen"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa257263452"
+    },
+    "name": "Jacinth",
+    "type": "Gemstone",
+    "prize": "5000 gp",
+    "description": ["A transparent fiery orange gem worth 5,000 gold pieces"],
+    "weight": " -- ",
+    "tags": [],
+    "link": "https://www.dndbeyond.com//equipment/jacinth"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa257263453"
+    },
+    "name": "Jade",
+    "type": "Gemstone",
+    "prize": "100 gp",
+    "description": [
+      "A translucent light green, deep green, or white gemstone worth 100 gold pieces"
+    ],
+    "weight": " -- ",
+    "tags": [],
+    "link": "https://www.dndbeyond.com//equipment/jade"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa257263454"
+    },
+    "name": "Jasper",
+    "type": "Gemstone",
+    "prize": "50 gp",
+    "description": ["An opaque blue, black, or brown gemstone worth 50 gold pieces"],
+    "weight": " -- ",
+    "tags": [],
+    "link": "https://www.dndbeyond.com//equipment/jasper"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa257263455"
+    },
+    "name": "Jet",
+    "type": "Gemstone",
+    "prize": "100 gp",
+    "description": ["An opaque deep black gemstone worth 100 gold pieces."],
+    "weight": " -- ",
+    "tags": [],
+    "link": "https://www.dndbeyond.com//equipment/jet"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa257263456"
+    },
+    "name": "Jeweler's Tools",
+    "type": "Tool",
+    "prize": "25 gp",
+    "description": [
+      "These special tools include the items needed to pursue a craft or trade. Proficiency with a set of artisan's tools lets you add your proficiency bonus to any ability checks you make using the tools in your craft. Each type of artisan's tools requires a separate proficiency."
+    ],
+    "weight": "2 lbs",
+    "tags": ["Utility"],
+    "link": "https://www.dndbeyond.com//equipment/jewelers-tools"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa257263457"
+    },
+    "name": "Jug or Pitcher",
+    "type": "Adventuring Gear",
+    "prize": "2 cp",
+    "description": ["A jug or pitcher can hold 1 gallon of liquid."],
+    "weight": "4 lbs",
+    "tags": ["Container"],
+    "link": "https://www.dndbeyond.com//equipment/jug-or-pitcher"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa257263458"
+    },
+    "name": "Keelboat",
+    "type": "Vehicle (Water)",
+    "prize": "3000 gp",
+    "description": [
+      "If you have proficiency with a certain kind of vehicle (land or water), you can add your proficiency bonus to any check you make to control that kind of vehicle in difficult circumstances.",
+      "One of the smallest sailing vessels, keelboats can be sailed or rowed by a single person. These ships often transport small amounts of cargo or passengers. They're perfect for pleasure cruises, as they're easier and less expensive to operate than larger vessels.",
+      "Keelboats and rowboats are used on lakes and rivers. If going downstream, add the speed of the current (typically 3 miles per hour) to the speed of the vehicle. These vehicles can’t be rowed against any significant current, but they can be pulled upstream by draft animals on the shores."
+    ],
+    "weight": " -- ",
+    "tags": ["Movement", "Utility", "Exploration"],
+    "link": "https://www.dndbeyond.com//equipment/keelboat"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa257263459"
+    },
+    "name": "Ladder (10 foot)",
+    "type": "Adventuring Gear",
+    "prize": "1 sp",
+    "description": ["This item is a straight, simple wooden ladder."],
+    "weight": "25 lbs",
+    "tags": ["Utility", "Exploration"],
+    "link": "https://www.dndbeyond.com//equipment/ladder-10-foot"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa25726345a"
+    },
+    "name": "Lamp",
+    "type": "Adventuring Gear",
+    "prize": "5 sp",
+    "description": [
+      "A lamp casts bright light in a 15-foot radius and dim light for an additional 30 feet. Once lit, it burns for 6 hours on a flask (1 pint) of oil."
+    ],
+    "weight": "1 lb",
+    "tags": ["Utility", "Exploration"],
+    "link": "https://www.dndbeyond.com//equipment/lamp"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa25726345b"
+    },
+    "name": "Lantern, Bullseye",
+    "type": "Adventuring Gear",
+    "prize": "10 gp",
+    "description": [
+      "A bullseye lantern casts bright light in a 60-foot cone and dim light for an additional 60 feet. Once lit, it burns for 6 hours on a flask (1 pint) of oil."
+    ],
+    "weight": "2 lbs",
+    "tags": ["Utility", "Exploration"],
+    "link": "https://www.dndbeyond.com//equipment/lantern-bullseye"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa25726345c"
+    },
+    "name": "Lantern, Hooded",
+    "type": "Adventuring Gear",
+    "prize": "5 gp",
+    "description": [
+      "A hooded lantern casts bright light in a 30-foot radius and dim light for an additional 30 feet. Once lit, it burns for 6 hours on a flask (1 pint) of oil. As an action, you can lower the hood, reducing the light to dim light in a 5-foot radius."
+    ],
+    "weight": "2 lbs",
+    "tags": ["Utility", "Exploration"],
+    "link": "https://www.dndbeyond.com//equipment/lantern-hooded"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa25726345d"
+    },
+    "name": "Lapis Lazuli",
+    "type": "Gemstone",
+    "prize": "10 gp",
+    "description": [
+      "An opaque light and dark blue gemstone with yellow flecks worth 10 gold pieces."
+    ],
+    "weight": " -- ",
+    "tags": [],
+    "link": "https://www.dndbeyond.com//equipment/lapis-lazuli"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa25726345e"
+    },
+    "name": "Leather",
+    "type": "Light Armor",
+    "prize": "10 gp",
+    "description": [
+      "The breastplate and shoulder protectors of this armor are made of leather that has been stiffened by being boiled in oil. The rest of the armor is made of softer and more flexible materials."
+    ],
+    "weight": "10 lbs",
+    "tags": ["Warding"],
+    "link": "https://www.dndbeyond.com//equipment/leather"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa25726345f"
+    },
+    "name": "Leatherworker's Tools",
+    "type": "Tool",
+    "prize": "5 gp",
+    "description": [
+      "These special tools include the items needed to pursue a craft or trade. Proficiency with a set of artisan's tools lets you add your proficiency bonus to any ability checks you make using the tools in your craft. Each type of artisan's tools requires a separate proficiency."
+    ],
+    "weight": "5 lbs",
+    "tags": ["Utility"],
+    "link": "https://www.dndbeyond.com//equipment/leatherworkers-tools"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa257263460"
+    },
+    "name": "Little Bag of Sand",
+    "type": "Adventuring Gear",
+    "prize": " -- ",
+    "description": ["A small bag of sand, typically found in a scholar's pack."],
+    "weight": " -- ",
+    "tags": ["Utility"],
+    "link": "https://www.dndbeyond.com//equipment/little-bag-of-sand"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa257263461"
+    },
+    "name": "Lock",
+    "type": "Adventuring Gear",
+    "prize": "10 gp",
+    "description": [
+      "A key is provided with the lock. Without the key, a creature proficient with thieves' tools can pick this lock with a successful DC 15 Dexterity check. Your DM may decide that better locks are available for higher prices."
+    ],
+    "weight": "1 lb",
+    "tags": ["Utility", "Warding"],
+    "link": "https://www.dndbeyond.com//equipment/lock"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa257263462"
+    },
+    "name": "Longship",
+    "type": "Vehicle (Water)",
+    "prize": "10000 gp",
+    "description": [
+      "If you have proficiency with a certain kind of vehicle (land or water), you can add your proficiency bonus to any check you make to control that kind of vehicle in difficult circumstances."
+    ],
+    "weight": " -- ",
+    "tags": ["Movement", "Utility", "Exploration"],
+    "link": "https://www.dndbeyond.com//equipment/longship"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa257263463"
+    },
+    "name": "Lute",
+    "type": "Tool",
+    "prize": "35 gp",
+    "description": [
+      "If you have proficiency with a given musical instrument, you can add your proficiency bonus to any ability checks you make to play music with the instrument. A bard can use a musical instrument as a spellcasting focus."
+    ],
+    "weight": "2 lbs",
+    "tags": ["Instrument"],
+    "link": "https://www.dndbeyond.com//equipment/lute"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa257263464"
+    },
+    "name": "Lyre",
+    "type": "Tool",
+    "prize": "30 gp",
+    "description": [
+      "If you have proficiency with a given musical instrument, you can add your proficiency bonus to any ability checks you make to play music with the instrument. A bard can use a musical instrument as a spellcasting focus."
+    ],
+    "weight": "2 lbs",
+    "tags": ["Instrument"],
+    "link": "https://www.dndbeyond.com//equipment/lyre"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa257263465"
+    },
+    "name": "Magnifying Glass",
+    "type": "Adventuring Gear",
+    "prize": "100 gp",
+    "description": [
+      "This lens allows a closer look at small objects. It is also useful as a substitute for flint and steel when starting fires. Lighting a fire with a magnifying glass requires light as bright as sunlight to focus, tinder to ignite, and about 5 minutes for the fire to ignite. A magnifying glass grants advantage on any ability check made to appraise or inspect an item that is small or highly detailed."
+    ],
+    "weight": " -- ",
+    "tags": ["Detection", "Utility", "Exploration"],
+    "link": "https://www.dndbeyond.com//equipment/magnifying-glass"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa257263466"
+    },
+    "name": "Malachite",
+    "type": "Gemstone",
+    "prize": "10 gp",
+    "description": [
+      "An opaque striated light and dark green gemstone worth 10 gold pieces"
+    ],
+    "weight": " -- ",
+    "tags": [],
+    "link": "https://www.dndbeyond.com//equipment/malachite"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa257263467"
+    },
+    "name": "Malice (Inhaled)",
+    "type": "Poison",
+    "prize": "250 gp",
+    "description": [
+      "A creature subjected to this poison must succeed on a DC 15 Constitution saving throw or become poisoned for 1 hour. The poisoned creature is blinded.",
+      "Inhaled. These poisons are powders or gases that take effect when inhaled. Blowing the powder or releasing the gas subjects creatures in a 5-foot cube to its effect. The resulting cloud dissipates immediately afterward. Holding one's breath is ineffective against inhaled poisons, as they affect nasal membranes, tear ducts, and other parts of the body."
+    ],
+    "weight": " -- ",
+    "tags": ["Damage", "Debuff", "Consumable"],
+    "link": "https://www.dndbeyond.com//equipment/malice-inhaled"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa257263468"
+    },
+    "name": "Manacles",
+    "type": "Adventuring Gear",
+    "prize": "2 gp",
+    "description": [
+      "These metal restraints can bind a Small or Medium creature. Escaping the manacles requires a successful DC 20 Dexterity check. Breaking them requires a successful DC 20 Strength check. Each set of manacles comes with one key. Without the key, a creature proficient with thieves' tools can pick the manacles' lock with a successful DC 15 Dexterity check. Manacles have 15 hit points."
+    ],
+    "weight": "6 lbs",
+    "tags": ["Control", "Utility"],
+    "link": "https://www.dndbeyond.com//equipment/manacles"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa257263469"
+    },
+    "name": "Mason's Tools",
+    "type": "Tool",
+    "prize": "10 gp",
+    "description": [
+      "These special tools include the items needed to pursue a craft or trade. Proficiency with a set of artisan's tools lets you add your proficiency bonus to any ability checks you make using the tools in your craft. Each type of artisan's tools requires a separate proficiency."
+    ],
+    "weight": "8 lbs",
+    "tags": ["Utility"],
+    "link": "https://www.dndbeyond.com//equipment/masons-tools"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa25726346a"
+    },
+    "name": "Mastiff",
+    "type": "Mount",
+    "prize": "25 gp",
+    "description": [
+      "Mastiff Statistics",
+      "A good mount can help you move more quickly through the wilderness, but its primary purpose is to carry the gear that would otherwise slow you down.",
+      "An animal pulling a carriage, cart, chariot, sled, or wagon can move weight up to five times its base carrying capacity, including the weight of the vehicle. If multiple animals pull the same vehicle, they can add their carrying capacity together."
+    ],
+    "weight": " -- ",
+    "tags": ["Movement", "Utility", "Exploration"],
+    "link": "https://www.dndbeyond.com//equipment/mastiff"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa25726346b"
+    },
+    "name": "Mess Kit",
+    "type": "Adventuring Gear",
+    "prize": "2 sp",
+    "description": [
+      "This tin box contains a cup and simple cutlery. The box clamps together, and one side can be used as a cooking pan and the other as a plate or shallow bowl."
+    ],
+    "weight": "1 lb",
+    "tags": ["Social", "Utility"],
+    "link": "https://www.dndbeyond.com//equipment/mess-kit"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa25726346c"
+    },
+    "name": "Midnight Tears (Ingested)",
+    "type": "Poison",
+    "prize": "1500 gp",
+    "description": [
+      "A creature that ingests this poison suffers no effect until the stroke of midnight. If the poison has not been neutralized before then, the creature must succeed on a DC 17 Constitution saving throw, taking 31 (9d6) poison damage on a failed save, or half as much damage on a successful one.",
+      "Ingested. A creature must swallow an entire dose of ingested poison to suffer its effects. The dose can be delivered in food or a liquid. You may decide that a partial dose has a reduced effect, such as allowing advantage on the saving throw or dealing only half damage on a failed save."
+    ],
+    "weight": " -- ",
+    "tags": ["Damage", "Consumable"],
+    "link": "https://www.dndbeyond.com//equipment/midnight-tears-ingested"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa25726346d"
+    },
+    "name": "Mirror, Steel",
+    "type": "Adventuring Gear",
+    "prize": "5 gp",
+    "description": [
+      "A steel mirror is handy when you want to look around corners, signal friends with reflected sunlight, keep an eye on a medusa, make sure that you look good enough to present yourself to the queen, or examine wounds that you’ve received on hard-to-see parts of your body."
+    ],
+    "weight": "1/2 lb",
+    "tags": ["Social", "Utility"],
+    "link": "https://www.dndbeyond.com//equipment/mirror-steel"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa25726346e"
+    },
+    "name": "Monster Hunter's Pack",
+    "type": "Equipment Pack",
+    "prize": "33 gp",
+    "description": [
+      "Includes a chest, a crowbar, a hammer, three wooden stakes, a holy symbol, a flask of holy water, a set of manacles, a steel mirror, a flask of oil, a tinderbox, and 3 torches."
+    ],
+    "weight": "49 lbs",
+    "tags": ["Control", "Utility", "Container"],
+    "link": "https://www.dndbeyond.com//equipment/monster-hunters-pack"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa25726346f"
+    },
+    "name": "Moonstone",
+    "type": "Gemstone",
+    "prize": "50 gp",
+    "description": [
+      "A translucent white gemstone with a pale blue glow worth 50 gold pieces."
+    ],
+    "weight": " -- ",
+    "tags": [],
+    "link": "https://www.dndbeyond.com//equipment/moonstone"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa257263470"
+    },
+    "name": "Moss agate",
+    "type": "Gemstone",
+    "prize": "10 gp",
+    "description": [
+      "A translucent gemstone with pink or yellow-white with mossy gray or green markings worth 10 gold pieces"
+    ],
+    "weight": " -- ",
+    "tags": [],
+    "link": "https://www.dndbeyond.com//equipment/moss-agate"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa257263471"
+    },
+    "name": "Musket (Exandria) Bullets",
+    "type": "Ammunition",
+    "prize": "5 gp",
+    "description": [
+      "Firearm bullets are used with a weapon that has the reload property to make a ranged attack. Each time you attack with the weapon, you expend one piece of ammunition. Drawing the ammunition from a case, or other container is part of the attack (you need a free hand to load a one-handed weapon)."
+    ],
+    "weight": " -- ",
+    "tags": [],
+    "link": "https://www.dndbeyond.com//equipment/musket-exandria-bullets"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa257263472"
+    },
+    "name": "Navigator's Tools",
+    "type": "Tool",
+    "prize": "25 gp",
+    "description": [
+      "This set of instruments is used for navigation at sea. Proficiency with navigator's tools lets you chart a ship's course and follow navigation charts. In addition, these tools allow you to add your proficiency bonus to any ability check you make to avoid getting lost at sea."
+    ],
+    "weight": "2 lbs",
+    "tags": ["Utility", "Exploration"],
+    "link": "https://www.dndbeyond.com//equipment/navigators-tools"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa257263473"
+    },
+    "name": "Obsidian",
+    "type": "Gemstone",
+    "prize": "10 gp",
+    "description": ["An opaque black gemstone worth 10 gold pieces"],
+    "weight": " -- ",
+    "tags": [],
+    "link": "https://www.dndbeyond.com//equipment/obsidian"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa257263474"
+    },
+    "name": "Oil (flask)",
+    "type": "Adventuring Gear",
+    "prize": "1 sp",
+    "description": [
+      "Oil usually comes in a clay flask that holds 1 pint. As an action, you can splash the oil in this flask onto a creature within 5 feet of you or throw it up to 20 feet, shattering it on impact. Make a ranged attack against a target creature or object, treating the oil as an improvised weapon. On a hit, the target is covered in oil. If the target takes any fire damage before the oil dries (after 1 minute), the target takes an additional 5 fire damage from the burning oil. You can also pour a flask of oil on the ground to cover a 5-foot-square area, provided that the surface is level. If lit, the oil burns for 2 rounds and deals 5 fire damage to any creature that enters the area or ends its turn in the area. A creature can take this damage only once per turn."
+    ],
+    "weight": "1 lb",
+    "tags": ["Damage", "Utility", "Combat"],
+    "link": "https://www.dndbeyond.com//equipment/oil-flask"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa257263475"
+    },
+    "name": "Oil of Taggit (Contact)",
+    "type": "Poison",
+    "prize": "400 gp",
+    "description": [
+      "A creature subjected to this poison must succeed on a DC 13 Constitution saving throw or become poisoned for 24 hours. The poisoned creature is unconscious. The creature wakes up if it takes damage.",
+      "Contact. Contact poison can be smeared on an object and remains potent until it is touched or washed off. A creature that touches contact poison with exposed skin suffers its effects."
+    ],
+    "weight": " -- ",
+    "tags": ["Damage", "Debuff", "Consumable"],
+    "link": "https://www.dndbeyond.com//equipment/oil-of-taggit-contact"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa257263476"
+    },
+    "name": "Onyx",
+    "type": "Gemstone",
+    "prize": "50 gp",
+    "description": [
+      "An opaque gemstone with bands of black and white, or pure black or white worth 50 gold pieces"
+    ],
+    "weight": " -- ",
+    "tags": [],
+    "link": "https://www.dndbeyond.com//equipment/onyx"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa257263477"
+    },
+    "name": "Opal",
+    "type": "Gemstone",
+    "prize": "1000 gp",
+    "description": [
+      "A translucent pale blue with green and golden mottling gemstone worth 1,000 gold pieces"
+    ],
+    "weight": " -- ",
+    "tags": [],
+    "link": "https://www.dndbeyond.com//equipment/opal"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa257263478"
+    },
+    "name": "Orb",
+    "type": "Arcane Focus",
+    "prize": "20 gp",
+    "description": [
+      "An arcane focus is a special item designed to channel the power of arcane spells. A sorcerer, warlock, or wizard can use such an item as a spellcasting focus, as described in the Spellcasting section."
+    ],
+    "weight": "3 lbs",
+    "tags": ["Utility"],
+    "link": "https://www.dndbeyond.com//equipment/orb"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa257263479"
+    },
+    "name": "Padded",
+    "type": "Light Armor",
+    "prize": "5 gp",
+    "description": ["Padded armor consists of quilted layers of cloth and batting."],
+    "weight": "8 lbs",
+    "tags": ["Warding"],
+    "link": "https://www.dndbeyond.com//equipment/padded"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa25726347a"
+    },
+    "name": "Painter's Supplies",
+    "type": "Tool",
+    "prize": "10 gp",
+    "description": [
+      "These special tools include the items needed to pursue a craft or trade. Proficiency with a set of artisan's tools lets you add your proficiency bonus to any ability checks you make using the tools in your craft. Each type of artisan's tools requires a separate proficiency."
+    ],
+    "weight": "5 lbs",
+    "tags": ["Utility"],
+    "link": "https://www.dndbeyond.com//equipment/painters-supplies"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa25726347b"
+    },
+    "name": "Pale Tincture (Ingested)",
+    "type": "Poison",
+    "prize": "250 gp",
+    "description": [
+      "A creature subjected to this poison must succeed on a DC 16 Constitution saving throw or take 3 (1d6) poison damage and become poisoned. The poisoned creature must repeat the saving throw every 24 hours, taking 3 (1d6) poison damage on a failed save. Until this poison ends, the damage the poison deals can't be healed by any means. After seven successful saving throws, the effect ends and the creature can heal normally.",
+      "Ingested. A creature must swallow an entire dose of ingested poison to suffer its effects. The dose can be delivered in food or a liquid. You may decide that a partial dose has a reduced effect, such as allowing advantage on the saving throw or dealing only half damage on a failed save."
+    ],
+    "weight": " -- ",
+    "tags": ["Damage", "Debuff", "Consumable"],
+    "link": "https://www.dndbeyond.com//equipment/pale-tincture-ingested"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa25726347c"
+    },
+    "name": "Palm Pistol Bullets",
+    "type": "Ammunition",
+    "prize": "2 gp",
+    "description": [
+      "Firearm bullets are used with a weapon that has the reload property to make a ranged attack. Each time you attack with the weapon, you expend one piece of ammunition. Drawing the ammunition from a case, or other container is part of the attack (you need a free hand to load a one-handed weapon)."
+    ],
+    "weight": " -- ",
+    "tags": [],
+    "link": "https://www.dndbeyond.com//equipment/palm-pistol-bullets"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa25726347d"
+    },
+    "name": "Pan Flute",
+    "type": "Tool",
+    "prize": "12 gp",
+    "description": [
+      "If you have proficiency with a given musical instrument, you can add your proficiency bonus to any ability checks you make to play music with the instrument. A bard can use a musical instrument as a spellcasting focus."
+    ],
+    "weight": "2 lbs",
+    "tags": ["Instrument"],
+    "link": "https://www.dndbeyond.com//equipment/pan-flute"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa25726347e"
+    },
+    "name": "Paper (one sheet)",
+    "type": "Adventuring Gear",
+    "prize": "2 sp",
+    "description": ["A sheet of standard paper is made from cloth fibers."],
+    "weight": " -- ",
+    "tags": ["Communication", "Social", "Utility", "Consumable"],
+    "link": "https://www.dndbeyond.com//equipment/paper-one-sheet"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa25726347f"
+    },
+    "name": "Parchment (one sheet)",
+    "type": "Adventuring Gear",
+    "prize": "1 sp",
+    "description": [
+      "A sheet of parchment is a piece of goat hide or sheepskin that has been prepared for writing on."
+    ],
+    "weight": " -- ",
+    "tags": ["Communication", "Social", "Utility", "Consumable"],
+    "link": "https://www.dndbeyond.com//equipment/parchment-one-sheet"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa257263480"
+    },
+    "name": "Pearl",
+    "type": "Gemstone",
+    "prize": "100 gp",
+    "description": [
+      "An opaque lustrous white, yellow, or pink gemstone worth 100 gold pieces."
+    ],
+    "weight": " -- ",
+    "tags": [],
+    "link": "https://www.dndbeyond.com//equipment/pearl"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa257263481"
+    },
+    "name": "Pepperbox Bullets",
+    "type": "Ammunition",
+    "prize": "4 gp",
+    "description": [
+      "Firearm bullets are used with a weapon that has the reload property to make a ranged attack. Each time you attack with the weapon, you expend one piece of ammunition. Drawing the ammunition from a case, or other container is part of the attack (you need a free hand to load a one-handed weapon)."
+    ],
+    "weight": " -- ",
+    "tags": [],
+    "link": "https://www.dndbeyond.com//equipment/pepperbox-bullets"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa257263482"
+    },
+    "name": "Perfume (vial)",
+    "type": "Adventuring Gear",
+    "prize": "5 gp",
+    "description": ["A fragrant commodity typically used by the wealthy."],
+    "weight": " -- ",
+    "tags": ["Social", "Utility", "Consumable"],
+    "link": "https://www.dndbeyond.com//equipment/perfume-vial"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa257263483"
+    },
+    "name": "Peridot",
+    "type": "Gemstone",
+    "prize": "500 gp",
+    "description": ["A transparent rich olive green gemstone worth 500 gold pieces"],
+    "weight": " -- ",
+    "tags": [],
+    "link": "https://www.dndbeyond.com//equipment/peridot"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa257263484"
+    },
+    "name": "Pick, Miner's",
+    "type": "Adventuring Gear",
+    "prize": "2 gp",
+    "description": [
+      "A miner's pick is designed to concentrate the force of its blow on a small area."
+    ],
+    "weight": "10 lbs",
+    "tags": ["Utility"],
+    "link": "https://www.dndbeyond.com//equipment/pick-miners"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa257263485"
+    },
+    "name": "Pistol (Exandria) Bullets",
+    "type": "Ammunition",
+    "prize": "4 gp",
+    "description": [
+      "Firearm bullets are used with a weapon that has the reload property to make a ranged attack. Each time you attack with the weapon, you expend one piece of ammunition. Drawing the ammunition from a case, or other container is part of the attack (you need a free hand to load a one-handed weapon)."
+    ],
+    "weight": " -- ",
+    "tags": [],
+    "link": "https://www.dndbeyond.com//equipment/pistol-exandria-bullets"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa257263486"
+    },
+    "name": "Piton",
+    "type": "Adventuring Gear",
+    "prize": "5 cp",
+    "description": [
+      "When a wall doesn’t offer handholds and footholds, you can make your own. A piton is a steel spike with an eye through which you can loop a rope."
+    ],
+    "weight": "1/4 lb",
+    "tags": ["Utility"],
+    "link": "https://www.dndbeyond.com//equipment/piton"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa257263487"
+    },
+    "name": "Plate",
+    "type": "Heavy Armor",
+    "prize": "1500 gp",
+    "description": [
+      "Plate consists of shaped, interlocking metal plates to cover the entire body. A suit of plate includes gauntlets, heavy leather boots, a visored helmet, and thick layers of padding underneath the armor. Buckles and straps distribute the weight over the body."
+    ],
+    "weight": "65 lbs",
+    "tags": ["Warding"],
+    "link": "https://www.dndbeyond.com//equipment/plate"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa257263488"
+    },
+    "name": "Playing Card Set",
+    "type": "Tool",
+    "prize": "5 sp",
+    "description": [
+      "If you are proficient with a gaming set, you can add your proficiency bonus to ability checks you make to play a game with that set."
+    ],
+    "weight": " -- ",
+    "tags": ["Social"],
+    "link": "https://www.dndbeyond.com//equipment/playing-card-set"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa257263489"
+    },
+    "name": "Poison, Basic (vial)",
+    "type": "Poison",
+    "prize": "100 gp",
+    "description": [
+      "You can use the poison in this vial to coat one slashing or piercing weapon or up to three pieces of ammunition. Applying the poison takes an action. A creature hit by the poisoned weapon or ammunition must make a DC 10 Constitution saving throw or take 1d4 poison damage. Once applied, the poison retains potency for 1 minute before drying."
+    ],
+    "weight": " -- ",
+    "tags": ["Damage", "Utility", "Combat", "Consumable"],
+    "link": "https://www.dndbeyond.com//equipment/poison-basic-vial"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa25726348a"
+    },
+    "name": "Poisoner's Kit",
+    "type": "Tool",
+    "prize": "50 gp",
+    "description": [
+      "A poisoner's kit includes the vials, chemicals, and other equipment necessary for the creation of poisons. Proficiency with this kit lets you add your proficiency bonus to any ability checks you make to craft or use poisons."
+    ],
+    "weight": "2 lbs",
+    "tags": ["Utility"],
+    "link": "https://www.dndbeyond.com//equipment/poisoners-kit"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa25726348b"
+    },
+    "name": "Pole (10-foot)",
+    "type": "Adventuring Gear",
+    "prize": "5 cp",
+    "description": [
+      "When you suspect a trap, you can put the end of your 10-foot pole through that hole in the wall instead of reaching in with your hand."
+    ],
+    "weight": "7 lbs",
+    "tags": ["Utility", "Exploration"],
+    "link": "https://www.dndbeyond.com//equipment/pole-10-foot"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa25726348c"
+    },
+    "name": "Pony",
+    "type": "Mount",
+    "prize": "30 gp",
+    "description": [
+      "Pony Statistics",
+      "A good mount can help you move more quickly through the wilderness, but its primary purpose is to carry the gear that would otherwise slow you down.",
+      "An animal pulling a carriage, cart, chariot, sled, or wagon can move weight up to five times its base carrying capacity, including the weight of the vehicle. If multiple animals pull the same vehicle, they can add their carrying capacity together."
+    ],
+    "weight": " -- ",
+    "tags": ["Movement", "Utility", "Exploration"],
+    "link": "https://www.dndbeyond.com//equipment/pony"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa25726348d"
+    },
+    "name": "Pot, Iron",
+    "type": "Adventuring Gear",
+    "prize": "2 gp",
+    "description": ["An iron pot can hold 1 gallon of liquid."],
+    "weight": "10 lbs",
+    "tags": ["Container"],
+    "link": "https://www.dndbeyond.com//equipment/pot-iron"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa25726348e"
+    },
+    "name": "Potion of Healing",
+    "type": "Potion",
+    "prize": "50 gp",
+    "description": [
+      "A character who drinks the magical red fluid in this vial regains 2d4 + 2 hit points. Drinking or administering a potion takes an action."
+    ],
+    "weight": "1/2 lb",
+    "tags": ["Healing", "Combat", "Consumable"],
+    "link": "https://www.dndbeyond.com//equipment/potion-of-healing"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa25726348f"
+    },
+    "name": "Potter's Tools",
+    "type": "Tool",
+    "prize": "10 gp",
+    "description": [
+      "These special tools include the items needed to pursue a craft or trade. Proficiency with a set of artisan's tools lets you add your proficiency bonus to any ability checks you make using the tools in your craft. Each type of artisan's tools requires a separate proficiency."
+    ],
+    "weight": "3 lbs",
+    "tags": ["Utility"],
+    "link": "https://www.dndbeyond.com//equipment/potters-tools"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa257263490"
+    },
+    "name": "Pouch",
+    "type": "Adventuring Gear",
+    "prize": "5 sp",
+    "description": [
+      "A cloth or leather pouch can hold 1/5 cubic foot/ 6 pounds of gear - or up to 20 sling bullets or 50 blowgun needles, among other things. A compartmentalized pouch for holding spell components is called a component pouch."
+    ],
+    "weight": "1 lb",
+    "tags": ["Container"],
+    "link": "https://www.dndbeyond.com//equipment/pouch"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa257263491"
+    },
+    "name": "Pride Silk Outfit",
+    "type": "Light Armor",
+    "prize": "500 gp",
+    "description": [
+      "An outfit made of pride silk weighs 4 pounds and costs 500 gp. If you aren’t wearing armor, your base Armor Class is 11 + your Dexterity modifier while wearing it."
+    ],
+    "weight": "4 lbs",
+    "tags": [],
+    "link": "https://www.dndbeyond.com//equipment/pride-silk-outfit"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa257263492"
+    },
+    "name": "Priest's Pack",
+    "type": "Equipment Pack",
+    "prize": "19 gp",
+    "description": [
+      "Includes a backpack, a blanket, 10 candles, a tinderbox, an alms box, 2 blocks of incense, a censer, vestments, 2 days of rations, and a waterskin."
+    ],
+    "weight": "24 lbs",
+    "tags": ["Social", "Utility", "Exploration", "Container", "Outerwear"],
+    "link": "https://www.dndbeyond.com//equipment/priests-pack"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa257263493"
+    },
+    "name": "Purple Worm Poison (Injury)",
+    "type": "Poison",
+    "prize": "2000 gp",
+    "description": [
+      "This poison must be harvested from a dead or incapacitated purple worm. A creature subjected to this poison must make a DC 19 Constitution saving throw, taking 42 (12d6) poison damage on a failed save, or half as much damage on a successful one.",
+      "Injury. Injury poison can be applied to weapons, ammunition, trap components, and other objects that deal piercing or slashing damage and remains potent until delivered through a wound or washed off. A creature that takes piercing or slashing damage from an object coated with the poison is exposed to its effects."
+    ],
+    "weight": " -- ",
+    "tags": ["Damage", "Debuff", "Consumable"],
+    "link": "https://www.dndbeyond.com//equipment/purple-worm-poison-injury"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa257263494"
+    },
+    "name": "Quartz",
+    "type": "Gemstone",
+    "prize": "50 gp",
+    "description": [
+      "A transparent white, smoky gray, or yellow gemstone worth 50 gold pieces"
+    ],
+    "weight": " -- ",
+    "tags": [],
+    "link": "https://www.dndbeyond.com//equipment/quartz"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa257263495"
+    },
+    "name": "Quiver",
+    "type": "Adventuring Gear",
+    "prize": "1 gp",
+    "description": ["A quiver can hold up to 20 arrows."],
+    "weight": "1 lb",
+    "tags": ["Container"],
+    "link": "https://www.dndbeyond.com//equipment/quiver"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa257263496"
+    },
+    "name": "Ram, Portable",
+    "type": "Adventuring Gear",
+    "prize": "4 gp",
+    "description": [
+      "You can use a portable ram to break down doors. When doing so, you gain a +4 bonus on the Strength check. One other character can help you use the ram, giving you advantage on this check."
+    ],
+    "weight": "35 lbs",
+    "tags": ["Utility", "Exploration"],
+    "link": "https://www.dndbeyond.com//equipment/ram-portable"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa257263497"
+    },
+    "name": "Rations (1 day)",
+    "type": "Adventuring Gear",
+    "prize": "5 sp",
+    "description": [
+      "Rations consist of dry foods suitable for extended travel, including jerky, dried fruit, hardtack, and nuts."
+    ],
+    "weight": "2 lbs",
+    "tags": ["Social", "Utility", "Consumable"],
+    "link": "https://www.dndbeyond.com//equipment/rations-1-day"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa257263498"
+    },
+    "name": "Reliquary",
+    "type": "Holy Symbol",
+    "prize": "5 gp",
+    "description": [
+      "A holy symbol is a representation of a god or pantheon. A cleric or paladin can use a holy symbol as a spellcasting focus, as described in the Spellcasting section. To use the symbol in this way, the caster must hold it in hand, wear it visibly, or bear it on a shield."
+    ],
+    "weight": "2 lbs",
+    "tags": ["Utility"],
+    "link": "https://www.dndbeyond.com//equipment/reliquary"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa257263499"
+    },
+    "name": "Rhodochrosite",
+    "type": "Gemstone",
+    "prize": "10 gp",
+    "description": ["An opaque light pink gemstone worth 10 gold pieces"],
+    "weight": " -- ",
+    "tags": [],
+    "link": "https://www.dndbeyond.com//equipment/rhodochrosite"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa25726349a"
+    },
+    "name": "Riding Horse",
+    "type": "Mount",
+    "prize": "75 gp",
+    "description": [
+      "Riding Horse Statistics",
+      "A good mount can help you move more quickly through the wilderness, but its primary purpose is to carry the gear that would otherwise slow you down.",
+      "An animal pulling a carriage, cart, chariot, sled, or wagon can move weight up to five times its base carrying capacity, including the weight of the vehicle. If multiple animals pull the same vehicle, they can add their carrying capacity together."
+    ],
+    "weight": " -- ",
+    "tags": ["Movement", "Utility", "Exploration"],
+    "link": "https://www.dndbeyond.com//equipment/riding-horse"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa25726349b"
+    },
+    "name": "Ring Mail",
+    "type": "Heavy Armor",
+    "prize": "30 gp",
+    "description": [
+      "This armor is leather armor with heavy rings sewn into it. The rings help reinforce the armor against blows from swords and axes. Ring mail is inferior to chain mail, and it's usually worn only by those who can't afford better armor."
+    ],
+    "weight": "40 lbs",
+    "tags": ["Warding"],
+    "link": "https://www.dndbeyond.com//equipment/ring-mail"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa25726349c"
+    },
+    "name": "Robes",
+    "type": "Adventuring Gear",
+    "prize": "1 gp",
+    "description": ["A standard set of robes."],
+    "weight": "4 lbs",
+    "tags": ["Utility", "Outerwear"],
+    "link": "https://www.dndbeyond.com//equipment/robes"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa25726349d"
+    },
+    "name": "Rod",
+    "type": "Arcane Focus",
+    "prize": "10 gp",
+    "description": [
+      "An arcane focus is a special item designed to channel the power of arcane spells. A sorcerer, warlock, or wizard can use such an item as a spellcasting focus, as described in the Spellcasting section."
+    ],
+    "weight": "2 lbs",
+    "tags": ["Utility"],
+    "link": "https://www.dndbeyond.com//equipment/rod"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa25726349e"
+    },
+    "name": "Rope, Hempen (50 feet)",
+    "type": "Adventuring Gear",
+    "prize": "1 gp",
+    "description": [
+      "Rope, has 2 hit points and can be burst with a DC 17 Strength check."
+    ],
+    "weight": "10 lbs",
+    "tags": ["Utility", "Exploration"],
+    "link": "https://www.dndbeyond.com//equipment/rope-hempen-50-feet"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa25726349f"
+    },
+    "name": "Rope, Silk (50 feet)",
+    "type": "Adventuring Gear",
+    "prize": "10 gp",
+    "description": [
+      "Rope, has 2 hit points and can be burst with a DC 17 Strength check."
+    ],
+    "weight": "5 lbs",
+    "tags": ["Utility", "Exploration"],
+    "link": "https://www.dndbeyond.com//equipment/rope-silk-50-feet"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa2572634a0"
+    },
+    "name": "Rowboat",
+    "type": "Vehicle (Water)",
+    "prize": "50 gp",
+    "description": [
+      "If you have proficiency with a certain kind of vehicle (land or water), you can add your proficiency bonus to any check you make to control that kind of vehicle in difficult circumstances.",
+      "Rowboats are used on lakes and rivers. If going downstream, add the speed of the current (typically 3 miles per hour) to the speed of the vehicle. These vehicles can’t be rowed against any significant current, but they can be pulled upstream by draft animals on the shores. A rowboat weighs 100 pounds, in case adventurers carry it over land."
+    ],
+    "weight": "100 lbs",
+    "tags": ["Movement", "Utility", "Exploration"],
+    "link": "https://www.dndbeyond.com//equipment/rowboat"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa2572634a1"
+    },
+    "name": "Ruby",
+    "type": "Gemstone",
+    "prize": "5000 gp",
+    "description": [
+      "A transparent clear red to deep crimson gemstone worth 5,000 gold pieces"
+    ],
+    "weight": " -- ",
+    "tags": [],
+    "link": "https://www.dndbeyond.com//equipment/ruby"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa2572634a2"
+    },
+    "name": "Sack",
+    "type": "Adventuring Gear",
+    "prize": "1 cp",
+    "description": ["A sack can hold 1 cubic foot/ 30 pounds of gear."],
+    "weight": "1/2 lb",
+    "tags": ["Container"],
+    "link": "https://www.dndbeyond.com//equipment/sack"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa2572634a3"
+    },
+    "name": "Saddle, Exotic",
+    "type": "Adventuring Gear",
+    "prize": "60 gp",
+    "description": [
+      "An exotic saddle is required for riding any aquatic or flying mount."
+    ],
+    "weight": "40 lbs",
+    "tags": ["Utility"],
+    "link": "https://www.dndbeyond.com//equipment/saddle-exotic"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa2572634a4"
+    },
+    "name": "Saddle, Military",
+    "type": "Adventuring Gear",
+    "prize": "20 gp",
+    "description": [
+      "A military saddle braces the rider, helping you keep your seat on an active mount in battle. It gives you advantage on any check you make to remain mounted."
+    ],
+    "weight": "30 lbs",
+    "tags": ["Utility"],
+    "link": "https://www.dndbeyond.com//equipment/saddle-military"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa2572634a5"
+    },
+    "name": "Saddle, Pack",
+    "type": "Adventuring Gear",
+    "prize": "5 gp",
+    "description": ["A standard saddle for a pack mount."],
+    "weight": "15 lbs",
+    "tags": ["Utility"],
+    "link": "https://www.dndbeyond.com//equipment/saddle-pack"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa2572634a6"
+    },
+    "name": "Saddle, Riding",
+    "type": "Adventuring Gear",
+    "prize": "10 gp",
+    "description": ["A standard saddle for a riding mount."],
+    "weight": "25 lbs",
+    "tags": ["Utility"],
+    "link": "https://www.dndbeyond.com//equipment/saddle-riding"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa2572634a7"
+    },
+    "name": "Saddlebags",
+    "type": "Adventuring Gear",
+    "prize": "4 gp",
+    "description": ["Standard saddlebags that can be attached to a mount's saddle."],
+    "weight": "8 lbs",
+    "tags": ["Utility", "Container"],
+    "link": "https://www.dndbeyond.com//equipment/saddlebags"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa2572634a8"
+    },
+    "name": "Sailing Ship",
+    "type": "Vehicle (Water)",
+    "prize": "10000 gp",
+    "description": [
+      "If you have proficiency with a certain kind of vehicle (land or water), you can add your proficiency bonus to any check you make to control that kind of vehicle in difficult circumstances."
+    ],
+    "weight": " -- ",
+    "tags": ["Movement", "Utility", "Exploration"],
+    "link": "https://www.dndbeyond.com//equipment/sailing-ship"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa2572634a9"
+    },
+    "name": "Sardonyx",
+    "type": "Gemstone",
+    "prize": "50 gp",
+    "description": [
+      "An opaque gemstone with bands of red and white worth 50 gold pieces."
+    ],
+    "weight": " -- ",
+    "tags": [],
+    "link": "https://www.dndbeyond.com//equipment/sardonyx"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa2572634aa"
+    },
+    "name": "Scale Mail",
+    "type": "Medium Armor",
+    "prize": "50 gp",
+    "description": [
+      "This armor consists of a coat and leggings (and perhaps a separate skirt) of leather covered with overlapping pieces of metal, much like the scales of a fish. The suit includes gauntlets."
+    ],
+    "weight": "45 lbs",
+    "tags": ["Warding"],
+    "link": "https://www.dndbeyond.com//equipment/scale-mail"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa2572634ab"
+    },
+    "name": "Scale, Merchant's",
+    "type": "Adventuring Gear",
+    "prize": "5 gp",
+    "description": [
+      "A scale includes a small balance, pans, and a suitable assortment of weights up to 2 pounds. With it, you can measure the exact weight of small objects, such as raw precious metals or trade goods, to help determine their worth."
+    ],
+    "weight": "3 lbs",
+    "tags": ["Social", "Utility"],
+    "link": "https://www.dndbeyond.com//equipment/scale-merchants"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa2572634ac"
+    },
+    "name": "Scholar's Pack",
+    "type": "Equipment Pack",
+    "prize": "40 gp",
+    "description": [
+      "Includes a backpack, a book of lore, a bottle of ink, an ink pen, 10 sheets of parchment, a little bag of sand, and a small knife."
+    ],
+    "weight": "10 lbs",
+    "tags": ["Social", "Utility", "Container"],
+    "link": "https://www.dndbeyond.com//equipment/scholars-pack"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa2572634ad"
+    },
+    "name": "Sealing Wax",
+    "type": "Adventuring Gear",
+    "prize": "5 sp",
+    "description": [
+      "When you press a signet ring into warm sealing wax, you leave an identifying mark."
+    ],
+    "weight": " -- ",
+    "tags": ["Communication", "Social", "Utility", "Consumable"],
+    "link": "https://www.dndbeyond.com//equipment/sealing-wax"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa2572634ae"
+    },
+    "name": "Serpent Venom (Injury)",
+    "type": "Poison",
+    "prize": "200 gp",
+    "description": [
+      "This poison must be harvested from a dead or incapacitated giant poisonous snake. A creature subjected to this poison must succeed on a DC 11 Constitution saving throw, taking 10 (3d6) poison damage on a failed save, or half as much damage on a successful one.",
+      "Injury. Injury poison can be applied to weapons, ammunition, trap components, and other objects that deal piercing or slashing damage and remains potent until delivered through a wound or washed off. A creature that takes piercing or slashing damage from an object coated with the poison is exposed to its effects."
+    ],
+    "weight": " -- ",
+    "tags": ["Damage", "Debuff", "Consumable"],
+    "link": "https://www.dndbeyond.com//equipment/serpent-venom-injury"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa2572634af"
+    },
+    "name": "Shawm",
+    "type": "Tool",
+    "prize": "2 gp",
+    "description": [
+      "If you have proficiency with a given musical instrument, you can add your proficiency bonus to any ability checks you make to play music with the instrument. A bard can use a musical instrument as a spellcasting focus."
+    ],
+    "weight": "1 lb",
+    "tags": ["Instrument"],
+    "link": "https://www.dndbeyond.com//equipment/shawm"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa2572634b0"
+    },
+    "name": "Shield",
+    "type": "Shield",
+    "prize": "10 gp",
+    "description": [
+      "A shield is made from wood or metal and is carried in one hand. Wielding a shield increases your Armor Class by 2. You can benefit from only one shield at a time."
+    ],
+    "weight": "6 lbs",
+    "tags": ["Warding"],
+    "link": "https://www.dndbeyond.com//equipment/shield"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa2572634b1"
+    },
+    "name": "Shovel",
+    "type": "Adventuring Gear",
+    "prize": "2 gp",
+    "description": ["A standard shovel used for digging."],
+    "weight": "5 lbs",
+    "tags": ["Utility"],
+    "link": "https://www.dndbeyond.com//equipment/shovel"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa2572634b2"
+    },
+    "name": "Signal Whistle",
+    "type": "Adventuring Gear",
+    "prize": "5 cp",
+    "description": ["A small whistle used for signaling."],
+    "weight": " -- ",
+    "tags": ["Communication", "Utility"],
+    "link": "https://www.dndbeyond.com//equipment/signal-whistle"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa2572634b3"
+    },
+    "name": "Signet Ring",
+    "type": "Adventuring Gear",
+    "prize": "5 gp",
+    "description": [
+      "Each signet ring has a distinctive design carved into it. When you press this ring into warm sealing wax, you leave an identifying mark."
+    ],
+    "weight": " -- ",
+    "tags": ["Communication", "Social", "Utility"],
+    "link": "https://www.dndbeyond.com//equipment/signet-ring"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa2572634b4"
+    },
+    "name": "Sled",
+    "type": "Vehicle (Land)",
+    "prize": "20 gp",
+    "description": [
+      "If you have proficiency with a certain kind of vehicle (land or water), you can add your proficiency bonus to any check you make to control that kind of vehicle in difficult circumstances."
+    ],
+    "weight": "300 lbs",
+    "tags": ["Movement", "Utility", "Exploration"],
+    "link": "https://www.dndbeyond.com//equipment/sled"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa2572634b5"
+    },
+    "name": "Sling Bullets",
+    "type": "Ammunition",
+    "prize": "4 cp",
+    "description": [
+      "Sling bullets are used with a weapon that has the ammunition property to make a ranged attack. Each time you attack with the weapon, you expend one piece of ammunition. Drawing the ammunition from a quiver, case, or other container is part of the attack (you need a free hand to load a one-handed weapon). At the end of the battle, you can recover half your expended ammunition by taking a minute to search the battlefield."
+    ],
+    "weight": "1 1/2 lb",
+    "tags": ["Damage", "Combat"],
+    "link": "https://www.dndbeyond.com//equipment/sling-bullets"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa2572634b6"
+    },
+    "name": "Small Knife",
+    "type": "Adventuring Gear",
+    "prize": " -- ",
+    "description": ["A small knife, typically found in a scholar's pack."],
+    "weight": " -- ",
+    "tags": ["Utility"],
+    "link": "https://www.dndbeyond.com//equipment/small-knife"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa2572634b7"
+    },
+    "name": "Smith's Tools",
+    "type": "Tool",
+    "prize": "20 gp",
+    "description": [
+      "These special tools include the items needed to pursue a craft or trade. Proficiency with a set of artisan's tools lets you add your proficiency bonus to any ability checks you make using the tools in your craft. Each type of artisan's tools requires a separate proficiency."
+    ],
+    "weight": "8 lbs",
+    "tags": ["Utility"],
+    "link": "https://www.dndbeyond.com//equipment/smiths-tools"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa2572634b8"
+    },
+    "name": "Soap",
+    "type": "Adventuring Gear",
+    "prize": "2 cp",
+    "description": ["A commodity used for bathing."],
+    "weight": " -- ",
+    "tags": ["Social", "Utility", "Consumable"],
+    "link": "https://www.dndbeyond.com//equipment/soap"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa2572634b9"
+    },
+    "name": "Spellbook",
+    "type": "Adventuring Gear",
+    "prize": "50 gp",
+    "description": [
+      "Essential for wizards, a spellbook is a leather-bound tome with 100 blank vellum pages suitable for recording spells."
+    ],
+    "weight": "3 lbs",
+    "tags": ["Utility"],
+    "link": "https://www.dndbeyond.com//equipment/spellbook"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa2572634ba"
+    },
+    "name": "Spiked Armor",
+    "type": "Medium Armor",
+    "prize": "75 gp",
+    "description": [
+      "Spiked armor is a rare type of medium armor made by dwarves. It consists of a leather coat and leggings covered with spikes that are usually made of metal."
+    ],
+    "weight": "45 lbs",
+    "tags": ["Damage", "Warding"],
+    "link": "https://www.dndbeyond.com//equipment/spiked-armor"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa2572634bb"
+    },
+    "name": "Spikes, Iron (10)",
+    "type": "Adventuring Gear",
+    "prize": "1 gp",
+    "description": ["Standard iron spikes typically used with a hammer."],
+    "weight": "5 lbs",
+    "tags": ["Utility"],
+    "link": "https://www.dndbeyond.com//equipment/spikes-iron-10"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa2572634bc"
+    },
+    "name": "Spinel",
+    "type": "Gemstone",
+    "prize": "100 gp",
+    "description": [
+      "A transparent gemstone of red, red-brown, or deep green worth 100 gold pieces"
+    ],
+    "weight": " -- ",
+    "tags": [],
+    "link": "https://www.dndbeyond.com//equipment/spinel"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa2572634bd"
+    },
+    "name": "Splint",
+    "type": "Heavy Armor",
+    "prize": "200 gp",
+    "description": [
+      "This armor is made of narrow vertical strips of metal riveted to a backing of leather that is worn over cloth padding. Flexible chain mail protects the joints."
+    ],
+    "weight": "60 lbs",
+    "tags": ["Warding"],
+    "link": "https://www.dndbeyond.com//equipment/splint"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa2572634be"
+    },
+    "name": "Sprig of Mistletoe",
+    "type": "Druidic Focus",
+    "prize": "1 gp",
+    "description": [
+      "A druid can use a Sprig of Mistletoe (or holly) as a spellcasting focus, as described in the Spellcasting section."
+    ],
+    "weight": " -- ",
+    "tags": ["Utility"],
+    "link": "https://www.dndbeyond.com//equipment/sprig-of-mistletoe"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa2572634bf"
+    },
+    "name": "Spyglass",
+    "type": "Adventuring Gear",
+    "prize": "1000 gp",
+    "description": [
+      "Objects viewed through a spyglass are magnified to twice their size."
+    ],
+    "weight": "1 lb",
+    "tags": ["Social", "Utility", "Exploration"],
+    "link": "https://www.dndbeyond.com//equipment/spyglass"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa2572634c0"
+    },
+    "name": "Staff",
+    "type": "Arcane Focus",
+    "prize": "5 gp",
+    "description": [
+      "An arcane focus is a special item designed to channel the power of arcane spells. A sorcerer, warlock, or wizard can use such an item as a spellcasting focus, as described in the Spellcasting section."
+    ],
+    "weight": "4 lbs",
+    "tags": ["Utility"],
+    "link": "https://www.dndbeyond.com//equipment/staff"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa2572634c1"
+    },
+    "name": "Stake (Wooden)",
+    "type": "Adventuring Gear",
+    "prize": " -- ",
+    "description": [
+      "Stakes made out of wood, typically found in a monster hunter's pack."
+    ],
+    "weight": " -- ",
+    "tags": ["Utility"],
+    "link": "https://www.dndbeyond.com//equipment/stake-wooden"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa2572634c2"
+    },
+    "name": "Star Rose Quartz",
+    "type": "Gemstone",
+    "prize": "50 gp",
+    "description": [
+      "A translucent rosy Gemstone with a white star-shaped center worth 50 gold pieces."
+    ],
+    "weight": " -- ",
+    "tags": [],
+    "link": "https://www.dndbeyond.com//equipment/star-rose-quartz"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa2572634c3"
+    },
+    "name": "Star Ruby",
+    "type": "Gemstone",
+    "prize": "1000 gp",
+    "description": [
+      "A translucent ruby gemstone with a white star-shaped center worth 1,000 gold pieces. "
+    ],
+    "weight": " -- ",
+    "tags": [],
+    "link": "https://www.dndbeyond.com//equipment/star-ruby"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa2572634c4"
+    },
+    "name": "Star Sapphire",
+    "type": "Gemstone",
+    "prize": "1000 gp",
+    "description": [
+      "A translucent blue sapphire gemstone with a white star-shaped center worth 1,000 gold pieces. "
+    ],
+    "weight": " -- ",
+    "tags": [],
+    "link": "https://www.dndbeyond.com//equipment/star-sapphire"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa2572634c5"
+    },
+    "name": "String",
+    "type": "Adventuring Gear",
+    "prize": " -- ",
+    "description": ["A 10-foot length of string, typically found in a burglar's pack."],
+    "weight": " -- ",
+    "tags": ["Utility"],
+    "link": "https://www.dndbeyond.com//equipment/string"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa2572634c6"
+    },
+    "name": "Studded Leather",
+    "type": "Light Armor",
+    "prize": "45 gp",
+    "description": [
+      "Made from tough but flexible leather, studded leather is reinforced with close-set rivets or spikes."
+    ],
+    "weight": "13 lbs",
+    "tags": ["Warding"],
+    "link": "https://www.dndbeyond.com//equipment/studded-leather"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa2572634c7"
+    },
+    "name": "Tent, Two-Person",
+    "type": "Adventuring Gear",
+    "prize": "2 gp",
+    "description": ["A simple and portable canvas shelter, a tent sleeps two."],
+    "weight": "20 lbs",
+    "tags": ["Social", "Utility", "Exploration"],
+    "link": "https://www.dndbeyond.com//equipment/tent-two-person"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa2572634c8"
+    },
+    "name": "Thieves' Tools",
+    "type": "Tool",
+    "prize": "25 gp",
+    "description": [
+      "This set of tools includes a small file, a set of lock picks, a small mirror mounted on a metal handle, a set of narrow-bladed scissors, and a pair of pliers. Proficiency with these tools lets you add your proficiency bonus to any ability checks you make to disarm traps or open locks."
+    ],
+    "weight": "1 lb",
+    "tags": ["Utility", "Exploration"],
+    "link": "https://www.dndbeyond.com//equipment/thieves-tools"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa2572634c9"
+    },
+    "name": "Three-Dragon Ante Set",
+    "type": "Tool",
+    "prize": "1 gp",
+    "description": [
+      "If you are proficient with a gaming set, you can add your proficiency bonus to ability checks you make to play a game with that set."
+    ],
+    "weight": " -- ",
+    "tags": ["Social"],
+    "link": "https://www.dndbeyond.com//equipment/three-dragon-ante-set"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa2572634ca"
+    },
+    "name": "Tiger Eye",
+    "type": "Gemstone",
+    "prize": "10 gp",
+    "description": [
+      "A translucent brown gemstone with a golden center worth 10 gold pieces"
+    ],
+    "weight": " -- ",
+    "tags": [],
+    "link": "https://www.dndbeyond.com//equipment/tiger-eye"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa2572634cb"
+    },
+    "name": "Tinderbox",
+    "type": "Adventuring Gear",
+    "prize": "5 sp",
+    "description": [
+      "This small container holds flint, fire steel, and tinder (usually dry cloth soaked in light oil) used to kindle a fire. Using it to light a torch -- or anything else with abundant, exposed fuel -- takes an action. Lighting any other fire takes 1 minute.",
+      " "
+    ],
+    "weight": "1 lb",
+    "tags": ["Utility", "Exploration"],
+    "link": "https://www.dndbeyond.com//equipment/tinderbox"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa2572634cc"
+    },
+    "name": "Tinker's Tools",
+    "type": "Tool",
+    "prize": "50 gp",
+    "description": [
+      "These special tools include the items needed to pursue a craft or trade. Proficiency with a set of artisan's tools lets you add your proficiency bonus to any ability checks you make using the tools in your craft. Each type of artisan's tools requires a separate proficiency."
+    ],
+    "weight": "10 lbs",
+    "tags": ["Utility"],
+    "link": "https://www.dndbeyond.com//equipment/tinkers-tools"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa2572634cd"
+    },
+    "name": "Topaz",
+    "type": "Gemstone",
+    "prize": "500 gp",
+    "description": ["A transparent golden yellow gemstone worth 500 gold pieces"],
+    "weight": " -- ",
+    "tags": [],
+    "link": "https://www.dndbeyond.com//equipment/topaz"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa2572634ce"
+    },
+    "name": "Torch",
+    "type": "Adventuring Gear",
+    "prize": "1 cp",
+    "description": [
+      "A torch burns for 1 hour, providing bright light in a 20-foot radius and dim light for an additional 20 feet. If you make a melee attack with a burning torch and hit, it deals 1 fire damage."
+    ],
+    "weight": "1 lb",
+    "tags": ["Damage", "Utility", "Exploration", "Combat"],
+    "link": "https://www.dndbeyond.com//equipment/torch"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa2572634cf"
+    },
+    "name": "Torpor (Ingested)",
+    "type": "Poison",
+    "prize": "600 gp",
+    "description": [
+      "A creature subjected to this poison must succeed on a DC 15 Constitution saving throw or become poisoned for 4d6 hours. The poisoned creature is incapacitated.",
+      "Ingested. A creature must swallow an entire dose of ingested poison to suffer its effects. The dose can be delivered in food or a liquid. You may decide that a partial dose has a reduced effect, such as allowing advantage on the saving throw or dealing only half damage on a failed save."
+    ],
+    "weight": " -- ",
+    "tags": ["Damage", "Debuff", "Consumable"],
+    "link": "https://www.dndbeyond.com//equipment/torpor-ingested"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa2572634d0"
+    },
+    "name": "Totem",
+    "type": "Druidic Focus",
+    "prize": "1 gp",
+    "description": [
+      "A druid can use a Totem as a spellcasting focus, as described in the Spellcasting section."
+    ],
+    "weight": " -- ",
+    "tags": ["Utility"],
+    "link": "https://www.dndbeyond.com//equipment/totem"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa2572634d1"
+    },
+    "name": "Tourmaline",
+    "type": "Gemstone",
+    "prize": "100 gp",
+    "description": [
+      "A transparent pale green, blue, brown, or red gemstone worth 100 gold pieces"
+    ],
+    "weight": " -- ",
+    "tags": [],
+    "link": "https://www.dndbeyond.com//equipment/tourmaline"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa2572634d2"
+    },
+    "name": "Truth Serum (Ingested)",
+    "type": "Poison",
+    "prize": "150 gp",
+    "description": [
+      "A creature subjected to this poison must succeed on a DC 11 Constitution saving throw or become poisoned for 1 hour. The poisoned creature can't knowingly speak a lie, as if under the effect of a zone of truth spell.",
+      "Ingested. A creature must swallow an entire dose of ingested poison to suffer its effects. The dose can be delivered in food or a liquid. You may decide that a partial dose has a reduced effect, such as allowing advantage on the saving throw or dealing only half damage on a failed save."
+    ],
+    "weight": " -- ",
+    "tags": ["Debuff", "Utility", "Consumable"],
+    "link": "https://www.dndbeyond.com//equipment/truth-serum-ingested"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa2572634d3"
+    },
+    "name": "Turquoise",
+    "type": "Gemstone",
+    "prize": "10 gp",
+    "description": ["An opaque light blue-green gemstone worth 10 gold pieces"],
+    "weight": " -- ",
+    "tags": [],
+    "link": "https://www.dndbeyond.com//equipment/turquoise"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa2572634d4"
+    },
+    "name": "Vestments",
+    "type": "Adventuring Gear",
+    "prize": " -- ",
+    "description": ["Religious clothing, typically found in a priest's pack."],
+    "weight": " -- ",
+    "tags": ["Social", "Utility"],
+    "link": "https://www.dndbeyond.com//equipment/vestments"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa2572634d5"
+    },
+    "name": "Vial",
+    "type": "Adventuring Gear",
+    "prize": "1 gp",
+    "description": ["A vial can hold 4 ounces of liquid."],
+    "weight": " -- ",
+    "tags": ["Container"],
+    "link": "https://www.dndbeyond.com//equipment/vial"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa2572634d6"
+    },
+    "name": "Viol",
+    "type": "Tool",
+    "prize": "30 gp",
+    "description": [
+      "If you have proficiency with a given musical instrument, you can add your proficiency bonus to any ability checks you make to play music with the instrument. A bard can use a musical instrument as a spellcasting focus."
+    ],
+    "weight": "1 lb",
+    "tags": ["Instrument"],
+    "link": "https://www.dndbeyond.com//equipment/viol"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa2572634d7"
+    },
+    "name": "Wagon",
+    "type": "Vehicle (Land)",
+    "prize": "35 gp",
+    "description": [
+      "If you have proficiency with a certain kind of vehicle (land or water), you can add your proficiency bonus to any check you make to control that kind of vehicle in difficult circumstances."
+    ],
+    "weight": "400 lbs",
+    "tags": ["Movement", "Utility", "Exploration"],
+    "link": "https://www.dndbeyond.com//equipment/wagon"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa2572634d8"
+    },
+    "name": "Wand",
+    "type": "Arcane Focus",
+    "prize": "10 gp",
+    "description": [
+      "An arcane focus is a special item designed to channel the power of arcane spells. A sorcerer, warlock, or wizard can use such an item as a spellcasting focus, as described in the Spellcasting section."
+    ],
+    "weight": "1 lb",
+    "tags": ["Utility"],
+    "link": "https://www.dndbeyond.com//equipment/wand"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa2572634d9"
+    },
+    "name": "Warhorse",
+    "type": "Mount",
+    "prize": "400 gp",
+    "description": [
+      "Warhorse Statistics",
+      "A good mount can help you move more quickly through the wilderness, but its primary purpose is to carry the gear that would otherwise slow you down.",
+      "An animal pulling a carriage, cart, chariot, sled, or wagon can move weight up to five times its base carrying capacity, including the weight of the vehicle. If multiple animals pull the same vehicle, they can add their carrying capacity together."
+    ],
+    "weight": " -- ",
+    "tags": ["Movement", "Utility", "Exploration"],
+    "link": "https://www.dndbeyond.com//equipment/warhorse"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa2572634da"
+    },
+    "name": "Warship",
+    "type": "Vehicle (Water)",
+    "prize": "25000 gp",
+    "description": [
+      "If you have proficiency with a certain kind of vehicle (land or water), you can add your proficiency bonus to any check you make to control that kind of vehicle in difficult circumstances."
+    ],
+    "weight": " -- ",
+    "tags": ["Movement", "Utility", "Exploration"],
+    "link": "https://www.dndbeyond.com//equipment/warship"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa2572634db"
+    },
+    "name": "Waterskin",
+    "type": "Adventuring Gear",
+    "prize": "2 sp",
+    "description": ["A waterskin can hold 4 pints of liquid."],
+    "weight": "5 lbs",
+    "tags": ["Container"],
+    "link": "https://www.dndbeyond.com//equipment/waterskin"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa2572634dc"
+    },
+    "name": "Weaver's Tools",
+    "type": "Tool",
+    "prize": "1 gp",
+    "description": [
+      "These special tools include the items needed to pursue a craft or trade. Proficiency with a set of artisan's tools lets you add your proficiency bonus to any ability checks you make using the tools in your craft. Each type of artisan's tools requires a separate proficiency."
+    ],
+    "weight": "5 lbs",
+    "tags": ["Utility"],
+    "link": "https://www.dndbeyond.com//equipment/weavers-tools"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa2572634dd"
+    },
+    "name": "Whetstone",
+    "type": "Adventuring Gear",
+    "prize": "1 cp",
+    "description": ["A standard whetstone used to sharpen blades."],
+    "weight": "1 lb",
+    "tags": ["Utility"],
+    "link": "https://www.dndbeyond.com//equipment/whetstone"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa2572634de"
+    },
+    "name": "Woodcarver's Tools",
+    "type": "Tool",
+    "prize": "1 gp",
+    "description": [
+      "These special tools include the items needed to pursue a craft or trade. Proficiency with a set of artisan's tools lets you add your proficiency bonus to any ability checks you make using the tools in your craft. Each type of artisan's tools requires a separate proficiency."
+    ],
+    "weight": "5 lbs",
+    "tags": ["Utility"],
+    "link": "https://www.dndbeyond.com//equipment/woodcarvers-tools"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa2572634df"
+    },
+    "name": "Wooden Staff",
+    "type": "Druidic Focus",
+    "prize": "5 gp",
+    "description": [
+      "A druid can use a Wooden Staff as a spellcasting focus, as described in the Spellcasting section."
+    ],
+    "weight": "4 lbs",
+    "tags": ["Utility"],
+    "link": "https://www.dndbeyond.com//equipment/wooden-staff"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa2572634e0"
+    },
+    "name": "Wyvern Poison (Injury)",
+    "type": "Poison",
+    "prize": "1200 gp",
+    "description": [
+      "This poison must be harvested from a dead or incapacitated wyvern. A creature subjected to this poison must make a DC 15 Constitution saving throw, taking 24 (7d6) poison damage on a failed save, or half as much damage on a successful one.",
+      "Injury. Injury poison can be applied to weapons, ammunition, trap components, and other objects that deal piercing or slashing damage and remains potent until delivered through a wound or washed off. A creature that takes piercing or slashing damage from an object coated with the poison is exposed to its effects."
+    ],
+    "weight": " -- ",
+    "tags": ["Damage", "Debuff", "Consumable"],
+    "link": "https://www.dndbeyond.com//equipment/wyvern-poison-injury"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa2572634e1"
+    },
+    "name": "Yellow sapphire",
+    "type": "Gemstone",
+    "prize": "1000 gp",
+    "description": [
+      "A transparent fiery yellow or yellow-green gemstone worth 1,000 gold pieces"
+    ],
+    "weight": " -- ",
+    "tags": [],
+    "link": "https://www.dndbeyond.com//equipment/yellow-sapphire"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa2572634e2"
+    },
+    "name": "Yew Wand",
+    "type": "Druidic Focus",
+    "prize": "10 gp",
+    "description": [
+      "A druid can use a Yew Wand as a spellcasting focus, as described in the Spellcasting section."
+    ],
+    "weight": "1 lb",
+    "tags": ["Utility"],
+    "link": "https://www.dndbeyond.com//equipment/yew-wand"
+  },
+  {
+    "_id": {
+      "$oid": "63394a34ab603fa2572634e3"
+    },
+    "name": "Zircon",
+    "type": "Gemstone",
+    "prize": "50 gp",
+    "description": ["A transparent pale blue-green gemstone worth 50 gold pieces. "],
+    "weight": " -- ",
+    "tags": [],
+    "link": "https://www.dndbeyond.com//equipment/zircon"
+  }
+]

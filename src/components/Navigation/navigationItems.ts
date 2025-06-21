@@ -4,8 +4,7 @@ export type NavigationItem = {
 }
 
 export const navigationItems: NavigationItem[] = [
-  { title: 'User', url: '/user' },
   { title: 'NPC', url: '/npc' },
-  { title: 'Shop Builder', url: '/shop-builder' },
+  { title: 'Create Shop', url: '/shop-builder' },
   { title: 'My shops', url: '/my-shops' },
 ]

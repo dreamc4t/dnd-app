@@ -27,6 +27,7 @@ const iconDefinitions = {
   ExternalLinkIcon: paths.externalLink,
   EditIcon: paths.edit,
   RefreshIcon: paths.refresh,
+  ProfileIcon: paths.profile,
 }
 
 const icons = Object.fromEntries(

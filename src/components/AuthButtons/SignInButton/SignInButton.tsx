@@ -3,5 +3,9 @@ import { signInString } from '@/constants/strings'
 import { signIn } from 'next-auth/react'
 
 export function SignInButton() {
-  return <button onClick={() => signIn()}>{signInString}</button>
+  return (
+    <button className='text-sm' onClick={() => signIn()}>
+      {signInString}
+    </button>
+  )
 }

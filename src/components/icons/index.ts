@@ -9,4 +9,5 @@ export const {
   ExternalLinkIcon,
   EditIcon,
   RefreshIcon,
+  ProfileIcon,
 } = icons

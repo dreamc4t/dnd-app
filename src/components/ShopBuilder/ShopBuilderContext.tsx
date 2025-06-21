@@ -61,9 +61,13 @@ const ShopBuilderContextProvider = ({ children }: { children: React.ReactNode })
     setIsSaving(true)
     setErrorMessage('')
 
+    const now = new Date().toISOString()
+
     const shop: Shop = {
       name: shopName,
       items: selectedItems,
+      createdAt: now,
+      updatedAt: now,
     }
 
     try {

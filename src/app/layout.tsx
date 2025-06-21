@@ -1,6 +1,13 @@
 import type { Metadata } from 'next'
 import './globals.css'
 import { ReactNode } from 'react'
+import { Manrope } from 'next/font/google'
+
+const manrope = Manrope({
+  subsets: ['latin'],
+  variable: '--font-manrope',
+  display: 'swap',
+})
 
 export const metadata: Metadata = {
   title: 'D&D Shop app',
@@ -13,7 +20,7 @@ export default function RootLayout({
   children: ReactNode
 }>) {
   return (
-    <html lang='en'>
+    <html lang='en' className={manrope.variable}>
       <body className='bg-background text-text-primary'> {children}</body>
     </html>
   )

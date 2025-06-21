@@ -19,10 +19,7 @@ const config: Config = {
         primary: '#4B5953',
         accent: '#9CA3AF',
         textDisabled: '#6b7280',
-        row: {
-          default: '#FFFFFF',
-          hover: '#F1F3F5',
-        },
+
         button: {
           default: '#D1D5DB',
           selected: '#4B5358',
@@ -30,6 +27,9 @@ const config: Config = {
           hover: '#7A828C',
           active: '#2F3B44',
         },
+      },
+      fontFamily: {
+        sans: ['var(--font-manrope)', 'sans-serif'],
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',

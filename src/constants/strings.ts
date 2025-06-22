@@ -17,6 +17,7 @@ const saveShopString = 'Save shop' as const
 const searchForItemsString = 'Search for items...' as const
 const signInString = 'Sign in' as const
 const signOutString = 'Sign out' as const
+const unknownString = 'unknown' as const
 
 // Errors
 const noItemErrorMessage = 'You must add at least one item' as const
@@ -44,4 +45,5 @@ export {
   searchForItemsString,
   signInString,
   signOutString,
+  unknownString,
 }

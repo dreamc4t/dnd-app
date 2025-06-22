@@ -15,7 +15,7 @@ const Heading: FC<HeadingProps> = ({ title, variant = 'h2', ...props }) => {
   const variantStyles: Record<HeadingVariant, string> = {
     h1: clsx('text-3xl'),
     h2: clsx('text-2xl'),
-    h3: clsx('text-xl'),
+    h3: clsx('text-lg'),
     h4: clsx('text-l'),
   }
 
@@ -23,7 +23,7 @@ const Heading: FC<HeadingProps> = ({ title, variant = 'h2', ...props }) => {
 
   return (
     <HeadingTag
-      className={clsx(baseStyles, variantStyles[variant], className, { ...props }, 'p-4')}
+      className={clsx(baseStyles, variantStyles[variant], className, { ...props })}
     >
       {title}
     </HeadingTag>

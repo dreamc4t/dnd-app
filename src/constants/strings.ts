@@ -13,15 +13,21 @@ const addToShopString = 'Add to shop' as const
 const removeString = 'Remove' as const
 const deleteString = 'Delete' as const
 const notLoggedInString = 'You are not logged in' as const
-const mySavedShopsTitle = 'My saved shops' as const
+const mySavedShopsTitle = 'My Shops' as const
+const appTitle = 'D&D Shop Creator' as const
+const createdAtString = 'Created at' as const
+const itemsString = 'items' as const
+
 // Errors
 const noItemErrorMessage = 'You must add at least one item' as const
 const noShopNameErrorMessage = 'Missing shop name' as const
 export {
   signInString,
   addToShopString,
+  createdAtString,
   filtersString,
   signOutString,
+  itemsString,
   enterShopNameString,
   saveShopString,
   searchForItemsString,
@@ -36,4 +42,5 @@ export {
   noShopNameErrorMessage,
   notLoggedInString,
   mySavedShopsTitle,
+  appTitle,
 }

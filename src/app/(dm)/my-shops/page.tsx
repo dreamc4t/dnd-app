@@ -12,7 +12,7 @@ export default async function MyShops() {
 
   return (
     <main>
-      <ShopsList initialShops={shops} />
+      <ShopsList shops={shops} />
     </main>
   )
 }

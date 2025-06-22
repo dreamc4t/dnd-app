@@ -1,7 +1,7 @@
 import { Item } from './Item'
 
 type Shop = {
-  id?: string
+  id: string
   name: string
   items: Item[]
   createdAt?: string

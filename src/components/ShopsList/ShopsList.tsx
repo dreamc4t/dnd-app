@@ -1,29 +1,22 @@
-'use client'
-import React, { useState } from 'react'
+import React from 'react'
 import { mySavedShopsTitle, noShopsFoundsString } from '@/constants/strings'
 import { Shop } from '@/interfaces'
-import ShopListItem from './ShopListItem'
 import { Heading } from '../Heading'
+import { ShopListItem } from './ShopListItem'
 
 interface ShopsListProps {
-  initialShops: Shop[]
+  shops: Shop[]
 }
 
-const ShopsList: React.FC<ShopsListProps> = ({ initialShops }) => {
-  const [shops, setShops] = useState<Shop[]>(initialShops)
-
-  const handleDelete = (id: string) => {
-    setShops(shops.filter((shop) => shop.id !== id))
-  }
-
+const ShopsList: React.FC<ShopsListProps> = ({ shops }) => {
   if (shops.length === 0) return <div>{noShopsFoundsString}</div>
 
   return (
-    <div className='items- mx-auto flex max-w-2xl flex-col items-center'>
-      <Heading title={mySavedShopsTitle} variant='h2' />
-      <ul className='w-full border border-b-0 border-black'>
+    <div className='mx-auto flex max-w-3xl flex-col'>
+      <Heading title={mySavedShopsTitle} variant='h1' className='py-6' />
+      <ul className='space-y-2'>
         {shops.map((shop) => (
-          <ShopListItem shop={shop} key={shop.id} onDelete={handleDelete} />
+          <ShopListItem shop={shop} key={shop.id} />
         ))}
       </ul>
     </div>

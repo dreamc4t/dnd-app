@@ -4,7 +4,7 @@ import { icons } from './icons'
 
 describe('Rendering a couple of different icons, no need for all of them', () => {
   it('renders the DownIcon with props', () => {
-    render(icons.DownIcon({ color: 'red', size: 24 }))
+    render(icons.RefreshIcon({ color: 'red', size: 24 }))
     const svgElement = screen.getByRole('img')
 
     expect(svgElement).toHaveAttribute('fill', 'red')

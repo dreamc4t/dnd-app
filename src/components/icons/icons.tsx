@@ -19,8 +19,6 @@ const createIcon = (path: string, displayName: string) => {
   return IconComponent
 }
 const iconDefinitions = {
-  UpIcon: paths.up,
-  DownIcon: paths.down,
   GridSmallIcon: paths.gridSmall,
   GridBigIcon: paths.gridBig,
   InfoIcon: paths.info,
@@ -28,6 +26,10 @@ const iconDefinitions = {
   EditIcon: paths.edit,
   RefreshIcon: paths.refresh,
   ProfileIcon: paths.profile,
+  ChevronLeft: paths.chevronLeft,
+  ChevronRight: paths.chevronRight,
+  ChevronUp: paths.chevronUp,
+  ChevronDown: paths.chevronDown,
 }
 
 const icons = Object.fromEntries(

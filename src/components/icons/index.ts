@@ -1,8 +1,10 @@
 import { icons } from './icons'
 
 export const {
-  DownIcon,
-  UpIcon,
+  ChevronLeft,
+  ChevronRight,
+  ChevronUp,
+  ChevronDown,
   GridSmallIcon,
   GridBigIcon,
   InfoIcon,

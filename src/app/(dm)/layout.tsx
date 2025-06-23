@@ -16,7 +16,7 @@ export default async function RootLayout({
     <div className='flex h-screen flex-col'>
       <Providers session={session} items={items}>
         <Header />
-        <div className='flex-grow overflow-auto'>{children}</div>
+        <div className='flex-grow overflow-auto p-4'>{children}</div>
       </Providers>
     </div>
   )

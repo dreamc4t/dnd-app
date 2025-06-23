@@ -13,13 +13,13 @@ export const CurrentShop = () => {
 
   return (
     <div className={`relative flex h-full flex-col ${isSaving ? 'blur-sm' : ''}`}>
-      <div className={`p-4`}>
+      <div>
         <div className='flex items-center space-x-4'>
           <ShopNameInput />
         </div>
         {errorMessage && <p className='absolute text-sm text-red-500'>{errorMessage}</p>}
       </div>
-      <div className={`mx-2 mt-4 flex-grow overflow-auto`}>
+      <div className='flex-grow overflow-auto'>
         <ItemsList
           items={selectedItems}
           onButtonClick={removeItemFromShop}

@@ -47,8 +47,8 @@ export const FilterableItemList = ({ onAddToShopClick }: FilterableItemListProps
   }, [searchInput, selectedFilters, items])
 
   return (
-    <div className='flex h-full flex-col p-2'>
-      <div className='p-2'>
+    <div className='flex h-full flex-col'>
+      <div >
         <SearchField setSearchInput={setSearchInput} />
         <FilterBar
           filters={itemTypes}

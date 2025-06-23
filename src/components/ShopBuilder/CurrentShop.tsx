@@ -6,7 +6,7 @@ import { useShopBuilderContext } from './ShopBuilderContext'
 import { LoadingSpinnerOverlay } from '../LoadingSpinnerOverlay'
 import { useItemsContext } from '@/context'
 
-export const ShopContainer = () => {
+export const CurrentShop = () => {
   const { removeItemFromShop, selectedItems, isSaving, errorMessage, updateItemInShop } =
     useShopBuilderContext()
   const { itemTypes } = useItemsContext()
@@ -16,7 +16,6 @@ export const ShopContainer = () => {
       <div className={`p-4`}>
         <div className='flex items-center space-x-4'>
           <ShopNameInput />
-          <SaveShopButton />
         </div>
         {errorMessage && <p className='absolute text-sm text-red-500'>{errorMessage}</p>}
       </div>
@@ -31,6 +30,7 @@ export const ShopContainer = () => {
           itemTypes={itemTypes}
         />
       </div>
+      <SaveShopButton />
 
       {isSaving && <LoadingSpinnerOverlay />}
     </div>

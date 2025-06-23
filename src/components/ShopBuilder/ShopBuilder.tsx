@@ -1,5 +1,5 @@
 import { FilterableItemList } from '../FilterableItemList'
-import { ShopContainer } from './ShopContainer'
+import { CurrentShop } from './CurrentShop'
 import { useShopBuilderContext } from './ShopBuilderContext'
 import { useResizable } from '@/hooks'
 
@@ -30,7 +30,7 @@ const ShopBuilder = () => {
           className='p-x-2 overflow-y-auto'
           style={{ width: `${100 - widthPercentage}%` }}
         >
-          <ShopContainer />
+          <CurrentShop />
         </div>
       </div>
     </div>

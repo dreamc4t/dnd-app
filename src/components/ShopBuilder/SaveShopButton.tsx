@@ -6,7 +6,7 @@ export const SaveShopButton = () => {
 
   return (
     <button
-      className='w-28 flex-shrink-0 rounded bg-blue-500 px-4 py-2 text-white'
+      className='w-full bg-green-900 px-4 py-2'
       onClick={handleSaveShop}
       disabled={isSaving}
     >

@@ -2,12 +2,14 @@
 
 import { useQuery } from '@tanstack/react-query'
 import { Npc } from '@/interfaces'
-import { GENERATE_NPC_ENDPOINT } from '@/constants/urls'
-import { ApiService } from '@/lib/services'
 
 export const useGenerateNpc = () => {
   const queryKey = ['generateNpc']
-  const generateNpc = () => ApiService.get<Npc>(GENERATE_NPC_ENDPOINT)
+  const generateNpc = async (): Promise<Npc> => {
+    const res = await fetch('/api/npc/generate')
+    if (!res.ok) throw new Error('Failed to generate NPC')
+    return res.json()
+  }
 
   return useQuery({
     queryKey,

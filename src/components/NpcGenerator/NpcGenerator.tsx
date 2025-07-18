@@ -2,7 +2,6 @@
 
 import { useGenerateNpc } from '@/hooks/useGenerateNpc'
 import NpcDetails from './NpcDetails'
-import { saveNpc } from '@/app/actions/saveNpc'
 import { NameGeneratorRow } from './NameGeneratorRow'
 import { useEffect, useState } from 'react'
 import { useGetNamesForSpecies } from '@/hooks'
@@ -15,8 +14,21 @@ const NpcGenerator = () => {
 
   const handleSaveNpc = async () => {
     if (!npc) return
+
     try {
-      await saveNpc({ ...npc, name: npcName })
+      const res = await fetch('/api/npc/save', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ ...npc, name: npcName }),
+      })
+
+      if (!res.ok) {
+        throw new Error(`Failed to save NPC: ${res.statusText}`)
+      }
+
+      console.log('NPC saved successfully!')
     } catch (error) {
       console.error('Failed to save npc:', error)
     }

@@ -1,20 +1,21 @@
 'use client'
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import { SearchField } from '../searchField'
 import { ItemsList } from '../ItemsList'
 import { Item } from '@/interfaces'
 import { FilterBar } from '../filterBar'
 import { noItemsFoundString } from '@/constants/strings'
 import { useItemsContext } from '@/context'
+import { ItemsTable } from '../ItemsTable'
 
 interface FilterableItemListProps {
   onAddToShopClick: (item: Item) => void
 }
 export const FilterableItemList = ({ onAddToShopClick }: FilterableItemListProps) => {
-  const { items, itemTypes } = useItemsContext()
+  const { itemTypes, itemsByType } = useItemsContext()
   const [selectedFilters, setSelectedFilters] = useState<string[]>([])
   const [searchInput, setSearchInput] = useState<string>('')
-  const [filteredItems, setFilteredItems] = useState<Item[]>(items)
+  const [filteredItems, setFilteredItems] = useState<Record<string, Item[]>>(itemsByType)
 
   const handleSetFilter = (filter: string, isSelected: boolean) => {
     if (isSelected) {
@@ -26,25 +27,28 @@ export const FilterableItemList = ({ onAddToShopClick }: FilterableItemListProps
     }
   }
 
-  const filterItems = (
-    items: Item[],
-    searchInput: string,
-    selectedFilters: string[],
-  ): Item[] => {
-    const lowerCaseSearchInput = searchInput.toLowerCase()
-
-    const filteredBySearch = items.filter(({ name }) =>
-      name.toLowerCase().includes(lowerCaseSearchInput),
-    )
-
-    return selectedFilters.length
-      ? filteredBySearch.filter(({ type }) => selectedFilters.includes(type))
-      : filteredBySearch
-  }
-
   useEffect(() => {
-    setFilteredItems(filterItems(items, searchInput, selectedFilters))
-  }, [searchInput, selectedFilters, items])
+    const normalizedSearch = searchInput.toLowerCase()
+
+    const filtered: Record<string, Item[]> = {}
+
+    for (const [type, items] of Object.entries(itemsByType)) {
+      const result = items.filter((item) => {
+        const matchesSearch = item.name.toLowerCase().includes(normalizedSearch)
+        const matchesFilter =
+          selectedFilters.length === 0 || selectedFilters.includes(item.type)
+        return matchesSearch && matchesFilter
+      })
+
+      if (result.length > 0) {
+        filtered[type] = result
+      }
+    }
+
+    setFilteredItems(filtered)
+  }, [itemsByType, searchInput, selectedFilters])
+
+  const hasItems = Object.keys(filteredItems).length > 0
 
   return (
     <div className='flex h-full flex-col'>
@@ -56,12 +60,18 @@ export const FilterableItemList = ({ onAddToShopClick }: FilterableItemListProps
           selectedFilters={selectedFilters}
         />
       </div>
-      <ItemsList
-        items={filteredItems}
-        onButtonClick={onAddToShopClick}
-        buttonType='ADD'
-        noItemsMessage={noItemsFoundString}
-      />
+      {hasItems ? (
+        Object.entries(filteredItems).map(([title, items]) => (
+          <ItemsTable
+            key={title}
+            title={title}
+            items={items}
+            onButtonClick={onAddToShopClick}
+          />
+        ))
+      ) : (
+        <div className='p-4 text-center text-sm text-gray-500'>{noItemsFoundString}</div>
+      )}
     </div>
   )
 }

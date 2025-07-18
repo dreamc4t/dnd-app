@@ -1,6 +1,7 @@
 import { PlayerShop } from '@/components/playerShop'
-import { SHOP_URL } from '@/constants/urls'
 import { Shop } from '@/interfaces/Shop'
+import { getShopById } from '@/lib/services'
+import { notFound } from 'next/navigation'
 
 interface PageProps {
   params: {
@@ -10,8 +11,10 @@ interface PageProps {
 
 export default async function Page({ params }: PageProps) {
   const { id } = params
-  const url = `${SHOP_URL}/${id}`
-  const shop: Shop = await fetch(url).then((res) => res.json())
+  const shop: Shop | null = await getShopById(id)
+
+  // TODO fix notFound to custom
+  if (!shop) return notFound()
 
   return <div>{<PlayerShop shop={shop} />}</div>
 }

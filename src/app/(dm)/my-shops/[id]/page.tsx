@@ -1,6 +1,7 @@
 import { ShopEditor } from '@/components/ShopEditor'
-import { SHOP_URL } from '@/constants/urls'
 import { Shop } from '@/interfaces'
+import { getShopById } from '@/lib/services'
+import { notFound } from 'next/navigation'
 
 interface PageProps {
   params: {
@@ -9,9 +10,10 @@ interface PageProps {
 }
 
 export default async function Page({ params }: PageProps) {
-  const { id } = params
-  const url = `${SHOP_URL}/${id}`
-  const shop: Shop = await fetch(url).then((res) => res.json())
+  // TODO look into only showing the shop if it matches logged in users id
+  const shop: Shop | null = await getShopById(params.id)
+
+  if (!shop) return notFound()
 
   return <ShopEditor {...shop} />
 }

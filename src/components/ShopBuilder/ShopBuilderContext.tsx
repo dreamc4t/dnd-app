@@ -3,7 +3,6 @@
 import { Item, Shop } from '@/interfaces'
 import { createContext, useContext, useState, useEffect } from 'react'
 import { v4 as uuidv4 } from 'uuid'
-import { saveShop } from '@/app/actions/saveShop' // Import the server action
 import { noItemErrorMessage, noShopNameErrorMessage } from '@/constants/strings'
 
 interface ShopBuilderContextType {
@@ -63,7 +62,7 @@ const ShopBuilderContextProvider = ({ children }: { children: React.ReactNode })
 
     const now = new Date().toISOString()
 
-    const shop: Shop = {
+    const shop: Omit<Shop, 'id'> = {
       name: shopName,
       items: selectedItems,
       createdAt: now,
@@ -71,7 +70,11 @@ const ShopBuilderContextProvider = ({ children }: { children: React.ReactNode })
     }
 
     try {
-      await saveShop(shop)
+      await fetch('/api/shop/create', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(shop),
+      })
       setShopName('')
       setSelectedItems([])
     } catch (error) {

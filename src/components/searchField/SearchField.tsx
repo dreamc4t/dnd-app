@@ -11,14 +11,14 @@ const SearchField = ({ setSearchInput }: SearchFieldProps) => {
   }
 
   return (
-    <div className='relative w-full flex items-center'>
-      <SearchIcon className='absolute left-2 fill-text-secondary'/>
+    <div className='relative flex w-full items-center'>
+      <SearchIcon className='absolute left-2 fill-text-secondary' />
       <input
         type='text'
         onChange={handleTextInput}
         placeholder={searchForItemsString}
         role='search'
-        className='bg-surface pl-9 mr-4 w-full rounded p-2 placeholder-text-secondary text-text-secondary'
+        className='w-full rounded-lg bg-surface p-2 pl-9 text-text-secondary placeholder-text-secondary focus:outline-none'
       />
     </div>
   )

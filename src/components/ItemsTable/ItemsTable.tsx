@@ -1,5 +1,6 @@
 import { Item } from '@/interfaces'
 import { Heading } from '../Heading'
+import { addToShopString } from '@/constants/strings'
 
 interface ItemsTableProps {
   items: Item[]
@@ -11,7 +12,7 @@ const ItemsTable = ({ items, title, onButtonClick }: ItemsTableProps) => {
     <div>
       <Heading variant='h3' title={title} className='py-3' />
 
-      <div className='border-backgroundTint2 overflow-hidden rounded-xl border shadow-sm'>
+      <div className='overflow-hidden rounded-xl border border-backgroundTint2 shadow-sm'>
         <table className='w-full text-left'>
           <thead className='bg-backgroundTint1'>
             <tr>
@@ -19,22 +20,22 @@ const ItemsTable = ({ items, title, onButtonClick }: ItemsTableProps) => {
               <th className='p-3'>Type</th>
               <th className='p-3'>Weight</th>
               <th className='p-3'>Price</th>
-              <th className='w-20 p-3' />
+              <th className='w-28 p-1' />
             </tr>
           </thead>
           <tbody>
             {items.map((item) => (
-              <tr key={item.id} className='border-contrast border-t text-text-secondary'>
+              <tr key={item.id} className='border-t border-contrast text-text-secondary'>
                 <td className='p-3 text-text-primary'>{item.name}</td>
                 <td className='p-3'>{item.type}</td>
                 <td className='p-3'>{item.weight}</td>
                 <td className='p-3'>{item.prize}</td>
-                <td className='w-20 p-3'>
+                <td className='w-28 p-1'>
                   <button
                     onClick={() => onButtonClick(item)}
-                    className='text-left text-sm text-primary hover:underline focus:outline-none'
+                    className='text-primary text-left text-sm hover:underline focus:outline-none'
                   >
-                    Add to shop
+                    {addToShopString}
                   </button>
                 </td>
               </tr>

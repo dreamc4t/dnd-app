@@ -13,4 +13,5 @@ export const {
   RefreshIcon,
   ProfileIcon,
   SearchIcon,
+  AddIcon,
 } = icons

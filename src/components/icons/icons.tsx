@@ -31,6 +31,7 @@ const iconDefinitions = {
   ChevronUp: paths.chevronUp,
   ChevronDown: paths.chevronDown,
   SearchIcon: paths.search,
+  AddIcon: paths.add,
 }
 
 const icons = Object.fromEntries(

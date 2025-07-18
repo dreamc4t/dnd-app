@@ -1,7 +1,6 @@
 'use client'
 import { useEffect, useState } from 'react'
 import { SearchField } from '../searchField'
-import { ItemsList } from '../ItemsList'
 import { Item } from '@/interfaces'
 import { FilterBar } from '../filterBar'
 import { noItemsFoundString } from '@/constants/strings'

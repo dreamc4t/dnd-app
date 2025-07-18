@@ -18,7 +18,6 @@ const ItemsTable = ({ items, title, onButtonClick }: ItemsTableProps) => {
             <tr>
               <th className='p-3'>Name</th>
               <th className='p-3'>Type</th>
-              <th className='p-3'>Weight</th>
               <th className='p-3'>Price</th>
               <th className='w-28 p-1' />
             </tr>
@@ -28,9 +27,8 @@ const ItemsTable = ({ items, title, onButtonClick }: ItemsTableProps) => {
               <tr key={item.id} className='border-t border-contrast text-text-secondary'>
                 <td className='p-3 text-text-primary'>{item.name}</td>
                 <td className='p-3'>{item.type}</td>
-                <td className='p-3'>{item.weight}</td>
                 <td className='p-3'>{item.prize}</td>
-                <td className='w-28 p-1'>
+                <td className='min-w-14 p-1'>
                   <button
                     onClick={() => onButtonClick(item)}
                     className='text-primary text-left text-sm hover:underline focus:outline-none'

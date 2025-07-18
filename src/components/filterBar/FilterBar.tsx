@@ -12,11 +12,6 @@ const FilterBar = ({ filters, setFilter, selectedFilters }: FilterBarProps) => {
   return (
     <section>
       <Heading variant='h3' title={filtersString} />
-      <div className='flex text-text-secondary'>
-        {selectedFilters.map((filter, i) => {
-          return <p key={filter + i}>{filter}</p>
-        })}
-      </div>
       <div role='group' className='flex flex-wrap gap-x-2 gap-y-1'>
         {filters.map((filter, i) => {
           const key = `${filter}${i}`

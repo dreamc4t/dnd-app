@@ -1,5 +1,6 @@
 import { filtersString } from '@/constants/strings'
 import { Chip } from '../Chip'
+import { Heading } from '../Heading'
 
 interface FilterBarProps {
   filters: string[]
@@ -9,9 +10,14 @@ interface FilterBarProps {
 const FilterBar = ({ filters, setFilter, selectedFilters }: FilterBarProps) => {
   filters.sort()
   return (
-    <div>
-      <h2 className='text-center'>{filtersString}</h2>
-      <section role='group' className='flex flex-wrap gap-x-2 gap-y-1'>
+    <section>
+      <Heading variant='h3' title={filtersString} />
+      <div className='flex text-text-secondary'>
+        {selectedFilters.map((filter, i) => {
+          return <p key={filter + i}>{filter}</p>
+        })}
+      </div>
+      <div role='group' className='flex flex-wrap gap-x-2 gap-y-1'>
         {filters.map((filter, i) => {
           const key = `${filter}${i}`
           const isSelected = selectedFilters.includes(filter)
@@ -25,8 +31,8 @@ const FilterBar = ({ filters, setFilter, selectedFilters }: FilterBarProps) => {
             />
           )
         })}
-      </section>
-    </div>
+      </div>
+    </section>
   )
 }
 

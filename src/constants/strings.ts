@@ -1,6 +1,7 @@
 const addToShopString = 'Add to shop' as const
 const appTitle = 'D&D Shop Creator' as const
 const createdAtString = 'Created at' as const
+const currentShopTitle = 'Current Shop' as const
 const deleteString = 'Delete' as const
 const descriptionString = 'Description: ' as const
 const enterShopNameString = 'enter shop name...' as const
@@ -27,6 +28,7 @@ export {
   addToShopString,
   appTitle,
   createdAtString,
+  currentShopTitle,
   deleteString,
   descriptionString,
   enterShopNameString,

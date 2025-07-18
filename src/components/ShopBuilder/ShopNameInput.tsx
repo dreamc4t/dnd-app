@@ -1,7 +1,6 @@
 'use client'
 
 import { useState, useRef, useEffect } from 'react'
-import { Heading } from '../Heading'
 import { EditIcon } from '../icons' // adjust as needed
 import { enterShopNameString } from '@/constants/strings'
 import { useShopBuilderContext } from './ShopBuilderContext'
@@ -24,7 +23,7 @@ export const ShopNameInput = () => {
   }
 
   return (
-    <div className='mb-4 flex items-center gap-1'>
+    <div className='flex items-center gap-1'>
       <label className='text-nowrap text-text-secondary'>Shop name:</label>
       <div className='flex w-full items-center gap-1' onClick={() => setIsEditing(true)}>
         {isEditing ? (

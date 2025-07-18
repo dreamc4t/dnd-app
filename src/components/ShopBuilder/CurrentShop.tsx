@@ -1,5 +1,5 @@
 import { ItemsList } from '../ItemsList'
-import { noItemsSelectedString } from '@/constants/strings'
+import { currentShopTitle, noItemsSelectedString } from '@/constants/strings'
 import { SaveShopButton } from './SaveShopButton'
 import { ShopNameInput } from './ShopNameInput'
 import { useShopBuilderContext } from './ShopBuilderContext'
@@ -13,8 +13,8 @@ export const CurrentShop = () => {
   const { itemTypes } = useItemsContext()
 
   return (
-    <div className={`relative flex h-full flex-col ${isSaving ? 'blur-sm' : ''}`}>
-      <Heading variant='h2' title='Current Shop' className='mb-3' />
+    <div className={`relative flex h-full flex-col gap-3 ${isSaving ? 'blur-sm' : ''}`}>
+      <Heading variant='h2' title={currentShopTitle} />
       <div>
         <ShopNameInput />
         {errorMessage && <p className='text-sm text-red-500'>{errorMessage}</p>}

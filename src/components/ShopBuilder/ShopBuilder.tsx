@@ -13,10 +13,7 @@ const ShopBuilder = () => {
   return (
     <div className='flex h-full flex-col'>
       <div className='flex flex-grow overflow-y-hidden'>
-        <div
-          className='p-x-2 overflow-y-auto border-r border-black'
-          style={{ width: `${widthPercentage}%` }}
-        >
+        <div className='overflow-y-auto pr-4' style={{ width: `${widthPercentage}%` }}>
           <FilterableItemList onAddToShopClick={addItemToShop} />
         </div>
 
@@ -27,7 +24,7 @@ const ShopBuilder = () => {
         />
 
         <div
-          className='p-x-2 overflow-y-auto'
+          className='overflow-y-auto pl-4'
           style={{ width: `${100 - widthPercentage}%` }}
         >
           <CurrentShop />

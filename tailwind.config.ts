@@ -10,16 +10,15 @@ const config: Config = {
     extend: {
       colors: {
         background: '#121712',
+        backgroundTint1: '#1F241F',
+        backgroundTint2: '#424F40',
         surface: '#2E362B',
+        contrast: '#E5E8EB',
         text: {
           primary: '#FFFFFF',
           secondary: '#A6B2A3',
           disabled: '6b7280',
         },
-
-        primary: '#4B5953',
-        accent: '#9CA3AF',
-        textDisabled: '#6b7280',
 
         button: {
           default: '#D1D5DB',

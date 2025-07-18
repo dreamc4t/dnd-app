@@ -28,7 +28,7 @@ const Button: FC<ButtonProps> = ({
 
   const variantStyles: Partial<Record<ButtonStyle, string>> = {
     default: clsx('bg-button-default hover:bg-button-hover active:bg-button-active'),
-    disabled: clsx('bg-button-disabled text-textDisabled cursor-not-allowed'),
+    disabled: clsx('bg-button-disabled text-text-disabled cursor-not-allowed'),
   }
 
   const style = clsx('rounded text-black', variantStyles[buttonStyle], sizeStyles[size])

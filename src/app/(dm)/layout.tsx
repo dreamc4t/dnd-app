@@ -1,8 +1,8 @@
 import { ReactNode } from 'react'
 import { auth } from '@/lib/auth'
 import Providers from './Providers'
-import { fetchAllItems } from '@/lib/repositories'
 import { Header } from '@/components'
+import { getAllItems } from '@/lib/services/itemService'
 
 export default async function RootLayout({
   children,
@@ -10,7 +10,7 @@ export default async function RootLayout({
   children: ReactNode
 }>) {
   const session = await auth()
-  const items = await fetchAllItems()
+  const items = await getAllItems()
 
   return (
     <div className='flex h-screen flex-col'>

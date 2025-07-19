@@ -1,7 +1,6 @@
-// app/api/npc/user/route.ts
-import dbConnect from '@/lib/db'
+// src/app/api/npc/user/route.ts
 import { NextRequest, NextResponse } from 'next/server'
-import Npc from '@/lib/models/npc'
+import { getNpcsByUserId } from '@/lib/services/npcService'
 
 export async function GET(req: NextRequest) {
   try {
@@ -10,8 +9,7 @@ export async function GET(req: NextRequest) {
       return NextResponse.json({ error: 'Missing user-id header' }, { status: 400 })
     }
 
-    await dbConnect()
-    const npcs = await Npc.find({ userId }).sort({ createdAt: -1 })
+    const npcs = await getNpcsByUserId(userId)
     return NextResponse.json(npcs)
   } catch (error) {
     console.error('[GET_NPCS_ERROR]', error)

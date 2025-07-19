@@ -12,4 +12,6 @@ export interface Npc {
   charisma: number
   wisdom: number
   userId?: string
+  createdAt?: string
+  updatedAt?: string
 }

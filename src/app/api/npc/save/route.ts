@@ -1,8 +1,7 @@
-// app/api/npc/save/route.ts
+// src/app/api/npc/save/route.ts
 import { auth } from '@/lib/auth'
-import dbConnect from '@/lib/db'
-import Npc from '@/lib/models/npc'
 import { NextRequest, NextResponse } from 'next/server'
+import { createNpc } from '@/lib/services/npcService'
 
 export async function POST(req: NextRequest) {
   try {
@@ -14,13 +13,7 @@ export async function POST(req: NextRequest) {
     }
 
     const npc = await req.json()
-
-    await dbConnect()
-
-    const savedNpc = await Npc.create({
-      ...npc,
-      userId: user.id,
-    })
+    const savedNpc = await createNpc(npc, user.id)
 
     return NextResponse.json(savedNpc, { status: 201 })
   } catch (error) {

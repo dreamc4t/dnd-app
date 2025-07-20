@@ -14,5 +14,6 @@ export const {
   ProfileIcon,
   SearchIcon,
   AddIcon,
-  TrashcanIcon
+  TrashcanIcon,
+  CheckIcon
 } = icons

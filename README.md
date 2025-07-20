@@ -24,11 +24,13 @@ To enable Tailwind CSS IntelliSense for styles variables and `clsx` in VSCode, f
    "tailwindCSS.experimental.classRegex": [
      ["clsx\\(([^)]*)\\)", "(?:'|\"|`)([^']*)(?:'|\"|`)"]], "tailwindCSS.classAttributes": [".*ClassName", ".*Style", ".*Styles"],
 
+   ```
 
 2. Comment out or remove the following line if it's present:
 
    ```json
    "tailwindCSS.experimental.configFile": null,
+   ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 

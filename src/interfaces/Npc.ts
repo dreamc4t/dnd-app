@@ -15,11 +15,3 @@ export interface Npc {
   createdAt?: string
   updatedAt?: string
 }
-
-export interface NpcNames {
-  id?: string
-  species: SPECIES
-  male: string[]
-  female: string[]
-  surnames: string[]
-}

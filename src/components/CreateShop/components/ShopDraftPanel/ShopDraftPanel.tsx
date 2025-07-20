@@ -18,7 +18,11 @@ export const ShopDraftPanel = () => {
         {errorMessage && <p className='text-sm text-red-500'>{errorMessage}</p>}
       </div>
       <div className='flex-grow overflow-auto'>
-        <ItemList items={selectedItems} onDeleteItem={removeItemFromShop} />
+        <ItemList
+          items={selectedItems}
+          onDeleteItem={removeItemFromShop}
+          onUpdateItem={updateItemInShop}
+        />
       </div>
       <SaveShopButton />
 

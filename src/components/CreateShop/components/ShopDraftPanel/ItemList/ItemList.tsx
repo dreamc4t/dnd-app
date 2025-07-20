@@ -4,7 +4,7 @@ import { ListItem } from './ListItem'
 
 interface ItemsListProps {
   items?: Item[]
-  onUpdateItem?: (itemId: string, updatedFields: Partial<Item>) => void
+  onUpdateItem: (itemId: string, updatedFields: Partial<Item>) => void
   onDeleteItem: (item: Item) => void
 }
 
@@ -14,7 +14,14 @@ const ItemList = ({ items, onUpdateItem, onDeleteItem }: ItemsListProps) => {
   return (
     <div>
       {items.map((item) => {
-        return <ListItem item={item} key={item.id} onDeleteItem={onDeleteItem} />
+        return (
+          <ListItem
+            item={item}
+            key={item.id}
+            onDeleteItem={onDeleteItem}
+            onUpdateItem={onUpdateItem}
+          />
+        )
       })}
     </div>
   )

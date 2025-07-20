@@ -32,6 +32,7 @@ const iconDefinitions = {
   ChevronDown: paths.chevronDown,
   SearchIcon: paths.search,
   AddIcon: paths.add,
+  TrashcanIcon: paths.trashcan
 }
 
 const icons = Object.fromEntries(

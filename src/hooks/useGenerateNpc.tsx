@@ -1,22 +1,34 @@
-import { useQuery } from '@tanstack/react-query'
 import { Npc } from '@/interfaces'
 import { GENDER, SPECIES } from '@/constants/enums'
+import { getRandomSpecies, rollDice } from '@/lib/utils'
+import { v4 as uuidv4 } from 'uuid'
+import { useRandomNameBySpecies } from './useRandomNameBySpecies'
 
 interface UseGenerateNpcProps {
   species?: SPECIES
   gender?: GENDER
 }
 export const useGenerateNpc = ({ species, gender }: UseGenerateNpcProps = {}) => {
-  const queryKey = ['generateNpc', species, gender]
-  const generateNpc = async (): Promise<Npc> => {
-    const params = new URLSearchParams()
-    if (species) params.append('species', species)
-    if (gender) params.append('gender', gender)
+  const getName = useRandomNameBySpecies()
 
-    const response = await fetch(`/api/npc/generate?${params.toString()}`)
-    if (!response.ok) throw new Error('Failed to generate NPC')
-    return response.json()
+  const generateNpc = (): Npc => {
+    const finalSpecies = species ?? getRandomSpecies()
+    const finalGender = gender ?? (Math.random() < 0.5 ? GENDER.MALE : GENDER.FEMALE)
+
+    const name = getName({ species: finalSpecies, gender: finalGender })
+
+    return {
+      id: uuidv4(),
+      name,
+      gender: finalGender,
+      species: finalSpecies,
+      strength: rollDice(6, 3),
+      dexterity: rollDice(6, 3),
+      intelligence: rollDice(6, 3),
+      constitution: rollDice(6, 3),
+      charisma: rollDice(6, 3),
+      wisdom: rollDice(6, 3),
+    }
   }
-
-  return useQuery({ queryKey, queryFn: generateNpc, enabled: false })
+  return { generateNpc }
 }

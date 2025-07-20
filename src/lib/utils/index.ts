@@ -1,2 +1,2 @@
-export * from './authenticatedFetch'
 export * from './species'
+export * from './dice'

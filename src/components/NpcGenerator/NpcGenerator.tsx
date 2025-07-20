@@ -4,13 +4,15 @@ import { useGenerateNpc } from '@/hooks/useGenerateNpc'
 import NpcDetails from './NpcDetails'
 import { NameGeneratorRow } from './NameGeneratorRow'
 import { useEffect, useState } from 'react'
-import { useGetNamesForSpecies } from '@/hooks'
+import { Npc } from '@/interfaces'
+import { useRandomNameBySpecies } from '@/hooks/useRandomNameBySpecies'
 
 const NpcGenerator = () => {
-  const { data: npc, error, isLoading, refetch: generateNewNpc } = useGenerateNpc()
+  const [npc, setNpc] = useState<Npc | null>(null)
+  const [npcName, setNpcName] = useState<string>('')
 
-  const [npcName, setNpcName] = useState<string>(npc?.name ?? '')
-  const { names } = useGetNamesForSpecies({ species: npc?.species })
+  const { generateNpc } = useGenerateNpc()
+  const getRandomName = useRandomNameBySpecies()
 
   const handleSaveNpc = async () => {
     if (!npc) return
@@ -35,12 +37,13 @@ const NpcGenerator = () => {
   }
 
   const handleOnGenerateClick = () => {
-    generateNewNpc()
+    const newNpc = generateNpc()
+    setNpc(newNpc)
   }
-
   const handleRandomNameClick = () => {
-    const randomName = names && names[Math.floor(Math.random() * names.length)]
-    randomName && setNpcName(randomName)
+    if (!npc) return
+    const name = getRandomName({ species: npc.species, gender: npc.gender })
+    setNpcName(name)
   }
 
   useEffect(() => {
@@ -53,12 +56,9 @@ const NpcGenerator = () => {
       <button
         onClick={handleOnGenerateClick}
         className='rounded bg-blue-500 px-4 py-2 font-bold text-white hover:bg-blue-700'
-        disabled={isLoading}
       >
-        {isLoading ? 'Generating...' : 'Generate NPC'}
+        Generate NPC
       </button>
-
-      {error && <p className='text-red-500'>Failed to generate NPC</p>}
 
       {npc && (
         <div className='mt-4 rounded-md bg-gray-700 p-4'>

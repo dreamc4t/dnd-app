@@ -1,16 +1,16 @@
 'use client'
-import { useEffect, useState } from 'react'
-import { SearchField } from '../searchField'
-import { Item } from '@/interfaces'
-import { FilterBar } from '../filterBar'
+import { FilterBar } from '@/components/filterBar'
+import { ItemsTable } from '@/components/ItemsTable'
+import { SearchField } from '@/components/searchField'
 import { noItemsFoundString } from '@/constants/strings'
 import { useItemsContext } from '@/context'
-import { ItemsTable } from '../ItemsTable'
+import { Item } from '@/interfaces'
+import { useEffect, useState } from 'react'
 
-interface FilterableItemListProps {
+interface ItemCatalogPanelProps {
   onAddToShopClick: (item: Item) => void
 }
-export const FilterableItemList = ({ onAddToShopClick }: FilterableItemListProps) => {
+export const ItemCatalogPanel = ({ onAddToShopClick }: ItemCatalogPanelProps) => {
   const { itemTypes, itemsByType } = useItemsContext()
   const [selectedFilters, setSelectedFilters] = useState<string[]>([])
   const [searchInput, setSearchInput] = useState<string>('')

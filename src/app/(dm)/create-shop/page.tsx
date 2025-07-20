@@ -1,9 +1,3 @@
-import { ShopBuilderWrapper } from '@/components/ShopBuilderWrapper'
+import { CreateShopPage } from '@/components/CreateShop'
 
-export default async function ShopPage() {
-  return (
-    <main className='flex h-full flex-col'>
-      <ShopBuilderWrapper />
-    </main>
-  )
-}
+export default CreateShopPage

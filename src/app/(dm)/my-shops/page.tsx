@@ -10,9 +10,5 @@ export default async function MyShops() {
   const userID = session.user.id
   const shops = await getShopsByUserId(userID)
 
-  return (
-    <main>
-      <ShopsList shops={shops} />
-    </main>
-  )
+  return <ShopsList shops={shops} />
 }

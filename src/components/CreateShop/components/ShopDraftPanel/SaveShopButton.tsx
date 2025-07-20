@@ -1,8 +1,8 @@
 import { saveShopString, isSavingString } from '@/constants/strings'
-import { useShopBuilderContext } from './ShopBuilderContext'
+import { useShopDraftContext } from '../../ShopDraftContext'
 
 export const SaveShopButton = () => {
-  const { handleSaveShop, isSaving } = useShopBuilderContext()
+  const { handleSaveShop, isSaving } = useShopDraftContext()
 
   return (
     <button

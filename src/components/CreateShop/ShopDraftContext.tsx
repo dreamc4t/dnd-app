@@ -5,7 +5,7 @@ import { createContext, useContext, useState, useEffect } from 'react'
 import { v4 as uuidv4 } from 'uuid'
 import { noItemErrorMessage, noShopNameErrorMessage } from '@/constants/strings'
 
-interface ShopBuilderContextType {
+interface ShopDraftContextType {
   shopName: string
   setShopName: (name: string) => void
   selectedItems: Item[]
@@ -17,10 +17,10 @@ interface ShopBuilderContextType {
   updateItemInShop: (itemId: string, updatedFields: Partial<Item>) => void // New function
 }
 
-const ShopBuilderContext = createContext({} as ShopBuilderContextType)
-const useShopBuilderContext = () => useContext(ShopBuilderContext)
+const ShopDraftContext = createContext({} as ShopDraftContextType)
+const useShopDraftContext = () => useContext(ShopDraftContext)
 
-const ShopBuilderContextProvider = ({ children }: { children: React.ReactNode }) => {
+const ShopDraftContextProvider = ({ children }: { children: React.ReactNode }) => {
   const [shopName, setShopName] = useState<string>('')
   const [selectedItems, setSelectedItems] = useState<Item[]>([])
   const [isSaving, setIsSaving] = useState<boolean>(false)
@@ -91,7 +91,7 @@ const ShopBuilderContextProvider = ({ children }: { children: React.ReactNode })
   }, [shopName, selectedItems])
 
   return (
-    <ShopBuilderContext.Provider
+    <ShopDraftContext.Provider
       value={{
         shopName,
         setShopName,
@@ -105,8 +105,8 @@ const ShopBuilderContextProvider = ({ children }: { children: React.ReactNode })
       }}
     >
       {children}
-    </ShopBuilderContext.Provider>
+    </ShopDraftContext.Provider>
   )
 }
 
-export { useShopBuilderContext, ShopBuilderContextProvider }
+export { useShopDraftContext, ShopDraftContextProvider }

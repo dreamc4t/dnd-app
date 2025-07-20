@@ -1,10 +1,9 @@
-import { FilterableItemList } from '../FilterableItemList'
-import { CurrentShop } from './CurrentShop'
-import { useShopBuilderContext } from './ShopBuilderContext'
+import { useShopDraftContext } from './ShopDraftContext'
 import { useResizable } from '@/hooks'
+import { ItemCatalogPanel, ShopDraftPanel } from './components'
 
-const ShopBuilder = () => {
-  const { addItemToShop } = useShopBuilderContext()
+const CreateShopLayout = () => {
+  const { addItemToShop } = useShopDraftContext()
   const { handleMouseDown, widthPercentage } = useResizable({
     initialLeftWidthPercentage: 60,
     minimumWidthPercentage: 35,
@@ -14,7 +13,7 @@ const ShopBuilder = () => {
     <div className='flex h-full flex-col'>
       <div className='flex flex-grow overflow-y-hidden'>
         <div className='overflow-y-scroll pr-4' style={{ width: `${widthPercentage}%` }}>
-          <FilterableItemList onAddToShopClick={addItemToShop} />
+          <ItemCatalogPanel onAddToShopClick={addItemToShop} />
         </div>
 
         <div
@@ -27,11 +26,11 @@ const ShopBuilder = () => {
           className='overflow-y-auto pl-4'
           style={{ width: `${100 - widthPercentage}%` }}
         >
-          <CurrentShop />
+          <ShopDraftPanel />
         </div>
       </div>
     </div>
   )
 }
 
-export { ShopBuilder }
+export { CreateShopLayout }

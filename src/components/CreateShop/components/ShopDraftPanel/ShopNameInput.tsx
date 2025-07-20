@@ -1,12 +1,12 @@
 'use client'
 
 import { useState, useRef, useEffect } from 'react'
-import { EditIcon } from '../icons' // adjust as needed
 import { enterShopNameString } from '@/constants/strings'
-import { useShopBuilderContext } from './ShopBuilderContext'
+import { useShopDraftContext } from '../../ShopDraftContext'
+import { EditIcon } from '@/components/icons'
 
 export const ShopNameInput = () => {
-  const { shopName, setShopName } = useShopBuilderContext()
+  const { shopName, setShopName } = useShopDraftContext()
   const [isEditing, setIsEditing] = useState(false)
   const inputRef = useRef<HTMLInputElement>(null)
 

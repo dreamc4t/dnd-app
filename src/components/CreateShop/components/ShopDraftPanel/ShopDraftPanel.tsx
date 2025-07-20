@@ -1,15 +1,15 @@
-import { ItemsList } from '../ItemsList'
+import { Heading } from '@/components/Heading'
+import { ItemsList } from '@/components/ItemsList'
+import { LoadingSpinnerOverlay } from '@/components/LoadingSpinnerOverlay'
 import { currentShopTitle, noItemsSelectedString } from '@/constants/strings'
+import { useItemsContext } from '@/context'
 import { SaveShopButton } from './SaveShopButton'
 import { ShopNameInput } from './ShopNameInput'
-import { useShopBuilderContext } from './ShopBuilderContext'
-import { LoadingSpinnerOverlay } from '../LoadingSpinnerOverlay'
-import { useItemsContext } from '@/context'
-import { Heading } from '../Heading'
+import { useShopDraftContext } from '../../ShopDraftContext'
 
-export const CurrentShop = () => {
+export const ShopDraftPanel = () => {
   const { removeItemFromShop, selectedItems, isSaving, errorMessage, updateItemInShop } =
-    useShopBuilderContext()
+    useShopDraftContext()
   const { itemTypes } = useItemsContext()
 
   return (

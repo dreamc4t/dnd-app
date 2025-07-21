@@ -5,7 +5,7 @@ import { addToShopString } from '@/constants/strings'
 interface ItemsTableProps {
   items: Item[]
   title: string
-  onButtonClick: (item: Item) => void
+  onButtonClick?: (item: Item) => void
   itemAttributesToDisplay?: (keyof Omit<Item, 'name'>)[]
 }
 const ItemsTable = ({
@@ -30,7 +30,7 @@ const ItemsTable = ({
                   </th>
                 )
               })}
-              <th className='w-28 p-1' />
+              {onButtonClick && <th className='w-28 p-1' />}
             </tr>
           </thead>
           <tbody>
@@ -44,14 +44,16 @@ const ItemsTable = ({
                     </td>
                   )
                 })}
-                <td className='min-w-14 p-1'>
-                  <button
-                    onClick={() => onButtonClick(item)}
-                    className='text-primary text-left text-sm hover:underline focus:outline-none'
-                  >
-                    {addToShopString}
-                  </button>
-                </td>
+                {onButtonClick && (
+                  <td className='min-w-14 p-1'>
+                    <button
+                      onClick={() => onButtonClick(item)}
+                      className='text-primary text-left text-sm hover:underline focus:outline-none'
+                    >
+                      {addToShopString}
+                    </button>
+                  </td>
+                )}
               </tr>
             ))}
           </tbody>

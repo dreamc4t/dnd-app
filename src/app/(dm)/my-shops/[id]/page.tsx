@@ -1,4 +1,4 @@
-import { ShopEditor } from '@/components/ShopEditor'
+import { ShopOverview } from '@/components/ShopOverview'
 import { Shop } from '@/interfaces'
 import { getShopById } from '@/lib/services'
 import { notFound } from 'next/navigation'
@@ -15,5 +15,5 @@ export default async function Page({ params }: PageProps) {
 
   if (!shop) return notFound()
 
-  return <ShopEditor {...shop} />
+  return <ShopOverview shop={shop} />
 }

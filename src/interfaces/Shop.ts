@@ -4,7 +4,7 @@ type Shop = {
   id: string
   name: string
   items: Item[]
-  createdAt?: string
+  createdAt: string
   updatedAt?: string
 }
 

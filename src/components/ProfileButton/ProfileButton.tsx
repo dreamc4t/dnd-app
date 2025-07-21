@@ -32,7 +32,7 @@ const ProfileButton = () => {
         onClick={() => setOpen((prev) => !prev)}
         className='rounded-full border border-gray-700 p-1 transition hover:ring-2 hover:ring-white'
       >
-        <ProfileIcon color='white' />
+        <ProfileIcon />
       </button>
 
       {open && (

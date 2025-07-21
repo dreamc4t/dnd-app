@@ -9,7 +9,7 @@ const NameGeneratorRow = ({ name, onRandomNameClick }: NameGeneratorRowProps) =>
     <div className='flex justify-between'>
       <p>Name: {name}</p>
       <button onClick={onRandomNameClick}>
-        <RefreshIcon color='white' />{' '}
+        <RefreshIcon  />{' '}
       </button>
     </div>
   )

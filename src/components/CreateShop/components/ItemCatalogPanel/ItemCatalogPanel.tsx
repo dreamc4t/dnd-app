@@ -66,6 +66,7 @@ export const ItemCatalogPanel = ({ onAddToShopClick }: ItemCatalogPanelProps) =>
             title={title}
             items={items}
             onButtonClick={onAddToShopClick}
+            itemAttributesToDisplay={['type', 'prize']}
           />
         ))
       ) : (

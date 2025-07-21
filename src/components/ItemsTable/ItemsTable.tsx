@@ -6,8 +6,14 @@ interface ItemsTableProps {
   items: Item[]
   title: string
   onButtonClick: (item: Item) => void
+  itemAttributesToDisplay?: (keyof Omit<Item, 'name'>)[]
 }
-const ItemsTable = ({ items, title, onButtonClick }: ItemsTableProps) => {
+const ItemsTable = ({
+  items,
+  title,
+  onButtonClick,
+  itemAttributesToDisplay = ['type', 'prize'],
+}: ItemsTableProps) => {
   return (
     <div>
       <Heading variant='h3' title={title} className='py-3' />
@@ -17,8 +23,13 @@ const ItemsTable = ({ items, title, onButtonClick }: ItemsTableProps) => {
           <thead className='bg-backgroundTint1'>
             <tr>
               <th className='p-3'>Name</th>
-              <th className='p-3'>Type</th>
-              <th className='p-3'>Price</th>
+              {itemAttributesToDisplay.map((attr, i) => {
+                return (
+                  <th key={attr + i} className='p-3 capitalize'>
+                    {attr}
+                  </th>
+                )
+              })}
               <th className='w-28 p-1' />
             </tr>
           </thead>
@@ -26,8 +37,13 @@ const ItemsTable = ({ items, title, onButtonClick }: ItemsTableProps) => {
             {items.map((item) => (
               <tr key={item.id} className='border-t border-contrast text-text-secondary'>
                 <td className='p-3 text-text-primary'>{item.name}</td>
-                <td className='p-3'>{item.type}</td>
-                <td className='p-3'>{item.prize}</td>
+                {itemAttributesToDisplay.map((attr, i) => {
+                  return (
+                    <td key={attr + i} className='p-3'>
+                      {item[attr]}
+                    </td>
+                  )
+                })}
                 <td className='min-w-14 p-1'>
                   <button
                     onClick={() => onButtonClick(item)}

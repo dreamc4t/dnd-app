@@ -19,6 +19,7 @@ const config: Config = {
           secondary: '#A6B2A3',
           disabled: '6b7280',
         },
+        success: '#7DBF7A',
 
         button: {
           default: '#D1D5DB',

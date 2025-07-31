@@ -1,6 +1,6 @@
 'use client'
 import { useState } from 'react'
-import { CheckIcon, CopyIcon } from '../icons'
+import { CheckIcon, CopyIcon } from '../../icons'
 
 interface CopyShopLinkProps {
   shopId: string

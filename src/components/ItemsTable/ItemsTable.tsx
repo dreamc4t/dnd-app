@@ -34,8 +34,11 @@ const ItemsTable = ({
             </tr>
           </thead>
           <tbody>
-            {items.map((item) => (
-              <tr key={item.id} className='border-t border-contrast text-text-secondary'>
+            {items.map((item, i) => (
+              <tr
+                key={`${item.id} ${i}`}
+                className='border-t border-contrast text-text-secondary'
+              >
                 <td className='p-3 text-text-primary'>{item.name}</td>
                 {itemAttributesToDisplay.map((attr, i) => {
                   return (

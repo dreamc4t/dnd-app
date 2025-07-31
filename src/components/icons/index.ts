@@ -1,19 +1,20 @@
 import { icons } from './icons'
 
 export const {
+  AddIcon,
+  CheckIcon,
+  ChevronDown,
   ChevronLeft,
   ChevronRight,
   ChevronUp,
-  ChevronDown,
-  GridSmallIcon,
-  GridBigIcon,
-  InfoIcon,
-  ExternalLinkIcon,
+  CopyIcon,
   EditIcon,
-  RefreshIcon,
+  ExternalLinkIcon,
+  GridBigIcon,
+  GridSmallIcon,
+  InfoIcon,
   ProfileIcon,
+  RefreshIcon,
   SearchIcon,
-  AddIcon,
   TrashcanIcon,
-  CheckIcon
 } = icons

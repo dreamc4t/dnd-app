@@ -19,21 +19,22 @@ const createIcon = (path: string, displayName: string) => {
   return IconComponent
 }
 const iconDefinitions = {
-  GridSmallIcon: paths.gridSmall,
-  GridBigIcon: paths.gridBig,
-  InfoIcon: paths.info,
-  ExternalLinkIcon: paths.externalLink,
-  EditIcon: paths.edit,
-  RefreshIcon: paths.refresh,
-  ProfileIcon: paths.profile,
+  AddIcon: paths.add,
+  CheckIcon: paths.check,
+  ChevronDown: paths.chevronDown,
   ChevronLeft: paths.chevronLeft,
   ChevronRight: paths.chevronRight,
   ChevronUp: paths.chevronUp,
-  ChevronDown: paths.chevronDown,
+  CopyIcon: paths.copy,
+  EditIcon: paths.edit,
+  ExternalLinkIcon: paths.externalLink,
+  GridBigIcon: paths.gridBig,
+  GridSmallIcon: paths.gridSmall,
+  InfoIcon: paths.info,
+  ProfileIcon: paths.profile,
+  RefreshIcon: paths.refresh,
   SearchIcon: paths.search,
-  AddIcon: paths.add,
   TrashcanIcon: paths.trashcan,
-  CheckIcon: paths.check
 }
 
 const icons = Object.fromEntries(

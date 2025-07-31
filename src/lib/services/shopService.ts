@@ -6,6 +6,7 @@ function toAppShop(doc: any): AppShop {
   return {
     id: doc._id.toString(),
     name: doc.name ?? '',
+    userId: doc.userId?.toString(),
     items: doc.items ?? [],
     createdAt: doc.createdAt?.toString(),
     updatedAt: doc.updatedAt?.toString(),
@@ -29,10 +30,10 @@ export async function createShop(shopData: Partial<IShop>, userId: string) {
   return await Shop.create({ ...shopData, userId })
 }
 
-// export async function deleteShop(id: string) {
-//   await dbConnect()
-//   await Shop.findByIdAndDelete(id)
-// }
+export async function deleteShop(id: string) {
+  await dbConnect()
+  await Shop.findByIdAndDelete(id)
+}
 
 // export async function updateShop(id: string, update: Partial<IShop>) {
 //   await dbConnect()

@@ -1,10 +1,11 @@
 'use server'
 
-import { deleteShop, getShopById } from '@/lib/services'
+import { createShop, deleteShop, getShopById } from '@/lib/services'
 import { auth } from '@/lib/auth'
 import { revalidatePath } from 'next/cache'
 import { NAV_MY_SHOPS_URL } from '@/constants/urls'
 import { redirect } from 'next/navigation'
+import type { Shop as AppShop } from '@/interfaces'
 
 export async function deleteShopAction(formData: FormData) {
   const shopId = formData.get('shopId') as string
@@ -23,4 +24,12 @@ export async function deleteShopAction(formData: FormData) {
   await deleteShop(shopId)
   revalidatePath(`/${NAV_MY_SHOPS_URL}`)
   redirect(redirectTo)
+}
+
+export async function createShopAction(shop: Partial<AppShop>) {
+  const session = await auth()
+  if (!session?.user?.id) throw new Error('Unauthorized')
+
+  await createShop(shop, session.user.id)
+  revalidatePath('/my-shops')
 }

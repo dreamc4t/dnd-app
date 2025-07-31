@@ -4,6 +4,7 @@ import { Item, Shop } from '@/interfaces'
 import { createContext, useContext, useState, useEffect } from 'react'
 import { v4 as uuidv4 } from 'uuid'
 import { noItemErrorMessage, noShopNameErrorMessage } from '@/constants/strings'
+import { createShopAction } from '@/lib/actions/shopActions'
 
 interface ShopDraftContextType {
   shopName: string
@@ -70,11 +71,8 @@ const ShopDraftContextProvider = ({ children }: { children: React.ReactNode }) =
     }
 
     try {
-      await fetch('/api/shop/create', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(shop),
-      })
+      await createShopAction(shop)
+
       setShopName('')
       setSelectedItems([])
     } catch (error) {

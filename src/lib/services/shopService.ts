@@ -1,5 +1,5 @@
 import dbConnect from '@/lib/db'
-import { Shop, IShop } from '../models'
+import { Shop } from '../models'
 import type { Shop as AppShop } from '@/interfaces'
 
 function toAppShop(doc: any): AppShop {
@@ -25,7 +25,7 @@ export async function getShopById(id: string): Promise<AppShop | null> {
   return doc ? toAppShop(doc) : null
 }
 
-export async function createShop(shopData: Partial<IShop>, userId: string) {
+export async function createShop(shopData: Partial<AppShop>, userId: string) {
   await dbConnect()
   return await Shop.create({ ...shopData, userId })
 }

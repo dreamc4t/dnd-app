@@ -31,3 +31,9 @@ export async function createNpc(npcData: Partial<INpc>, userId: string): Promise
   const created = await Npc.create({ ...npcData, userId })
   return toAppNpc(created)
 }
+
+export async function getAllNpcs(): Promise<AppNpc[]> {
+  await dbConnect()
+  const docs = await Npc.find().lean()
+  return docs.map(toAppNpc)
+}
